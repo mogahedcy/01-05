@@ -1,0 +1,1685 @@
+{
+  "metadata": {
+    "title": "Deyar Jeddah | Best Shades & Pergolas in Jeddah - 15 Years Experience",
+    "description": "The leading company in Jeddah for installing shades, pergolas, and fences. 15 years of experience, 10-year warranty, professional installation, competitive prices."
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "services": "Our Services",
+    "search": "Search",
+    "callNow": "Call Now",
+    "getQuote": "Get a Quote",
+    "freeQuote": "Get a Free Quote",
+    "location": "Jeddah, Saudi Arabia",
+    "companyName": "Aldeyar Global Professionals",
+    "companySubtitle": "15+ Years in Jeddah & KSA",
+    "specializedServices": "Our Specialized Services",
+    "servicesDescription": "We provide the best solutions in shades, fences, and design with quality assurance"
+  },
+  "features": {
+    "experience": "15+ Years Experience",
+    "warranty": "10-Year Warranty",
+    "service247": "24/7 Service",
+    "qualityGuaranteed": "Quality Guaranteed"
+  },
+  "services": {
+    "carShades": {
+      "title": "Car Shades",
+      "description": "Advanced shades to protect vehicles"
+    },
+    "tents": {
+      "title": "Tents & Traditional Houses",
+      "description": "Distinctive traditional and modern tents"
+    },
+    "hairHouses": {
+      "title": "Traditional Hair Houses",
+      "description": "Authentic and luxurious hair houses"
+    },
+    "fences": {
+      "title": "Fences",
+      "description": "Privacy and protection fences"
+    },
+    "landscaping": {
+      "title": "Landscaping",
+      "description": "Green space design and landscaping"
+    },
+    "pergolas": {
+      "title": "Pergolas",
+      "description": "Elegant wooden and iron pergolas"
+    },
+    "renovation": {
+      "title": "Finishing & Renovation",
+      "description": "Renovation and finishing services"
+    },
+    "sandwichPanel": {
+      "title": "Sandwich Panel",
+      "description": "Advanced insulating panels"
+    }
+  },
+  "hero": {
+    "companyName": "Aldeyar Professionals",
+    "tagline": "Shades, Fences, Pergolas & Sandwich Panels in Jeddah",
+    "description": "Car shades installation - Garden pergolas - Fences - Sandwich panels - Landscaping - Traditional houses - Royal tents - Renovation",
+    "projects": "5000+ Projects",
+    "warranty": "10-Year Warranty",
+    "experience": "15+ Years Experience",
+    "freeConsultation": "Free Consultation Now",
+    "needHelp": "Need help? Contact us!"
+  },
+  "servicesSection": {
+    "title": "Our Comprehensive Services",
+    "subtitle": "We offer 8 specialized and integrated services including shades, pergolas, fences, sandwich panels, renovation, landscaping, traditional houses, and royal tents with the highest quality standards",
+    "moreInfo": "More Information",
+    "mostRequested": "Most Requested",
+    "featured": "Featured",
+    "fromPrice": "From",
+    "priceByArea": "By Area",
+    "ctaTitle": "Free Consultation for All Services",
+    "ctaSubtitle": "Our specialized team is ready to help you choose the perfect solution for your project and provide professional advice to ensure the best results",
+    "contactNow": "Contact Us Now",
+    "viewPortfolio": "View Our Work",
+    "servicesData": {
+      "carShades": {
+        "title": "Car Shades",
+        "description": "Luxury protection with modern designs",
+        "features": [
+          "Complete sun protection",
+          "Various designs"
+        ],
+        "price": "Starting from 80 SAR/m²"
+      },
+      "sandwichPanel": {
+        "title": "Sandwich Panel",
+        "description": "Professional thermal and acoustic insulation",
+        "features": [
+          "Heat and sound insulation",
+          "Fire resistant"
+        ],
+        "price": "Starting from 120 SAR/m²"
+      },
+      "renovation": {
+        "title": "Annex Renovation",
+        "description": "Complete renovation with latest technology",
+        "features": [
+          "Villa and rest house renovation",
+          "Complete maintenance"
+        ],
+        "price": "Based on project details"
+      },
+      "pergolas": {
+        "title": "Garden Pergolas",
+        "description": "Elegant designs that add exceptional beauty",
+        "features": [
+          "Wooden and iron",
+          "Exclusive designs"
+        ],
+        "price": "Starting from 150 SAR/m²"
+      },
+      "fences": {
+        "title": "Fences",
+        "description": "Complete privacy and guaranteed protection",
+        "features": [
+          "PVC, iron, and fabric",
+          "100% privacy"
+        ],
+        "price": "Starting from 80 SAR/m²"
+      },
+      "traditionalHouses": {
+        "title": "Traditional Houses",
+        "description": "Authentic heritage with modern touch",
+        "features": [
+          "Handcrafted",
+          "Authentic Saudi heritage"
+        ],
+        "price": "Starting from 180 SAR/m²"
+      },
+      "landscaping": {
+        "title": "Landscaping",
+        "description": "Professional design and smart irrigation systems",
+        "features": [
+          "Modern design",
+          "Climate-suitable plants"
+        ],
+        "price": "Competitive prices/m²"
+      },
+      "royalTents": {
+        "title": "Royal Tents",
+        "description": "World-class luxury for special occasions",
+        "features": [
+          "Exclusive royal designs",
+          "Events and celebrations"
+        ],
+        "price": "Starting from 250 SAR/m²"
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Why Aldeyar Professionals is the First Choice in Jeddah?",
+    "subtitle": "We are proud to be the leading company in shades, pergolas, and sandwich panels in Jeddah. Our long experience and commitment to quality have made us the first choice for thousands of satisfied customers",
+    "trustTitle": "Aldeyar Professionals - Trust and Quality Since 2009",
+    "stats": {
+      "projects": {
+        "number": "+5000",
+        "label": "Successful Projects",
+        "description": "Diverse projects across all services"
+      },
+      "experience": {
+        "number": "15",
+        "label": "Years Experience",
+        "description": "Accumulated experience in Saudi market"
+      },
+      "services": {
+        "number": "8",
+        "label": "Specialized Services",
+        "description": "Comprehensive and integrated services"
+      },
+      "support": {
+        "number": "24/7",
+        "label": "Continuous Support",
+        "description": "Customer service and continuous technical support"
+      }
+    },
+    "features": {
+      "experience": {
+        "title": "15 Years Proven Experience",
+        "description": "Over 15 years of accumulated experience in executing all types of projects with the highest quality standards",
+        "highlight": "15 Years"
+      },
+      "warranty": {
+        "title": "Comprehensive 10-Year Warranty",
+        "description": "We offer a comprehensive 10-year warranty on all our services with free periodic maintenance",
+        "highlight": "10 Years Warranty"
+      },
+      "customers": {
+        "title": "+5000 Satisfied Customers",
+        "description": "More than 5000 customers satisfied with our services in Jeddah and surrounding areas testify to our quality work",
+        "highlight": "+5000 Customers"
+      },
+      "punctuality": {
+        "title": "Commitment to Deadlines",
+        "description": "We are committed to specified project delivery dates without delays with accurate work scheduling follow-up",
+        "highlight": "Full Commitment"
+      },
+      "comprehensive": {
+        "title": "Comprehensive Integrated Service",
+        "description": "8 specialized services under one roof from design and execution to maintenance and follow-up",
+        "highlight": "8 Services"
+      },
+      "coverage": {
+        "title": "Complete Jeddah Coverage",
+        "description": "We cover all neighborhoods and areas of Jeddah and surrounding areas with a mobile and specialized work team",
+        "highlight": "Full Coverage"
+      }
+    },
+    "trustBadges": {
+      "expertSupervision": "Supervision by expert engineers",
+      "qualityMaterials": "Quality in material selection",
+      "experiencedLabor": "Experienced skilled labor",
+      "globalStandards": "International quality standards",
+      "technicalTeam": "Specialized technical team"
+    }
+  },
+  "howItWorks": {
+    "badge": "How We Work?",
+    "title": "Your Journey with Us from",
+    "titleHighlight": "Start to Finish",
+    "subtitle": "4 simple steps to get your shade, pergola, or any project with premium quality and 10-year warranty",
+    "ctaTitle": "Start Your Journey with Us Now!",
+    "ctaSubtitle": "Within 48 hours, your project in shades, pergolas, fences, or any service begins",
+    "ctaButton": "Call Now and Get 15% Discount",
+    "ctaSecondary": "Book Free Consultation",
+    "noCommitment": "No commitment",
+    "freeConsultation": "Free consultation",
+    "instantQuote": "Instant quote",
+    "allServices": "All our services: Car shades - Pergolas - Fences - Sandwich panel - Landscaping - Traditional houses - Royal tents - Renovation",
+    "steps": {
+      "step1": {
+        "title": "Free Consultation",
+        "description": "Contact us via WhatsApp or phone. A specialized engineer listens to your needs for shades, pergolas, fences, sandwich panel, or any other service and provides the optimal solution within 30 minutes.",
+        "details": [
+          "30 minutes",
+          "Via WhatsApp or visit",
+          "100% Free"
+        ]
+      },
+      "step2": {
+        "title": "Visit and Accurate Measurement",
+        "description": "A specialized technician visits your site, takes accurate measurements for your car shades, garden pergola, or fence, and shows you various samples and designs. All this for free.",
+        "details": [
+          "One hour",
+          "Accurate 3D measurement",
+          "Various design display"
+        ]
+      },
+      "step3": {
+        "title": "Transparent Price Quote",
+        "description": "You receive a detailed price quote including everything - materials, installation, warranty. No hidden costs.",
+        "details": [
+          "Competitive prices",
+          "Documented contract",
+          "Full transparency"
+        ]
+      },
+      "step4": {
+        "title": "Fast Professional Installation",
+        "description": "A team of 4-6 professional technicians starts installing your shade, pergola, fence, or project with high quality. Clean and organized work. 10-year warranty starts immediately.",
+        "details": [
+          "1-3 days depending on project",
+          "Professional specialized team",
+          "Guaranteed high quality"
+        ]
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Comprehensive answers to the most common questions from our customers about Aldeyar Professionals services. Didn't find an answer to your question? Contact us directly",
+    "loading": "Loading FAQ...",
+    "noResults": "No questions available in this category",
+    "ctaTitle": "Didn't Find an Answer to Your Question?",
+    "ctaSubtitle": "Aldeyar Professionals customer service team is ready to answer all your inquiries and provide appropriate free consultation for your needs",
+    "contactWhatsApp": "Contact via WhatsApp",
+    "directCall": "Direct Call",
+    "categories": {
+      "all": "All",
+      "carShades": "Car Shades",
+      "fences": "Fences",
+      "royalTents": "Royal Tents",
+      "traditionalHouses": "Traditional Houses",
+      "pergolas": "Pergolas",
+      "landscaping": "Landscaping",
+      "hangars": "Hangars",
+      "chainLink": "Chain Link",
+      "tiles": "Tiles",
+      "sandwichPanel": "Sandwich Panel"
+    }
+  },
+  "testimonials": {
+    "rating": "Rating 4.9 out of 5",
+    "title": "Our Happy Customers' Reviews",
+    "subtitle": "Trust of over 5000 customers in Jeddah",
+    "ctaTitle": "Join Our Satisfied Customers",
+    "ctaSubtitle": "Get the same level of quality and excellent service that thousands of customers before you received",
+    "ctaButton": "Get Free Consultation Now",
+    "prevReview": "Previous review",
+    "nextReview": "Next review",
+    "selectReview": "Select review",
+    "reviews": [
+      {
+        "name": "Ahmed Al-Malki",
+        "location": "Al-Rawdah District, Jeddah",
+        "service": "Car Shades",
+        "text": "Excellent service from Aldeyar Professionals. The car shades were installed with high quality and on time. I recommend dealing with them."
+      },
+      {
+        "name": "Fatima Al-Otaibi",
+        "location": "Al-Naseem District, Jeddah",
+        "service": "Garden Pergola",
+        "text": "The garden pergola was done with great precision. The design is wonderful and the materials are high quality. Thanks to Aldeyar Professionals team."
+      },
+      {
+        "name": "Mohammed Al-Ghamdi",
+        "location": "Al-Andalus District, Jeddah",
+        "service": "Sandwich Panel",
+        "text": "Sandwich panel installation for my warehouse was done with high professionalism. Excellent insulation and fast execution. Best company in Jeddah."
+      },
+      {
+        "name": "Sara Al-Qahtani",
+        "location": "Al-Shati District, Jeddah",
+        "service": "Privacy Fences",
+        "text": "The fences achieved the required privacy with beautiful design. The work team is professional and the service is excellent."
+      },
+      {
+        "name": "Abdullah Al-Harbi",
+        "location": "North Jeddah",
+        "service": "Annex Renovation",
+        "text": "The annex renovation was done wonderfully. Attention to detail and high-quality materials. The result exceeded expectations."
+      },
+      {
+        "name": "Noura Al-Salmi",
+        "location": "Al-Zahra District, Jeddah",
+        "service": "Landscaping",
+        "text": "The garden landscaping became more beautiful than expected. Climate-suitable plants and excellent irrigation system."
+      }
+    ]
+  },
+  "footer": {
+    "aboutCompany": "About the Company",
+    "aboutDescription": "Deyar Jeddah - The leading company in shades, fences, and pergolas in Jeddah for over 15 years.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "contactUs": "Contact Us",
+    "workHours": "Working Hours",
+    "everyday": "Every Day",
+    "allRightsReserved": "All Rights Reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "companyName": "Deyar Jeddah",
+    "companySubtitle": "All Specialized Services - Jeddah",
+    "companyDescription": "Leading company in shades, pergolas, and sandwich panels in Jeddah. 15 years of experience providing the best services with the highest standards of quality and perfection.",
+    "stayConnected": "Stay Connected with Us",
+    "latestOffers": "Get the latest offers and specialized articles",
+    "emailContact": "Email",
+    "followUs": "Follow Us",
+    "requestQuote": "Request Quote",
+    "serviceAreas": "Service Areas",
+    "contactInfo": "Contact Information",
+    "callUs": "Call Us",
+    "location": "Location",
+    "jeddahSA": "Jeddah, Saudi Arabia",
+    "customerService247": "24/7 Customer Service",
+    "developedBy": "Website developed and managed by engineer",
+    "services": {
+      "carShades": "Car Shades Jeddah",
+      "pergolas": "Garden Pergolas Jeddah",
+      "fences": "Privacy Fences Jeddah",
+      "sandwichPanel": "Sandwich Panel Jeddah",
+      "renovation": "Annex Renovation Jeddah",
+      "landscaping": "Landscaping Jeddah",
+      "traditionalHouses": "Traditional Hair Houses",
+      "royalTents": "Luxury Royal Tents"
+    },
+    "links": {
+      "portfolio": "Portfolio",
+      "about": "About Deyar Jeddah",
+      "articles": "Articles",
+      "quotes": "Price Quotes",
+      "faq": "Frequently Asked Questions",
+      "contact": "Contact Us",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "areas": {
+      "north": "North Jeddah Shades",
+      "central": "Central Jeddah Shades",
+      "east": "East Jeddah Shades",
+      "south": "South Jeddah Shades",
+      "west": "West Jeddah Shades",
+      "faisaliyah": "Al-Faisaliyah Shades",
+      "zahra": "Al-Zahra Shades",
+      "naim": "Al-Naim Shades"
+    },
+    "stats": {
+      "clients": "Satisfied Clients",
+      "projects": "Completed Projects",
+      "experience": "Years Experience",
+      "rating": "Customer Rating"
+    },
+    "seo": {
+      "title": "Deyar Jeddah - Best Shades and Pergolas Company in Jeddah",
+      "description": "Deyar Jeddah is the leading company in Jeddah for installing car shades, pergolas, fences, sandwich panels, annex renovation, landscaping, traditional hair houses, and royal tents. We serve all Jeddah neighborhoods with 15 years of experience and comprehensive 10-year warranty."
+    }
+  },
+  "common": {
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try Again",
+    "noResults": "No results found",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "language": "Language",
+    "arabic": "العربية",
+    "english": "English"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "pageTitle": "Contact Aldeyar Professionals",
+    "pageTitlePart1": "Contact",
+    "pageTitlePart2": "Aldeyar Professionals",
+    "subtitle": "We're here to serve you around the clock. Our specialized team is ready to answer your inquiries and provide free consultation",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "message": "Your Message",
+    "send": "Send Message",
+    "success": "Your message was sent successfully!",
+    "orCall": "Or call us directly",
+    "callUs": "Call Us",
+    "callUsDesc": "Available 24/7 to answer your inquiries",
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp",
+    "whatsappDesc": "Direct and fast communication via WhatsApp",
+    "sendMessage": "Send Message",
+    "emailTitle": "Email",
+    "emailDesc": "We respond within 24 hours maximum",
+    "sendEmail": "Send Email",
+    "ourLocation": "Our Location",
+    "locationDesc": "Visit our office in Jeddah",
+    "locationValue": "Jeddah, Saudi Arabia",
+    "viewMap": "View Map",
+    "contactMethods": "Ways to Contact Us",
+    "contactMethodsDesc": "Choose the most convenient way to contact us",
+    "sendUsMessage": "Send Us a Message",
+    "fullName": "Full Name *",
+    "fullNamePlaceholder": "Enter your full name",
+    "phonePlaceholder": "05xxxxxxxx",
+    "emailPlaceholder": "example@email.com",
+    "serviceType": "Type of Service Required",
+    "selectService": "Select service type",
+    "addressArea": "Address/Area",
+    "addressPlaceholder": "Al Salamah District, Jeddah",
+    "projectDetails": "Project Details *",
+    "projectDetailsPlaceholder": "Write your project details, area, required design, or any special requirements...",
+    "workingHours": "Working Hours",
+    "sunToThu": "Sunday - Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "emergencyService": "Emergency Service",
+    "serviceAreas": "Service Areas",
+    "needImmediateHelp": "Need Immediate Help?",
+    "teamAvailable": "Our customer service team is now available to answer your inquiries",
+    "directWhatsapp": "Direct WhatsApp",
+    "instantWhatsapp": "Instant WhatsApp",
+    "ourLocationInJeddah": "Our Location in Jeddah",
+    "servingAllJeddah": "Deyar Jeddah - At your service throughout Jeddah",
+    "openInGoogleMaps": "Open in Google Maps",
+    "frequentQuestions": "Frequent Questions?",
+    "findAnswerInFAQ": "You may find the answer to your question in the FAQ page",
+    "viewFAQ": "View FAQ",
+    "home": "Home",
+    "serviceOptions": {
+      "carShades": "Car Shades",
+      "privacyFences": "Privacy Fences",
+      "gardenPergolas": "Garden Pergolas",
+      "royalTents": "Royal Tents",
+      "traditionalHouses": "Traditional Houses",
+      "sandwichPanel": "Sandwich Panel",
+      "landscaping": "Landscaping",
+      "renovation": "Annex Renovation",
+      "generalConsultation": "General Consultation"
+    },
+    "areas": {
+      "northJeddah": "North Jeddah",
+      "southJeddah": "South Jeddah",
+      "eastJeddah": "East Jeddah",
+      "westJeddah": "West Jeddah",
+      "centralJeddah": "Central Jeddah",
+      "corniche": "Corniche",
+      "safa": "Al Safa District",
+      "nuzha": "Al Nuzha District",
+      "rawdah": "Al Rawdah District",
+      "murjan": "Al Murjan District",
+      "shati": "Al Shati District",
+      "salamah": "Al Salamah District"
+    }
+  },
+  "about": {
+    "title": "About Deyar Jeddah",
+    "subtitle": "15 Years of Experience at Your Service",
+    "description": "Deyar Jeddah was established to be the first choice in shades, fences, and pergolas in the Kingdom of Saudi Arabia.",
+    "mission": "Our Mission",
+    "missionText": "Providing the best integrated solutions in shades and fences with the highest quality standards.",
+    "vision": "Our Vision",
+    "visionText": "To be the leading company in the Kingdom of Saudi Arabia in shades and fences."
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "subtitle": "Discover our distinguished projects",
+    "allCategories": "All Categories",
+    "viewProject": "View Project",
+    "projectDetails": "Project Details"
+  },
+  "articles": {
+    "title": "Blog",
+    "subtitle": "Latest articles and tips",
+    "readTime": "minutes to read",
+    "relatedArticles": "Related Articles"
+  },
+  "seo": {
+    "homeTitle": "Shades and Fences Jeddah | Aldeyar Professionals - 10 Year Warranty",
+    "homeDescription": "Deyar Jeddah - Installing car shades, pergolas, fences, sandwich panels, landscaping, traditional houses in Jeddah. 15 years experience, 10 year warranty.",
+    "keywords": "car shades jeddah, wooden pergolas jeddah, privacy fences jeddah, sandwich panel jeddah, landscaping jeddah, aldeyar global professionals, shades installation saudi arabia"
+  },
+  "mazallat": {
+    "pageTitle": "Car Shades Jeddah - 10 Year Warranty | Aldeyar Professionals",
+    "pageDescription": "Installation of car and garden shades in Jeddah with 10-year warranty. UV and rain resistant PVC shades. Prices starting from 2,500 SAR. Free consultation",
+    "keywords": "car shades jeddah, PVC shades, iron shades, shade installation, shade company, car shade prices",
+    "hero": {
+      "title": "Best Car Shades in",
+      "titleHighlight": "Jeddah",
+      "subtitle": "High Quality and Competitive Prices",
+      "description": "Aldeyar Professionals - 15 years of experience installing the best car, garden, and school shades in Jeddah. High-quality PVC shades, modern designs, and a comprehensive 10-year warranty",
+      "features": {
+        "allAreas": "We serve all Jeddah neighborhoods",
+        "warranty": "Comprehensive 10-year warranty",
+        "projects": "More than 5000 successful projects"
+      },
+      "callCta": "Call for Free Consultation",
+      "whatsappCta": "WhatsApp Now"
+    },
+    "servicesSection": {
+      "title": "Specialized Shade Types",
+      "subtitle": "We offer a comprehensive range of high-quality shades to suit all needs",
+      "moreInfo": "More Information"
+    },
+    "shadeTypes": {
+      "cars": {
+        "title": "Car Shades",
+        "description": "Parking lot shades in various sizes and shapes, providing complete protection for cars from sunlight and rain.",
+        "features": [
+          "UV protection",
+          "Rain resistant",
+          "Various designs"
+        ],
+        "price": "Starting from 2,500 SAR"
+      },
+      "gardens": {
+        "title": "Garden Shades",
+        "description": "Shades for home and public gardens with modern designs and high-quality materials that add an aesthetic touch.",
+        "features": [
+          "Aesthetic designs",
+          "Weather resistant",
+          "Various colors"
+        ],
+        "price": "Starting from 3,000 SAR"
+      },
+      "schools": {
+        "title": "School Shades",
+        "description": "Shades for schools and educational institutions, providing a safe environment for students and teachers.",
+        "features": [
+          "Large spaces",
+          "High safety",
+          "Excellent durability"
+        ],
+        "price": "Starting from 5,000 SAR"
+      },
+      "pools": {
+        "title": "Pool Shades",
+        "description": "Pool shades that protect from sunlight and maintain pool cleanliness, with proper ventilation.",
+        "features": [
+          "Pool protection",
+          "Excellent ventilation",
+          "Chlorine resistant"
+        ],
+        "price": "Starting from 4,000 SAR"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Aldeyar Professionals?",
+      "features": {
+        "experience": {
+          "title": "15 Years Experience",
+          "description": "We are pioneers in the shade industry with over 15 years of experience"
+        },
+        "warranty": {
+          "title": "Comprehensive 10-Year Warranty",
+          "description": "Long-term warranty on all our work and materials used"
+        },
+        "team": {
+          "title": "Specialized Team",
+          "description": "Engineers and technicians specialized and trained at the highest level"
+        },
+        "speed": {
+          "title": "Fast Execution",
+          "description": "Speed in execution while maintaining the highest quality standards"
+        },
+        "satisfaction": {
+          "title": "Customer Satisfaction",
+          "description": "Customer satisfaction rate up to 99% with excellent ratings"
+        },
+        "prices": {
+          "title": "Competitive Prices",
+          "description": "Best prices in the market with unmatched high quality"
+        }
+      }
+    },
+    "stats": {
+      "projects": "Completed Projects",
+      "experience": "Years Experience",
+      "satisfaction": "Customer Satisfaction",
+      "support": "Customer Service"
+    },
+    "projectsGallery": {
+      "title": "Our Portfolio in",
+      "viewAll": "View All Projects",
+      "viewProject": "View Project"
+    },
+    "articlesSection": {
+      "title": "Articles and Tips about",
+      "viewAll": "View All Articles",
+      "readMore": "Read More"
+    },
+    "faqSection": {
+      "title": "Frequently Asked Questions about",
+      "noFaqs": "No FAQs available at the moment"
+    },
+    "relatedServices": {
+      "title": "Related Services",
+      "subtitle": "Discover more of our distinguished services",
+      "sawater": {
+        "title": "Fences",
+        "description": "Installation of various types and materials of fences for privacy and protection.",
+        "features": [
+          "Fabric fences",
+          "Iron fences",
+          "Wooden fences"
+        ]
+      },
+      "pergolas": {
+        "title": "Pergolas",
+        "description": "Design and execution of wooden and iron pergolas in modern styles.",
+        "features": [
+          "Wooden pergolas",
+          "Iron pergolas",
+          "Mixed pergolas"
+        ]
+      },
+      "khayyam": {
+        "title": "Royal Tents",
+        "description": "Design and execution of luxurious royal tents for events and celebrations.",
+        "features": [
+          "Wedding tents",
+          "Rest house tents",
+          "Event tents"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Contact us now for a free consultation and a customized quote for your needs",
+      "callButton": "Call Now",
+      "whatsappButton": "Contact via WhatsApp"
+    },
+    "breadcrumb": {
+      "services": "Our Services",
+      "mazallat": "Car Shades"
+    },
+    "schema": {
+      "serviceName": "Car Shades Jeddah",
+      "serviceDescription": "Best car shades in Jeddah from Aldeyar Professionals. PVC shades, garden shades, school and pool shades. 10-year warranty and 15 years of experience.",
+      "productName": "PVC Car Shades - Jeddah",
+      "productDescription": "High-quality car shades made from heat and UV resistant PVC. 10-year warranty on materials and installation.",
+      "projectsListName": "Car Shade Projects in Jeddah - Aldeyar Professionals",
+      "projectsListDescription": "Our portfolio of car and garden shade installations in Jeddah",
+      "articlesListName": "Articles about Car Shades in Jeddah",
+      "articlesListDescription": "Comprehensive guide and educational articles about car and garden shades"
+    },
+    "seoArticle": {
+      "title": "The Ultimate Guide to Car Shades & Garden Umbrellas in Jeddah",
+      "paragraphs": [
+        "Umbrellas and shades of all types, whether car shades, garden umbrellas, or shades for pools and schools, are an indispensable necessity in Jeddah and Saudi Arabia due to the hot climate and strong sunlight year-round. At Aldeyar Global Professionals, we offer the best innovative solutions for installing shades with modern designs and premium global materials such as German and Korean PVC fabric, Polyethylene, and transparent or colored Lexan shades, along with treated wood and steel umbrellas that are rust and corrosion-resistant.",
+        "When looking for the best car shades installation company in Jeddah, focus on quality, durability, and warranty. We guarantee the execution of your projects to the highest quality standards, providing cantilever car shades, pyramid shades, cone shades, and tensile structures. Our shades feature superior thermal and water insulation, providing total protection for your vehicle from UV rays, preventing exterior paint damage, and offering shelter from rain and dust.",
+        "Our expertise goes beyond car shades; we excel in designing and installing garden umbrellas, pergolas, and outdoor seating areas that add an aesthetic and luxurious touch to villas, palaces, and resorts. We use the finest Wood Plastic Composite (WPC), braided steel, and Lexan to provide a shaded, magnificent space for you to enjoy with your family. We also provide integrated solutions for pool enclosures to protect them from pollution and dust while maintaining privacy, as well as Ministry of Education-approved school shades ensuring student safety."
+      ],
+      "keywordsTitle": "Key Search Terms Related to Our Services:",
+      "keywordsList": [
+        "Car shades Jeddah",
+        "Garden umbrellas installation",
+        "Best shades company in Jeddah",
+        "Pool shades",
+        "School and parking shades",
+        "Polyethylene fabric shades",
+        "Korean and German PVC shades",
+        "Transparent Lexan shades",
+        "Jeddah shades blacksmith",
+        "Shades installation prices"
+      ]
+    }
+  },
+  "sawater": {
+    "pageTitle": "Fences Jeddah - 15 Year Warranty | Aldeyar Professionals",
+    "pageDescription": "Installation of iron, wooden and fabric fences in Jeddah with 15-year warranty. High-quality privacy fences, competitive prices starting from 80 SAR per meter. Free consultation",
+    "keywords": "fences jeddah, iron fences, wooden fences, fabric fences, shinko fences, fence installation, fence prices, fence company",
+    "hero": {
+      "title": "Best Fences in",
+      "titleHighlight": "Jeddah",
+      "subtitle": "Complete Privacy and Unmatched Quality",
+      "description": "Aldeyar Professionals - 15 years of experience installing the best types of fences in Jeddah. Iron, wooden, fabric and shinko fences with highest quality and best prices with comprehensive 15-year warranty",
+      "features": {
+        "allAreas": "We serve all Jeddah neighborhoods",
+        "warranty": "Comprehensive 15-year warranty",
+        "projects": "More than 3000 completed fences"
+      },
+      "callCta": "Call for Free Consultation",
+      "whatsappCta": "WhatsApp Now"
+    },
+    "servicesSection": {
+      "title": "Specialized Fence Types",
+      "subtitle": "We offer a comprehensive range of high-quality fences to suit all needs",
+      "moreInfo": "More Information"
+    },
+    "fenceTypes": {
+      "metal": {
+        "title": "Iron Fences",
+        "description": "Durable and strong iron fences providing maximum privacy and protection. Ideal for villas and residential complexes.",
+        "features": [
+          "High durability",
+          "Weather resistant",
+          "Modern designs"
+        ],
+        "price": "Starting from 180 SAR/m"
+      },
+      "wood": {
+        "title": "Wooden Fences",
+        "description": "Natural or treated wood fences with elegant designs that add aesthetic beauty with required privacy.",
+        "features": [
+          "Elegant natural look",
+          "Insect-treated wood",
+          "Multiple colors"
+        ],
+        "price": "Starting from 150 SAR/m"
+      },
+      "fabric": {
+        "title": "Fabric Fences",
+        "description": "Economical and practical fabric fences, ideal for gardens and areas that need good ventilation with privacy.",
+        "features": [
+          "Economical and flexible",
+          "Various colors",
+          "Easy maintenance"
+        ],
+        "price": "Starting from 80 SAR/m"
+      },
+      "shinko": {
+        "title": "Shinko Fences",
+        "description": "Corrugated metal shinko fences providing good insulation and excellent durability at suitable prices for large projects.",
+        "features": [
+          "Good thermal insulation",
+          "High durability",
+          "Fast installation"
+        ],
+        "price": "Starting from 120 SAR/m"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Aldeyar Professionals Fences?",
+      "features": {
+        "experience": {
+          "title": "15 Years Experience",
+          "description": "Over 15 years of experience installing all types of fences with highest quality standards"
+        },
+        "warranty": {
+          "title": "15 Year Warranty",
+          "description": "We offer a comprehensive 15-year warranty on all fences with free periodic maintenance"
+        },
+        "team": {
+          "title": "Specialized Team",
+          "description": "Team of engineers and technicians trained at the highest level"
+        },
+        "speed": {
+          "title": "Fast Execution",
+          "description": "Speed in execution while maintaining highest quality standards"
+        },
+        "satisfaction": {
+          "title": "Customer Satisfaction",
+          "description": "Customer satisfaction rate up to 97% with excellent ratings"
+        },
+        "prices": {
+          "title": "Competitive Prices",
+          "description": "Best prices in the market with unmatched high quality"
+        }
+      }
+    },
+    "stats": {
+      "projects": "Completed Fences",
+      "experience": "Years Experience",
+      "satisfaction": "Customer Satisfaction",
+      "support": "Customer Service"
+    },
+    "projectsGallery": {
+      "title": "Our Portfolio in",
+      "viewAll": "View All Projects",
+      "viewProject": "View Project"
+    },
+    "articlesSection": {
+      "title": "Articles and Tips about",
+      "viewAll": "View All Articles",
+      "readMore": "Read More"
+    },
+    "faqSection": {
+      "title": "Frequently Asked Questions about",
+      "noFaqs": "No FAQs available at the moment"
+    },
+    "relatedServices": {
+      "title": "Related Services",
+      "subtitle": "Discover more of our distinguished services",
+      "mazallat": {
+        "title": "Shades",
+        "description": "Installation of car and garden shades in various types and materials.",
+        "features": [
+          "Car shades",
+          "Garden shades",
+          "School shades"
+        ]
+      },
+      "pergolas": {
+        "title": "Pergolas",
+        "description": "Design and execution of wooden and iron pergolas in modern styles.",
+        "features": [
+          "Wooden pergolas",
+          "Iron pergolas",
+          "Mixed pergolas"
+        ]
+      },
+      "byootShaar": {
+        "title": "Traditional Tents",
+        "description": "Design and execution of traditional and modern hair houses with finest materials.",
+        "features": [
+          "Royal hair houses",
+          "Traditional hair houses",
+          "Arabic majlis"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Contact us now for a free consultation and a customized quote for your needs",
+      "callButton": "Call Now",
+      "whatsappButton": "Contact via WhatsApp"
+    },
+    "breadcrumb": {
+      "services": "Our Services",
+      "sawater": "Fences"
+    },
+    "schema": {
+      "serviceName": "Fences Jeddah",
+      "serviceDescription": "Best fences in Jeddah from Aldeyar Professionals. Iron fences, wooden fences, fabric fences, shinko fences. 15-year warranty and 15 years of experience.",
+      "productName": "Privacy Fences - Jeddah",
+      "productDescription": "High-quality fences for privacy and protection. Available in multiple materials: iron, wood, fabric, shinko. 15-year warranty on materials and installation.",
+      "projectsListName": "Fence Projects in Jeddah - Aldeyar Professionals",
+      "projectsListDescription": "Our portfolio of fence installations of all types in Jeddah",
+      "articlesListName": "Articles about Fences in Jeddah",
+      "articlesListDescription": "Comprehensive guide and educational articles about fence types and best options"
+    },
+    "seoArticle": {
+      "title": "The Ultimate Guide to Wall Fences & Privacy Screens Installation in Jeddah",
+      "paragraphs": [
+        "Privacy screens and fences (Sawater) are fundamental requirements in Saudi society, deeply connected to the culture of family privacy and security. At Aldeyar Global Professionals, we understand this need and offer the latest innovative solutions for extending wall heights and installing privacy screens that guarantee 100% vision block between neighbors while allowing airflow and providing thermal insulation against Jeddah's unique climate and dusty winds.",
+        "Our fence options vary to suit all needs and budgets. The most prominent are iron fences (slatted and braided), which are the strongest and longest-lasting, highly resistant to rust and corrosion thanks to thermal oven paint finishes. We also provide Wood Plastic Composite (WPC) fences that combine the luxurious, natural look of wood with plastic's resistance to decay. In addition, we offer transparent and colored Lexan screens ideal for pools and resorts, as well as fabric fences (PVC and Polyethylene) that serve as highly effective, economical options available in modern color palettes.",
+        "The role of a privacy screen is not limited to concealment; it plays a pivotal role in beautifying the exterior facades of villas and homes. With our engineering and technical team boasting over 15 years of experience, we ensure that fences are installed with maximum durability to withstand high winds, offering modern and classic designs that harmonize with your building's architectural identity. All our projects are backed by a comprehensive 10-year warranty, reflecting our absolute confidence in the world-class materials we use in every detail of our installation process."
+      ],
+      "keywordsTitle": "Key Search Terms for Fences & Privacy Screens:",
+      "keywordsList": [
+        "Braided iron fences",
+        "Best fence installation in Jeddah",
+        "WPC wooden privacy screens",
+        "Villa wall extension",
+        "PVC fabric fences",
+        "Transparent Lexan for pools",
+        "Fences and coverings blacksmith",
+        "Reinforced plastic screens",
+        "Neighbor privacy screens",
+        "Fence prices in Jeddah"
+      ]
+    }
+  },
+  "contentRefresh": {
+    "title": "New Content Available!",
+    "message": {
+      "projects": "New projects have been added. Refresh to see our latest work.",
+      "articles": "New articles have been published. Refresh to read them.",
+      "faqs": "New FAQs have been added. Refresh to read them.",
+      "reviews": "New customer reviews have been added. Refresh to read them."
+    },
+    "refreshButton": "Refresh Now",
+    "dismissButton": "Later"
+  },
+  "byootShaar": {
+    "pageTitle": "Traditional Hair Tents Jeddah | Deyar Jeddah",
+    "pageDescription": "Royal and Arabic traditional hair tents in Jeddah | Luxurious designs with 10-year warranty. High-quality fabrics and handmade embroidery. Prices from 5,000 SAR. Call: 0553719009",
+    "keywords": "hair tents jeddah, royal hair tents, arabic hair tents, traditional tents, Deyar Jeddah",
+    "hero": {
+      "title": "Best Hair Tents in",
+      "titleHighlight": "Jeddah",
+      "subtitle": "Authentic Heritage and High Quality",
+      "description": "Deyar Jeddah - 15 years of experience in designing and executing royal and traditional Arabic hair tents. High-quality fabrics, authentic designs, and comprehensive 10-year warranty",
+      "features": {
+        "warranty": "10 Year Warranty",
+        "quality": "Highest Quality",
+        "team": "Professional Team",
+        "delivery": "Fast Delivery"
+      },
+      "callCta": "Call for Free Consultation",
+      "whatsappCta": "WhatsApp Now"
+    },
+    "byootTypes": {
+      "title": "Types of Hair Tents We Offer",
+      "subtitle": "A diverse collection of hair tents to suit all your needs and requirements",
+      "royal": {
+        "title": "Royal Hair Tents",
+        "description": "Luxurious royal hair tents designed with the highest quality and luxury standards",
+        "price": "Starting from 8,000 SAR",
+        "size": "6×8 meters",
+        "category": "Royal",
+        "features": [
+          "Luxurious royal designs",
+          "High-quality fabrics",
+          "Handmade embroidery",
+          "Distinctive lighting"
+        ]
+      },
+      "arabic": {
+        "title": "Arabic Hair Tents",
+        "description": "Traditional Arabic style hair tents reflecting authenticity and heritage",
+        "price": "Starting from 6,000 SAR",
+        "size": "5×7 meters",
+        "category": "Traditional",
+        "features": [
+          "Authentic Arabic style",
+          "Traditional designs",
+          "Traditional materials",
+          "High quality"
+        ]
+      },
+      "majalis": {
+        "title": "Majlis Hair Tents",
+        "description": "Hair tents specially designed for men's majlis with luxury and spaciousness",
+        "price": "Starting from 7,000 SAR",
+        "size": "8×10 meters",
+        "category": "Majlis",
+        "features": [
+          "Spacious designs",
+          "Comfortable seating",
+          "Excellent ventilation",
+          "Complete privacy"
+        ]
+      },
+      "gardens": {
+        "title": "Garden Hair Tents",
+        "description": "Hair tents designed for home gardens while maintaining privacy",
+        "price": "Starting from 5,000 SAR",
+        "size": "4×6 meters",
+        "category": "Gardens",
+        "features": [
+          "Outdoor designs",
+          "Weather resistant",
+          "Natural views",
+          "Open spaces"
+        ]
+      }
+    },
+    "stats": {
+      "projects": "Hair Tents Completed",
+      "experience": "Years Experience",
+      "satisfaction": "Customer Satisfaction",
+      "support": "Technical Support"
+    },
+    "gallery": {
+      "title": "Our Portfolio",
+      "subtitle": "View a collection of our best hair tent projects"
+    },
+    "testimonials": {
+      "title": "Customer Reviews",
+      "subtitle": "Real testimonials from our valued customers who trusted our services"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Comprehensive answers to the most important questions about hair tent services"
+    },
+    "cta": {
+      "title": "Get Your Dream Hair Tent Now",
+      "subtitle": "Contact us today and get a free consultation and customized quote for your requirements",
+      "whatsappButton": "WhatsApp Now",
+      "callButton": "Call Now",
+      "emailButton": "Email Us"
+    },
+    "relatedServices": {
+      "title": "Other Services You May Like",
+      "subtitle": "Discover more of our distinguished services in shades and construction"
+    },
+    "breadcrumb": {
+      "services": "Our Services",
+      "byootShaar": "Hair Tents"
+    },
+    "schema": {
+      "serviceName": "Hair Tents in Jeddah - Royal, Arabic and Majlis",
+      "serviceDescription": "Royal and traditional Arabic hair tents in Jeddah. Design and execution of luxurious hair tents for majlis and gardens with highest quality standards. 10-year warranty."
+    }
+  },
+  "khayyam": {
+    "pageTitle": "Royal Tents Jeddah | Deyar Jeddah",
+    "pageDescription": "Luxurious royal tents for weddings and events in Jeddah | Exclusive designs with 10-year warranty. VIP and mourning tents with luxurious fabrics. Prices from 8,000 SAR. Book now: 0553719009",
+    "keywords": "royal tents jeddah, wedding tents, event tents, VIP tents, mourning tents, luxury tents, tent rental, Deyar Jeddah",
+    "hero": {
+      "title": "Best Luxury Royal Tents in",
+      "titleHighlight": "Jeddah",
+      "subtitle": "Exclusive Designs and Exceptional Luxury",
+      "description": "Deyar Jeddah - 15 years of experience in designing and executing the best luxury royal tents in Jeddah. Wedding, event, VIP and mourning tents with the finest imported materials and comprehensive warranty",
+      "features": {
+        "allAreas": "We serve all Jeddah areas",
+        "warranty": "Comprehensive 10-year warranty",
+        "projects": "More than 1000 completed tents"
+      },
+      "callCta": "Call for Free Consultation",
+      "whatsappCta": "WhatsApp Now"
+    },
+    "tentTypes": {
+      "title": "Specialized Royal Tent Types",
+      "subtitle": "We offer a diverse range of luxury royal tents for all events and needs",
+      "royalLuxury": {
+        "title": "Luxury Royal Tents",
+        "description": "Luxury royal tents with elegant and distinctive design, equipped with all comfort amenities, suitable for official events and VIP reception.",
+        "features": [
+          "Exclusive luxury designs",
+          "High-quality imported fabrics",
+          "Complete VIP equipment"
+        ],
+        "price": "Starting from 15,000 SAR",
+        "capacity": "Capacity 50-500 people"
+      },
+      "weddingEvents": {
+        "title": "Wedding & Event Tents",
+        "description": "Tents specially designed for weddings and special occasions, featuring luxury and spaciousness with customization options based on event type.",
+        "features": [
+          "Elegant romantic designs",
+          "Distinctive lighting and decorations",
+          "Spacious comfortable areas"
+        ],
+        "price": "Starting from 10,000 SAR",
+        "capacity": "Capacity 100-800 people"
+      },
+      "mourning": {
+        "title": "Mourning Tents",
+        "description": "Tents dedicated for mourning gatherings, designed to provide comfort and privacy appropriate to the occasion.",
+        "features": [
+          "Appropriate modest designs",
+          "Comfortable ventilation and lighting",
+          "Complete privacy"
+        ],
+        "price": "Starting from 8,000 SAR",
+        "capacity": "Capacity 50-400 people"
+      },
+      "vip": {
+        "title": "VIP Tents",
+        "description": "VIP tents with special specifications and exceptional equipment, designed to meet VIP requirements and high-end events.",
+        "features": [
+          "Exceptional specifications",
+          "Advanced technical equipment",
+          "Distinguished personal service"
+        ],
+        "price": "Starting from 20,000 SAR",
+        "capacity": "Capacity 30-300 people"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Why We Are the Best Choice for Royal Tents?",
+      "subtitle": "We are pioneers in royal tents in Jeddah with extensive experience and exceptional quality",
+      "features": {
+        "royalDesigns": {
+          "title": "Luxury Royal Designs",
+          "description": "Exclusive royal designs combining authenticity and modern luxury"
+        },
+        "importedMaterials": {
+          "title": "High-Quality Imported Materials",
+          "description": "Finest imported fabrics and materials resistant to weather conditions"
+        },
+        "team": {
+          "title": "Professional Specialized Team",
+          "description": "Designers and engineers specialized in royal tents and events"
+        },
+        "fastExecution": {
+          "title": "Fast and Perfect Execution",
+          "description": "Speed in installation and execution while maintaining highest quality standards"
+        },
+        "customerService": {
+          "title": "Distinguished Customer Service",
+          "description": "Customer service available 24/7 to ensure your complete satisfaction"
+        },
+        "packages": {
+          "title": "Comprehensive Packages",
+          "description": "Complete packages including design, installation, decoration and equipment"
+        }
+      }
+    },
+    "stats": {
+      "projects": "Tents Completed",
+      "experience": "Years Experience",
+      "satisfaction": "Customer Satisfaction",
+      "support": "Continuous Service"
+    },
+    "gallery": {
+      "title": "Our Distinguished Royal Tents Gallery",
+      "subtitle": "View a collection of our best royal tents completed for various events",
+      "viewMore": "View More Projects"
+    },
+    "testimonials": {
+      "title": "What Our Customers Say About Our Royal Tents",
+      "subtitle": "Real testimonials from our valued customers who chose our royal tents"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions About Royal Tents",
+      "subtitle": "Comprehensive answers to your most important inquiries about royal tent services"
+    },
+    "relatedServices": {
+      "title": "Other Services You May Like",
+      "subtitle": "Explore more of our specialized services"
+    },
+    "cta": {
+      "title": "Ready to Book a Luxury Royal Tent?",
+      "subtitle": "Get a free consultation and competitive quote for your royal tent from Deyar Jeddah experts",
+      "callButton": "Call Now - Free",
+      "whatsappButton": "Instant WhatsApp",
+      "quoteButton": "Request Quote"
+    },
+    "breadcrumb": {
+      "services": "Our Services",
+      "khayyam": "Royal Tents"
+    },
+    "schema": {
+      "serviceName": "Royal Tents Jeddah - Weddings, Events and VIP",
+      "serviceDescription": "Best luxury royal tents in Jeddah from Deyar Jeddah. Wedding tents, event tents, VIP tents, mourning tents. Professional design and execution. 10-year warranty."
+    }
+  },
+  "landscaping": {
+    "pageTitle": "Landscaping Jeddah | Deyar Jeddah",
+    "pageDescription": "Professional landscaping in Jeddah | Green space design with highest quality standards. Waterfalls, fountains, natural and artificial grass. Competitive prices. Call: 0553719009",
+    "keywords": "landscaping jeddah, garden design, waterfalls, fountains, artificial grass, natural grass, villa gardens, Deyar Jeddah",
+    "hero": {
+      "title": "Best Landscaping in",
+      "titleHighlight": "Jeddah",
+      "subtitle": "Creative Designs and Charming Green Spaces",
+      "description": "Deyar Jeddah - 15 years of experience in landscaping and green space design. Waterfalls, fountains, natural and artificial grass, pathways, and garden lighting with highest quality",
+      "features": {
+        "allAreas": "We serve all Jeddah areas",
+        "warranty": "Comprehensive warranty on all work",
+        "projects": "More than 2000 gardens completed"
+      },
+      "callCta": "Call for Free Consultation",
+      "whatsappCta": "WhatsApp Now"
+    },
+    "serviceTypes": {
+      "title": "Landscaping Services",
+      "subtitle": "We offer comprehensive services to transform your garden into a charming natural oasis",
+      "design": {
+        "title": "Garden Design",
+        "description": "Professional garden design with latest engineering software considering space and climate",
+        "features": [
+          "3D designs",
+          "Local climate consideration",
+          "Smart space planning"
+        ],
+        "price": "Based on area"
+      },
+      "grass": {
+        "title": "Grass and Green Areas",
+        "description": "Installation of natural and artificial grass with highest quality and comprehensive warranty",
+        "features": [
+          "Natural grass",
+          "Artificial grass",
+          "Periodic maintenance"
+        ],
+        "price": "Starting from 40 SAR/meter"
+      },
+      "waterfalls": {
+        "title": "Waterfalls and Fountains",
+        "description": "Design and execution of waterfalls and fountains with latest technologies",
+        "features": [
+          "Wall waterfalls",
+          "Dancing fountains",
+          "LED lighting"
+        ],
+        "price": "Starting from 5,000 SAR"
+      },
+      "lighting": {
+        "title": "Garden Lighting",
+        "description": "Smart garden lighting systems adding charming atmosphere",
+        "features": [
+          "Energy-efficient LED",
+          "Smart control",
+          "Multiple colors"
+        ],
+        "price": "Based on project"
+      }
+    },
+    "stats": {
+      "projects": "Gardens Completed",
+      "experience": "Years Experience",
+      "satisfaction": "Customer Satisfaction",
+      "support": "Technical Support"
+    },
+    "breadcrumb": {
+      "services": "Our Services",
+      "landscaping": "Landscaping"
+    },
+    "schema": {
+      "serviceName": "Landscaping Jeddah",
+      "serviceDescription": "Best landscaping services in Jeddah from Deyar Jeddah. Garden design, waterfalls, fountains, natural and artificial grass. 15 years experience."
+    }
+  },
+  "pergolas": {
+    "pageTitle": "Pergolas Jeddah | Deyar Jeddah",
+    "pageDescription": "Wooden and iron pergolas in Jeddah | Modern designs with 10-year warranty. Garden and rooftop pergolas at best prices. Call: 0553719009",
+    "keywords": "pergolas jeddah, wooden pergolas, iron pergolas, garden pergolas, rooftop pergolas, Deyar Jeddah",
+    "hero": {
+      "title": "Best Pergolas in",
+      "titleHighlight": "Jeddah",
+      "subtitle": "Modern Designs and Exceptional Quality",
+      "description": "Deyar Jeddah - 15 years of experience in designing and executing the best wooden and iron pergolas. Modern designs, high-quality materials, and comprehensive 10-year warranty",
+      "features": {
+        "allAreas": "We serve all Jeddah areas",
+        "warranty": "Comprehensive 10-year warranty",
+        "projects": "More than 3000 pergolas completed"
+      },
+      "callCta": "Call for Free Consultation",
+      "whatsappCta": "WhatsApp Now"
+    },
+    "pergolaTypes": {
+      "title": "Specialized Pergola Types",
+      "subtitle": "We offer a diverse range of pergolas to suit all needs",
+      "wooden": {
+        "title": "Wooden Pergolas",
+        "description": "Pergolas from finest treated wood with elegant natural designs",
+        "features": [
+          "Insect-treated wood",
+          "Elegant natural designs",
+          "High durability"
+        ],
+        "price": "Starting from 3,500 SAR"
+      },
+      "iron": {
+        "title": "Iron Pergolas",
+        "description": "Strong and durable metal pergolas with modern designs",
+        "features": [
+          "Superior durability",
+          "Rust resistant",
+          "Modern designs"
+        ],
+        "price": "Starting from 4,000 SAR"
+      },
+      "mixed": {
+        "title": "Mixed Pergolas",
+        "description": "Pergolas combining wood and iron for best results",
+        "features": [
+          "Wood beauty and iron durability",
+          "Unique designs",
+          "Long lifespan"
+        ],
+        "price": "Starting from 5,000 SAR"
+      },
+      "rooftop": {
+        "title": "Rooftop Pergolas",
+        "description": "Pergolas specially designed for rooftops and terraces",
+        "features": [
+          "Weather resistant",
+          "Shade provision",
+          "Integrated lighting"
+        ],
+        "price": "Starting from 6,000 SAR"
+      }
+    },
+    "stats": {
+      "projects": "Pergolas Completed",
+      "experience": "Years Experience",
+      "satisfaction": "Customer Satisfaction",
+      "support": "Technical Support"
+    },
+    "breadcrumb": {
+      "services": "Our Services",
+      "pergolas": "Pergolas"
+    },
+    "schema": {
+      "serviceName": "Pergolas Jeddah",
+      "serviceDescription": "Best wooden and iron pergolas in Jeddah from Deyar Jeddah. Modern designs, 10-year warranty, 15 years experience."
+    },
+    "seoArticle": {
+      "title": "The Ultimate Guide to Designing & Installing Pergolas & Outdoor Seating in Jeddah",
+      "paragraphs": [
+        "Pergolas are no longer just an aesthetic accessory; they have become the most crucial architectural element in transforming home gardens, patios, and rooftops into luxurious outdoor living spaces. At Aldeyar Global Professionals, we excel at turning unused areas into premium outdoor seating using the latest techniques in modern and classic pergola construction, tailored to your taste and built to withstand the hot climate and high humidity of Jeddah and coastal regions.",
+        "When deciding to install a pergola, choosing the right material is the deciding factor for its lifespan and aesthetics. We offer a wide selection that meets all expectations, starting from wooden pergolas made of treated natural wood or Wood Plastic Composite (WPC), which combines the luxurious look of wood with plastic's resistance to decay and water. We also specialize in designing braided steel pergolas with a faux wood finish, and modern aluminum pergolas that never rust or degrade under intense sunlight. Additionally, we provide roof covers made of transparent Lexan or heavy-duty fabrics to insulate against solar heat and provide complete shade.",
+        "Utilizing rooftops is one of the most prominent modern design trends in Saudi Arabia. We provide an integrated service for designing and landscaping rooftop pergolas, complemented by fantastic additions such as artificial grass (turf), concealed lighting, and glass or wooden privacy screens (Sawater) to ensure absolute privacy for your family. With over 15 years of experience and a team of professional engineers and technicians, we guarantee the delivery of your project with the highest degree of engineering and aesthetic precision, backed by a 10-year warranty on structure and execution."
+      ],
+      "keywordsTitle": "Key Search Terms for Pergolas:",
+      "keywordsList": [
+        "Wooden pergolas Jeddah",
+        "Modern steel pergolas installation",
+        "Best pergola company in Jeddah",
+        "Rooftop and resort pergolas",
+        "Outdoor home seating",
+        "WPC wood for gardens",
+        "Aluminum pergolas",
+        "Transparent Lexan pergolas",
+        "Pergola & seating blacksmith",
+        "Wooden pergola prices"
+      ]
+    }
+  },
+  "renovation": {
+    "pageTitle": "Renovation Jeddah | Deyar Jeddah",
+    "pageDescription": "Professional renovation services in Jeddah | Villa, rest house, annex renovation. Painting, plumbing, electrical work. Competitive prices. Call: 0553719009",
+    "keywords": "renovation jeddah, villa renovation, rest house renovation, home maintenance, painting, plumbing, electrical, Deyar Jeddah",
+    "hero": {
+      "title": "Best Renovation Services in",
+      "titleHighlight": "Jeddah",
+      "subtitle": "Comprehensive Renovation with Highest Quality Standards",
+      "description": "Deyar Jeddah - 15 years of experience in renovation and renewal. Villa, rest house, annex renovation. Painting, plumbing, electrical, and all maintenance work",
+      "features": {
+        "allAreas": "We serve all Jeddah areas",
+        "warranty": "Comprehensive warranty on all work",
+        "projects": "More than 1500 renovation projects"
+      },
+      "callCta": "Call for Free Consultation",
+      "whatsappCta": "WhatsApp Now"
+    },
+    "serviceTypes": {
+      "title": "Renovation Services",
+      "subtitle": "We offer comprehensive renovation services to transform your home into an architectural masterpiece",
+      "villas": {
+        "title": "Villa Renovation",
+        "description": "Comprehensive villa renovation including all construction and finishing work",
+        "features": [
+          "Structural renovation",
+          "Interior finishing",
+          "Exterior facades"
+        ],
+        "price": "Based on project"
+      },
+      "resthouses": {
+        "title": "Rest House Renovation",
+        "description": "Comprehensive rest house renewal while maintaining architectural character",
+        "features": [
+          "Complete renewal",
+          "Pool maintenance",
+          "Facility updates"
+        ],
+        "price": "Based on project"
+      },
+      "painting": {
+        "title": "Painting Work",
+        "description": "Interior and exterior painting with finest paint types",
+        "features": [
+          "Interior painting",
+          "Exterior painting",
+          "Wallpaper"
+        ],
+        "price": "Starting from 15 SAR/meter"
+      },
+      "plumbing": {
+        "title": "Plumbing Work",
+        "description": "Maintenance and renewal of water and sewage networks",
+        "features": [
+          "New installations",
+          "Leak repair",
+          "Sanitary fixture installation"
+        ],
+        "price": "Based on work"
+      }
+    },
+    "stats": {
+      "projects": "Renovation Projects",
+      "experience": "Years Experience",
+      "satisfaction": "Customer Satisfaction",
+      "support": "Technical Support"
+    },
+    "breadcrumb": {
+      "services": "Our Services",
+      "renovation": "Renovation"
+    },
+    "schema": {
+      "serviceName": "Renovation Jeddah",
+      "serviceDescription": "Best renovation services in Jeddah from Deyar Jeddah. Villa, rest house, annex renovation. 15 years experience."
+    }
+  },
+  "sandwichPanel": {
+    "pageTitle": "Sandwich Panel Jeddah | Deyar Jeddah",
+    "pageDescription": "Insulated sandwich panels in Jeddah | Thermal and sound insulation panels. Ready rooms, warehouses, offices. 10-year warranty. Call: 0553719009",
+    "keywords": "sandwich panel jeddah, insulated panels, ready rooms, warehouses, thermal insulation, sound insulation, Deyar Jeddah",
+    "hero": {
+      "title": "Best Sandwich Panels in",
+      "titleHighlight": "Jeddah",
+      "subtitle": "Thermal and Sound Insulation with Highest Specifications",
+      "description": "Deyar Jeddah - 15 years of experience in installing sandwich panels. Thermal and sound insulation, ready rooms, warehouses, and offices with 10-year warranty",
+      "features": {
+        "allAreas": "We serve all Jeddah areas",
+        "warranty": "Comprehensive 10-year warranty",
+        "projects": "More than 800 completed projects"
+      },
+      "callCta": "Call for Free Consultation",
+      "whatsappCta": "WhatsApp Now"
+    },
+    "panelTypes": {
+      "title": "Sandwich Panel Types",
+      "subtitle": "We provide the best types of sandwich panels for all uses",
+      "walls": {
+        "title": "Wall Sandwich Panels",
+        "description": "Insulated wall panels in various thicknesses",
+        "features": [
+          "Excellent thermal insulation",
+          "Sound insulation",
+          "Fire resistant"
+        ],
+        "price": "Starting from 85 SAR/meter"
+      },
+      "roofs": {
+        "title": "Roof Sandwich Panels",
+        "description": "Insulated roof panels with excellent water drainage",
+        "features": [
+          "Water drainage",
+          "Thermal insulation",
+          "Lightweight"
+        ],
+        "price": "Starting from 95 SAR/meter"
+      },
+      "rooms": {
+        "title": "Ready Rooms",
+        "description": "Complete ready rooms for offices and accommodation",
+        "features": [
+          "Fast installation",
+          "Complete equipment",
+          "Portable"
+        ],
+        "price": "Starting from 8,000 SAR"
+      },
+      "warehouses": {
+        "title": "Warehouses",
+        "description": "Sandwich panel warehouses in various sizes",
+        "features": [
+          "Large spaces",
+          "Excellent insulation",
+          "High security"
+        ],
+        "price": "Based on area"
+      }
+    },
+    "stats": {
+      "projects": "Projects Completed",
+      "experience": "Years Experience",
+      "satisfaction": "Customer Satisfaction",
+      "support": "Technical Support"
+    },
+    "breadcrumb": {
+      "services": "Our Services",
+      "sandwichPanel": "Sandwich Panel"
+    },
+    "schema": {
+      "serviceName": "Sandwich Panel Jeddah",
+      "serviceDescription": "Best sandwich panels and insulated panels in Jeddah from Deyar Jeddah. Ready rooms, warehouses, thermal and sound insulation. 10-year warranty."
+    }
+  },
+  "quote": {
+    "meta": {
+      "title": "Request a Quote | Deyar Jeddah Global - Get a Free Quote",
+      "description": "Get a free and detailed quote from Deyar Jeddah Global in Jeddah. Competitive prices, high quality, comprehensive warranty, professional installation for all types of shades and pergolas.",
+      "keywords": "free quote, jeddah shades prices, fence prices, pergola quote, Deyar Jeddah Global"
+    },
+    "hero": {
+      "title": "Get a Free Quote",
+      "description": "Detailed and transparent quote within 24 hours. Free consultation with no obligation from your side",
+      "features": {
+        "freeQuote": "Free Quote",
+        "fastResponse": "Response within 24 hours",
+        "expertConsultation": "Expert Consultation"
+      }
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "quote": "Request Quote"
+    },
+    "whyChoose": {
+      "title": "Why Choose Our Quotes?",
+      "items": {
+        "freeQuotes": {
+          "title": "Free Quotes",
+          "description": "We provide detailed and free quotes with no obligation"
+        },
+        "competitive": {
+          "title": "Competitive Prices",
+          "description": "Best prices in the market with uncompromised quality"
+        },
+        "transparency": {
+          "title": "Full Transparency",
+          "description": "No hidden fees, everything is clear and detailed"
+        },
+        "warranty": {
+          "title": "Comprehensive Warranty",
+          "description": "5-year warranty on all our work"
+        }
+      }
+    },
+    "form": {
+      "title": "Quote Request Form",
+      "contactInfo": {
+        "title": "Contact Information",
+        "fullName": "Full Name",
+        "fullNamePlaceholder": "Enter your full name",
+        "fullNameHelp": "Full name is required for contact",
+        "phone": "Phone Number",
+        "phonePlaceholder": "05xxxxxxxx",
+        "phoneHelp": "Saudi mobile number in format 05xxxxxxxx",
+        "email": "Email Address",
+        "emailPlaceholder": "example@email.com",
+        "emailHelp": "Optional - to send the quote via email",
+        "area": "Area/District",
+        "areaPlaceholder": "Al Salamah District, Jeddah",
+        "areaHelp": "Area or district name to identify project location"
+      },
+      "serviceDetails": {
+        "title": "Service Details",
+        "serviceType": "Required Service Type",
+        "serviceTypePlaceholder": "Select service type",
+        "serviceTypeHelp": "Select the main required service"
+      },
+      "projectDetails": {
+        "title": "Project Details",
+        "area": "Required Area (square meter)",
+        "areaPlaceholder": "Example: 50",
+        "budget": "Approximate Budget",
+        "budgetPlaceholder": "Select budget",
+        "budgetOptions": {
+          "5k-10k": "5,000 - 10,000 SAR",
+          "10k-20k": "10,000 - 20,000 SAR",
+          "20k-50k": "20,000 - 50,000 SAR",
+          "50k+": "More than 50,000 SAR"
+        },
+        "preferredDate": "Preferred Site Visit Date",
+        "preferredTime": "Select Time",
+        "timeOptions": {
+          "morning": "Morning (8:00 - 12:00)",
+          "afternoon": "Afternoon (12:00 - 4:00)",
+          "evening": "Evening (4:00 - 6:00)"
+        }
+      },
+      "additionalDetails": {
+        "title": "Additional Project Details",
+        "placeholder": "Write project details: required design type, preferred colors, any special requirements, etc...",
+        "help": "Mention all important details to understand your needs accurately"
+      },
+      "terms": {
+        "agree": "I agree to the",
+        "termsOfService": "Terms of Service",
+        "and": "and",
+        "privacyPolicy": "Privacy Policy"
+      },
+      "submit": "Submit Quote Request",
+      "required": "*"
+    },
+    "sidebar": {
+      "directContact": {
+        "title": "Prefer Direct Contact?",
+        "description": "Contact us directly for an instant quote",
+        "callNow": "Call Now",
+        "whatsapp": "Direct WhatsApp"
+      },
+      "included": {
+        "title": "What's Included in the Quote",
+        "items": [
+          "Free site assessment",
+          "Specialized technical consultation",
+          "Detailed and transparent quote",
+          "Clear time schedule",
+          "Comprehensive work warranty",
+          "After-sales service",
+          "Professional work team",
+          "Best materials and supplies"
+        ]
+      },
+      "services": {
+        "title": "Our Services & Prices",
+        "viewAll": "View All Services"
+      },
+      "responseTime": {
+        "title": "Response Time",
+        "items": [
+          "Instant response via phone/WhatsApp",
+          "Detailed quote within 24 hours",
+          "Site inspection within 48 hours",
+          "Execution starts as agreed"
+        ]
+      }
+    },
+    "process": {
+      "title": "How We Work?",
+      "description": "Simple and fast process to get a quote and execute the project",
+      "steps": {
+        "request": {
+          "title": "Request Quote",
+          "description": "Fill the form or contact us directly"
+        },
+        "inspect": {
+          "title": "Site Inspection",
+          "description": "Free site visit and measurements"
+        },
+        "quote": {
+          "title": "Price Quote",
+          "description": "Detailed and transparent quote with timeline"
+        },
+        "execute": {
+          "title": "Execution",
+          "description": "Work starts according to agreed schedule"
+        }
+      }
+    },
+    "services": {
+      "mazallat": {
+        "name": "Car Shades",
+        "price": "Starting from 150 SAR/m²"
+      },
+      "sawater": {
+        "name": "Privacy Fences",
+        "price": "Starting from 120 SAR/m²"
+      },
+      "pergolas": {
+        "name": "Garden Pergolas",
+        "price": "Starting from 200 SAR/m²"
+      },
+      "khayyam": {
+        "name": "Royal Tents",
+        "price": "Starting from 300 SAR/m²"
+      },
+      "byootShaar": {
+        "name": "Hair Houses",
+        "price": "Starting from 250 SAR/m²"
+      },
+      "sandwichPanel": {
+        "name": "Sandwich Panel",
+        "price": "Starting from 165 SAR/m²"
+      },
+      "landscaping": {
+        "name": "Landscaping",
+        "price": "Per project"
+      },
+      "renovation": {
+        "name": "Renovation",
+        "price": "Starting from 180 SAR/m²"
+      }
+    }
+  }
+}
