@@ -1,0 +1,350 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+model admin_sessions {
+  id        String   @id @default(cuid())
+  adminId   String
+  token     String   @unique
+  ip        String?
+  userAgent String?
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  admins    admins   @relation(fields: [adminId], references: [id], onDelete: Cascade)
+}
+
+model admins {
+  id             String           @id
+  username       String           @unique
+  password       String
+  email          String?          @unique
+  fullName       String?
+  avatar         String?
+  role           String           @default("ADMIN")
+  status         String           @default("ACTIVE")
+  lastLogin      DateTime?
+  loginCount     Int              @default(0)
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime
+  admin_sessions admin_sessions[]
+}
+
+model comment_replies {
+  id        String   @id @default(cuid())
+  commentId String
+  name      String
+  message   String
+  status    String   @default("APPROVED")
+  createdAt DateTime @default(now())
+  comments  comments @relation(fields: [commentId], references: [id], onDelete: Cascade)
+}
+
+model comments {
+  id              String            @id
+  projectId       String
+  name            String
+  email           String?
+  message         String
+  rating          Int               @default(5)
+  status          String            @default("APPROVED")
+  ip              String?
+  userAgent       String?
+  createdAt       DateTime          @default(now())
+  dislikes        Int               @default(0)
+  likes           Int               @default(0)
+  isVerified      Boolean           @default(false)
+  comment_likes   comment_likes[]
+  comment_replies comment_replies[]
+  projects        projects          @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+model comment_likes {
+  id        String   @id @default(cuid())
+  commentId String
+  ip        String
+  type      String
+  userAgent String?
+  createdAt DateTime @default(now())
+  comments  comments @relation(fields: [commentId], references: [id], onDelete: Cascade)
+
+  @@unique([commentId, ip])
+}
+
+model media_items {
+  id                 String    @id
+  projectId          String
+  type               MediaType
+  src                String
+  thumbnail          String?
+  title              String?
+  description        String?
+  duration           String?
+  fileSize           Int?
+  mimeType           String?
+  order              Int       @default(0)
+  alt                String?
+  caption            String?
+  createdAt          DateTime  @default(now())
+  cloudinaryPublicId String?
+  compressionRatio   Float?
+  originalSize       Int?
+  processedSize      Int?
+  processingTime     Int?
+  watermarkApplied   Boolean   @default(false)
+  projects           projects  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+model project_likes {
+  id        String   @id @default(cuid())
+  projectId String
+  ip        String
+  userAgent String?
+  createdAt DateTime @default(now())
+  projects  projects @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, ip])
+}
+
+model project_materials {
+  id        String   @id @default(cuid())
+  projectId String
+  name      String
+  createdAt DateTime @default(now())
+  projects  projects @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+model project_tags {
+  id        String   @id @default(cuid())
+  projectId String
+  name      String
+  createdAt DateTime @default(now())
+  projects  projects @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, name])
+}
+
+model project_views {
+  id        String   @id @default(cuid())
+  projectId String
+  ip        String
+  userAgent String?
+  source    String?
+  referrer  String?
+  createdAt DateTime @default(now())
+  projects  projects @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+model projects {
+  id                  String              @id
+  title               String
+  description         String
+  category            String
+  location            String
+  completionDate      DateTime            @default(now())
+  client              String?
+  featured            Boolean             @default(false)
+  projectDuration     String?
+  projectCost         String?
+  views               Int                 @default(0)
+  likes               Int                 @default(0)
+  rating              Float               @default(0)
+  status              String              @default("PUBLISHED")
+  slug                String?             @unique
+  metaTitle           String?
+  metaDescription     String?
+  keywords            String?
+  createdAt           DateTime            @default(now())
+  updatedAt           DateTime
+  publishedAt         DateTime?           @default(now())
+  titleEn             String?
+  descriptionEn       String?
+  locationEn          String?
+  clientEn            String?
+  metaTitleEn         String?
+  metaDescriptionEn   String?
+  keywordsEn          String?
+  aiAnalysis          String?
+  competitorInsights  String?
+  lastAnalyzedAt      DateTime?
+  mediaProcessingInfo String?
+  suggestedKeywords   String?
+  watermarkApplied    Boolean             @default(false)
+  comments            comments[]
+  media_items         media_items[]
+  project_likes       project_likes[]
+  project_materials   project_materials[]
+  project_tags        project_tags[]
+  project_views       project_views[]
+}
+
+model articles {
+  id                  String                @id
+  title               String
+  content             String
+  excerpt             String?
+  category            String
+  author              String                @default("محترفين الديار العالمية")
+  featured            Boolean               @default(false)
+  views               Int                   @default(0)
+  likes               Int                   @default(0)
+  status              String                @default("PUBLISHED")
+  slug                String?               @unique
+  metaTitle           String?
+  metaDescription     String?
+  keywords            String?
+  titleEn             String?
+  contentEn           String?
+  excerptEn           String?
+  metaTitleEn         String?
+  metaDescriptionEn   String?
+  keywordsEn          String?
+  createdAt           DateTime              @default(now())
+  updatedAt           DateTime
+  publishedAt         DateTime?             @default(now())
+  aiAnalysis          String?
+  rating              Float                 @default(0)
+  article_comments    article_comments[]
+  article_likes       article_likes[]
+  article_media_items article_media_items[]
+  article_tags        article_tags[]
+  article_views       article_views[]
+}
+
+model article_media_items {
+  id          String    @id
+  articleId   String
+  type        MediaType
+  src         String
+  thumbnail   String?
+  title       String?
+  description String?
+  duration    String?
+  fileSize    Int?
+  mimeType    String?
+  order       Int       @default(0)
+  alt         String?
+  caption     String?
+  createdAt   DateTime  @default(now())
+  articles    articles  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+}
+
+model article_tags {
+  id        String   @id @default(cuid())
+  articleId String
+  name      String
+  createdAt DateTime @default(now())
+  articles  articles @relation(fields: [articleId], references: [id], onDelete: Cascade)
+
+  @@unique([articleId, name])
+}
+
+model article_likes {
+  id        String   @id @default(cuid())
+  articleId String
+  ip        String
+  userAgent String?
+  createdAt DateTime @default(now())
+  articles  articles @relation(fields: [articleId], references: [id], onDelete: Cascade)
+
+  @@unique([articleId, ip])
+}
+
+model article_views {
+  id        String   @id @default(cuid())
+  articleId String
+  ip        String
+  userAgent String?
+  source    String?
+  referrer  String?
+  createdAt DateTime @default(now())
+  articles  articles @relation(fields: [articleId], references: [id], onDelete: Cascade)
+}
+
+model article_comments {
+  id        String   @id @default(cuid())
+  articleId String
+  name      String
+  email     String?
+  message   String
+  status    String   @default("APPROVED")
+  ip        String?
+  userAgent String?
+  createdAt DateTime @default(now())
+  rating    Int      @default(5)
+  articles  articles @relation(fields: [articleId], references: [id], onDelete: Cascade)
+}
+
+model automation_schedules {
+  id                  String    @id @default(cuid())
+  generateEnabled     Boolean   @default(false)
+  generateFrequency   String    @default("daily")
+  generateCount       Int       @default(3)
+  generateNiche       String?
+  generateAutoPublish Boolean   @default(false)
+  fixEnabled          Boolean   @default(false)
+  fixFrequency        String    @default("weekly")
+  lastGenerateRun     DateTime?
+  lastFixRun          DateTime?
+  nextGenerateRun     DateTime?
+  nextFixRun          DateTime?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  faqAutoPublish      Boolean   @default(false)
+  faqCount            Int       @default(5)
+  faqEnabled          Boolean   @default(false)
+  faqFrequency        String    @default("weekly")
+  faqNiche            String?
+  lastFaqRun          DateTime?
+  nextFaqRun          DateTime?
+}
+
+model automation_logs {
+  id           String   @id @default(cuid())
+  taskType     String
+  status       String
+  message      String?
+  successCount Int?
+  failureCount Int?
+  details      String?
+  executedAt   DateTime @default(now())
+}
+
+model faqs {
+  id                String   @id @default(cuid())
+  question          String
+  answer            String
+  questionEn        String?
+  answerEn          String?
+  category          String
+  order             Int      @default(0)
+  status            String   @default("PUBLISHED")
+  featured          Boolean  @default(false)
+  views             Int      @default(0)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  clickCount        Int      @default(0)
+  helpfulness       Int      @default(0)
+  keywords          String?
+  metaDescription   String?
+  metaTitle         String?
+  keywordsEn        String?
+  metaDescriptionEn String?
+  metaTitleEn       String?
+  relatedQuestions  String?
+  slug              String?  @unique
+
+  @@index([category, status, order])
+  @@index([featured, status])
+  @@index([views])
+}
+
+enum MediaType {
+  IMAGE
+  VIDEO
+}
