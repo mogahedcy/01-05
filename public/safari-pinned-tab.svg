@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- خلفية سوداء للسفاري -->
+  <rect width="512" height="512" fill="#000000"/>
+
+  <!-- العناصر باللون الأبيض -->
+  <g transform="translate(256,256)" fill="#FFFFFF">
+
+    <!-- قاعدة المظلة -->
+    <rect x="-3" y="60" width="6" height="80"/>
+
+    <!-- المظلة -->
+    <path d="M-100,60 Q-50,30 0,35 Q50,30 100,60 L70,75 Q35,60 0,60 Q-35,60 -70,75 Z"/>
+
+    <!-- المباني -->
+    <rect x="-120" y="-30" width="15" height="70"/>
+    <rect x="-50" y="-50" width="12" height="90"/>
+    <rect x="80" y="-40" width="14" height="80"/>
+
+    <!-- شعار مبسط -->
+    <circle cx="0" cy="-60" r="18"/>
+    <text x="0" y="-50" font-family="Arial" font-size="18" font-weight="bold" 
+          text-anchor="middle" fill="#000000">د</text>
+
+    <!-- النص -->
+    <text x="0" y="170" font-family="Arial" font-size="32" font-weight="bold" 
+          text-anchor="middle">الديار</text>
+  </g>
+</svg>
