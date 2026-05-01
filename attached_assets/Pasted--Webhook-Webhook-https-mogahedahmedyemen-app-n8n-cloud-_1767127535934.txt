@@ -1,0 +1,70 @@
+كيفية ربط الـ Webhook بموقعك
+رابط الـ Webhook:
+
+https://mogahedahmedyemen.app.n8n.cloud/webhook/project-webhook
+طريقة الإرسال من موقعك:
+
+1. باستخدام JavaScript/Fetch API:
+const projectData = {
+  title: "مشروع مظلات فاخرة",
+  description: "تركيب مظلات عصرية بأعلى جودة",
+  category: "مظلات",
+  location: "جدة - حي النعيم",
+  projectLink: "https://diyar-jeddah.com/projects/123",
+  media: [
+    { url: "https://res.cloudinary.com/your-account/image/upload/v1234/project1.jpg" },
+    { url: "https://res.cloudinary.com/your-account/video/upload/v1234/project-video.mp4" }
+  ]
+};
+
+fetch('https://mogahedahmedyemen.app.n8n.cloud/webhook/project-webhook', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(projectData)
+})
+.then(response => response.json())
+.then(data => console.log('تم النشر بنجاح:', data))
+.catch(error => console.error('خطأ:', error));
+2. باستخدام PHP (من Backend):
+<?php
+$projectData = [
+    'title' => 'مشروع مظلات فاخرة',
+    'description' => 'تركيب مظلات عصرية بأعلى جودة',
+    'category' => 'مظلات',
+    'location' => 'جدة - حي النعيم',
+    'projectLink' => 'https://diyar-jeddah.com/projects/123',
+    'media' => [
+        ['url' => 'https://res.cloudinary.com/your-account/image/upload/v1234/project1.jpg'],
+        ['url' => 'https://res.cloudinary.com/your-account/video/upload/v1234/project-video.mp4']
+    ]
+];
+
+$ch = curl_init('https://mogahedahmedyemen.app.n8n.cloud/webhook/project-webhook');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($projectData));
+curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+
+$response = curl_exec($ch);
+curl_close($ch);
+
+echo $response;
+?>
+3. هيكل البيانات المطلوب (JSON):
+{
+  "title": "عنوان المشروع",
+  "description": "وصف تفصيلي للمشروع",
+  "category": "مظلات",
+  "location": "جدة - الحي",
+  "projectLink": "https://example.com/project/123",
+  "media": [
+    {
+      "url": "https://res.cloudinary.com/.../image1.jpg"
+    },
+    {
+      "url": "https://res.cloudinary.com/.../video.mp4"
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+prisma:error 
+Invalid `prisma.articles.findFirst()` invocation:
+
+{
+  where: {
+    status: "PUBLISHED",
+    OR: [
+      {
+        category: {
+          contains: "سواتر"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر"
+        }
+      },
+      {
+        category: {
+          contains: "ساتر"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر"
+        }
+      },
+      {
+        category: {
+          contains: "سواتر خصوصية"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر خصوصية"
+        }
+      },
+      {
+        category: {
+          contains: "سواتر حديد"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر حديد"
+        }
+      },
+      {
+        title: {
+          contains: "خصوصية"
+        }
+      },
+      {
+        description: {
+          contains: "خصوصية"
+        }
+      },
+      {
+        title: {
+          contains: "حماية"
+        }
+      },
+      {
+        description: {
+          contains: "حماية"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر قماش"
+        }
+      },
+      {
+        description: {
+          contains: "ساتر قماش"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر خشب"
+        }
+      },
+      {
+        description: {
+          contains: "ساتر خشب"
+        }
+      }
+    ]
+  },
+  orderBy: {
+    updatedAt: "desc"
+  },
+  select: {
+    updatedAt: true
+  }
+}
+
+Unknown argument `description`. Available options are marked with ?.
+Error checking articles cache: Error [PrismaClientValidationError]: 
+Invalid `prisma.articles.findFirst()` invocation:
+
+{
+  where: {
+    status: "PUBLISHED",
+    OR: [
+      {
+        category: {
+          contains: "سواتر"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر"
+        }
+      },
+      {
+        category: {
+          contains: "ساتر"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر"
+        }
+      },
+      {
+        category: {
+          contains: "سواتر خصوصية"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر خصوصية"
+        }
+      },
+      {
+        category: {
+          contains: "سواتر حديد"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر حديد"
+        }
+      },
+      {
+        title: {
+          contains: "خصوصية"
+        }
+      },
+      {
+        description: {
+          contains: "خصوصية"
+        }
+      },
+      {
+        title: {
+          contains: "حماية"
+        }
+      },
+      {
+        description: {
+          contains: "حماية"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر قماش"
+        }
+      },
+      {
+        description: {
+          contains: "ساتر قماش"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر خشب"
+        }
+      },
+      {
+        description: {
+          contains: "ساتر خشب"
+        }
+      }
+    ]
+  },
+  orderBy: {
+    updatedAt: "desc"
+  },
+  select: {
+    updatedAt: true
+  }
+}
+
+Unknown argument `description`. Available options are marked with ?.
+    at async e (.next/server/chunks/6171.js:1:36643)
+    at async f (.next/server/chunks/6171.js:1:37363)
+    at async Y (.next/server/app/[locale]/services/sawater/page.js:2:12549) {
+  clientVersion: '6.18.0'
+}
+prisma:error 
+Invalid `prisma.comments.findFirst()` invocation:
+
+{
+  where: {
+    status: "APPROVED",
+    OR: [
+      {
+        category: {
+          contains: "سواتر"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر"
+        }
+      },
+      {
+        category: {
+          contains: "ساتر"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر"
+        }
+      },
+      {
+        category: {
+          contains: "سواتر خصوصية"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر خصوصية"
+        }
+      },
+      {
+        category: {
+          contains: "سواتر حديد"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر حديد"
+        }
+      },
+      {
+        title: {
+          contains: "خصوصية"
+        }
+      },
+      {
+        description: {
+          contains: "خصوصية"
+        }
+      },
+      {
+        title: {
+          contains: "حماية"
+        }
+      },
+      {
+        description: {
+          contains: "حماية"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر قماش"
+        }
+      },
+      {
+        description: {
+          contains: "ساتر قماش"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر خشب"
+        }
+      },
+      {
+        description: {
+          contains: "ساتر خشب"
+        }
+      }
+    ]
+  },
+  orderBy: {
+    createdAt: "desc"
+  },
+  select: {
+    createdAt: true
+  }
+}
+
+Unknown argument `category`. Available options are marked with ?.
+Error checking reviews cache: Error [PrismaClientValidationError]: 
+Invalid `prisma.comments.findFirst()` invocation:
+
+{
+  where: {
+    status: "APPROVED",
+    OR: [
+      {
+        category: {
+          contains: "سواتر"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر"
+        }
+      },
+      {
+        category: {
+          contains: "ساتر"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر"
+        }
+      },
+      {
+        category: {
+          contains: "سواتر خصوصية"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر خصوصية"
+        }
+      },
+      {
+        category: {
+          contains: "سواتر حديد"
+        }
+      },
+      {
+        title: {
+          contains: "سواتر حديد"
+        }
+      },
+      {
+        title: {
+          contains: "خصوصية"
+        }
+      },
+      {
+        description: {
+          contains: "خصوصية"
+        }
+      },
+      {
+        title: {
+          contains: "حماية"
+        }
+      },
+      {
+        description: {
+          contains: "حماية"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر قماش"
+        }
+      },
+      {
+        description: {
+          contains: "ساتر قماش"
+        }
+      },
+      {
+        title: {
+          contains: "ساتر خشب"
+        }
+      },
+      {
+        description: {
+          contains: "ساتر خشب"
+        }
+      }
+    ]
+  },
+  orderBy: {
+    createdAt: "desc"
+  },
+  select: {
+    createdAt: true
+  }
+}
+
+Unknown argument `category`. Available options are marked with ?.
+    at async e (.next/server/chunks/6171.js:1:36966)
+    at async f (.next/server/chunks/6171.js:1:37363)
+    at async Y (.next/server/app/[locale]/services/sawater/page.js:2:12549) {
+  clientVersion: '6.18.0'

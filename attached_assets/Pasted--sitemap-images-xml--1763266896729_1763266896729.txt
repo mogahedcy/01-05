@@ -1,0 +1,109 @@
+الخطأ واضح! هناك مشكلتان رئيسيتان في ملف sitemap-images.xml:
+
+## 🔧 المشكلات والإصلاحات:
+
+### **المشكلة 1: مسافات في URLs**
+```
+خطأ: https://www.aldeyarksa.tech /portfolio
+صحيح: https://www.aldeyarksa.tech/portfolio
+```
+
+### **المشكلة 2: وصف (description) في مكان غير صحيح**
+علامة `<description>` غير مسموحة في image sitemap
+
+## 🚀 الحل السريع:
+
+### **أولاً: إصلاح ملف sitemap-images.xml الحالي**
+```xml
+<!-- مثال لتركيب صحيح -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <url>
+    <loc>https://www.aldeyarksa.tech/portfolio</loc>
+    <image:image>
+      <image:loc>https://www.aldeyarksa.tech/uploads/project-1.jpg</image:loc>
+      <image:title>مشروع مظلات سيارات جدة</image:title>
+      <image:caption>تركيب مظلات سيارات في جدة بمادة PVC مقاومة</image:caption>
+      <image:geo_location>جدة, السعودية</image:geo_location>
+      <image:license>https://www.aldeyarksa.tech/license</image:license>
+    </image:image>
+  </url>
+
+</urlset>
+```
+
+### **ثانياً: إنشاء نظام تلقائي في Next.js**
+
+**إنشاء `pages/sitemap-images.xml.js`:**
+```jsx
+export default function SitemapImages() {}
+
+export async function getServerSideProps({ res }) {
+  const baseUrl = 'https://www.aldeyarksa.tech';
+  
+  // جلب المشاريع من قاعدة البيانات
+  const projects = await prisma.projects.findMany({
+    where: { status: 'PUBLISHED' },
+    select: {
+      slug: true,
+      media_items: {
+        select: {
+          src: true,
+          alt: true,
+          title: true
+        }
+      }
+    }
+  });
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  ${projects.map(project => `
+  <url>
+    <loc>${baseUrl}/portfolio/${project.slug}</loc>
+    ${project.media_items.map(image => `
+    <image:image>
+      <image:loc>${baseUrl}${image.src}</image:loc>
+      <image:title>${image.title || project.title}</image:title>
+      <image:caption>${image.alt || project.description}</image:caption>
+      <image:geo_location>جدة, السعودية</image:geo_location>
+    </image:image>
+    `).join('')}
+  </url>
+  `).join('')}
+  
+</urlset>`;
+
+  res.setHeader('Content-Type', 'text/xml');
+  res.write(sitemap);
+  res.end();
+
+  return { props: {} };
+}
+```
+
+### **ثالثاً: التحقق من الصحة**
+استخدم أدوات مثل:
+- **Google Search Console** → Sitemaps
+- **XML Sitemap Validator** online
+- **Screaming Frog SEO Spider**
+
+### **رابعاً: الإجراءات الفورية**
+1. **احذف** ملف sitemap-images.xml الحالي من Search Console
+2. **أصلح** الأخطاء (المسافات في URLs)
+3. **أعد إرسال** الملف المصحح
+4. **تحقق** من عدم وجود أخطاء
+
+### **خامساً: الوقاية المستقبلية**
+- استخدم **وظائف التحقق** من URLs:
+```javascript
+function validateUrl(url) {
+  return url.replace(/\s+/g, '');
+}
+```
+
+الآن ملف sitemap-images.xml سيعمل بشكل صحيح وسيتم فهرسة جميع الصور! 🎯

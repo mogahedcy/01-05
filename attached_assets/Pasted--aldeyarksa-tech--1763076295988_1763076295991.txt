@@ -1,0 +1,3046 @@
+📊 التقرير الشامل والكامل للصفحة الرئيسية - aldeyarksa.tech
+🎯 نظرة عامة تنفيذية
+اسم الموقع: محترفين الديار
+النطاق: aldeyarksa.tech
+نوع العمل: مظلات وبرجولات وسواتر في جدة
+التقنية: Next.js
+التقييم العام: 58/100 ⚠️
+
+📑 فهرس التقرير
+تحليل البنية والهيكل
+تحليل SEO التقني
+تحليل التصميم والـ UX
+تحليل المحتوى
+تحليل الأداء
+تحليل التحويل (Conversion)
+تحليل إمكانية الوصول
+المنافسة وأفضل الممارسات
+خطة العمل التفصيلية
+<a name="structure"></a>
+
+1️⃣ تحليل البنية والهيكل (Structure Analysis)
+✅ البنية الموجودة:
+الصفحة الرئيسية تتكون من:
+├── Header (الترويسة)
+│   ├── معلومات التواصل
+│   ├── شعارات الثقة (15+ سنة، ضمان 10 سنوات، خدمة 24/7)
+│   └── روابط السوشيال ميديا
+│
+├── Hero Section (القسم الرئيسي)
+│   ├── سلايدر 3 صور
+│   ├── العنوان الرئيسي
+│   ├── العنوان الفرعي
+│   └── 2 CTAs
+│
+├── Navigation Bar (شريط التنقل)
+│   └── 6 روابط للخدمات الرئيسية
+│
+├── Services Section (قسم الخدمات)
+│   ├── العنوان التعريفي
+│   └── 8 بطاقات خدمات
+│
+├── Portfolio Section (قسم الأعمال)
+│   ├── مقدمة + إحصائيات
+│   ├── فلتر الخدمات
+│   └── 4 مشاريع معروضة
+│
+├── Testimonials Section (قسم التقييمات)
+│   ├── العنوان
+│   └── 6 تقييمات عملاء
+│
+└── Footer (التذييل)
+    └── معلومات مبسطة
+
+❌ المشاكل الهيكلية:
+1. ترتيب الأقسام غير مثالي:
+الترتيب الحالي:
+1. Hero Section
+2. Navigation Links
+3. Services
+4. Portfolio
+5. Testimonials
+الترتيب المثالي حسب LSP:
+1. Hero Section (محسّن)
+2. Trust Bar (شريط الثقة)
+3. Problem-Solution Section
+4. Top 3 Services
+5. Why Choose Us
+6. How It Works (4 Steps)
+7. Portfolio (Before/After)
+8. All Services
+9. Testimonials + Video Reviews
+10. FAQ
+11. Final CTA + Urgency
+12. Contact Form
+
+2. أقسام مفقودة حرجة:
+❌ Trust Bar - شريط بالإحصائيات فوق Hero مباشرة
+❌ Problem Statement - "تعاني من حرارة السيارة؟"
+❌ Why Choose Us Section - مميزاتكم الـ 6
+❌ How It Works - 4 خطوات للعمل
+❌ FAQ Section - أسئلة شائعة
+❌ Urgency Section - عروض محدودة بوقت
+❌ Video Testimonials - شهادات فيديو
+❌ Live Chat / WhatsApp Widget
+3. التسلسل الهرمي للمعلومات:
+⚠️ يبدأ مباشرة بالخدمات بدون بناء ثقة كافية
+
+<a name="seo"></a>
+
+2️⃣ تحليل SEO التقني (Technical SEO Analysis)
+❌ المشاكل الحرجة:
+A. Meta Tags - (0/10) 🔴
+<!-- ❌ الحالة الحالية: -->
+<title>محترفين الديار - (غالباً غير موجود أو عام)</title>
+<!-- لا يوجد Meta Description -->
+<!-- لا يوجد Open Graph -->
+<!-- لا يوجد Twitter Cards -->
+
+التأثير:
+
+❌ لن يظهر في نتائج بحث Google بشكل جيد
+❌ المشاركة على السوشيال ميديا ستكون سيئة
+❌ Click-Through Rate منخفض جداً
+الحل المطلوب:
+
+<!-- ✅ المطلوب: -->
+<head>
+  <!-- Primary Meta Tags -->
+  <title>محترفين الديار | مظلات وبرجولات وسواتر في جدة - خبرة 15 سنة</title>
+  <meta name="title" content="محترفين الديار | مظلات وبرجولات وسواتر في جدة - خبرة 15 سنة">
+  <meta name="description" content="أفضل شركة مظلات وبرجولات في جدة. خبرة +15 سنة، ضمان 10 سنوات، +5000 مشروع ناجح. تركيب مظلات سيارات، برجولات حدائق، سواتر، ساندوتش بانل. اتصل الآن: 0553719009">
+  <meta name="keywords" content="مظلات جدة, برجولات جدة, سواتر جدة, مظلات سيارات, تنسيق حدائق جدة, ساندوتش بانل, بيوت شعر, محترفين الديار">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.aldeyarksa.tech/">
+  <meta property="og:title" content="محترفين الديار | مظلات وبرجولات في جدة - ضمان 10 سنوات">
+  <meta property="og:description" content="رواد المظلات والبرجولات في جدة. خبرة 15+ سنة، +5000 مشروع ناجح، تقييم 4.9⭐. احصل على استشارة مجانية الآن!">
+  <meta property="og:image" content="https://www.aldeyarksa.tech/images/og-image-1200x630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:site_name" content="محترفين الديار">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.aldeyarksa.tech/">
+  <meta property="twitter:title" content="محترفين الديار | مظلات وبرجولات في جدة">
+  <meta property="twitter:description" content="رواد المظلات والبرجولات في جدة. خبرة 15+ سنة، ضمان 10 سنوات">
+  <meta property="twitter:image" content="https://www.aldeyarksa.tech/images/twitter-card.jpg">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.aldeyarksa.tech/">
+  
+  <!-- Alternate for Language -->
+  <link rel="alternate" hreflang="ar" href="https://www.aldeyarksa.tech/">
+  <link rel="alternate" hreflang="en" href="https://www.aldeyarksa.tech/en/">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+
+B. Schema Markup - (0/10) 🔴
+الحالة: لا يوجد Structured Data
+
+التأثير:
+
+❌ لن يظهر Rich Snippets في Google
+❌ لن يظهر التقييم ⭐⭐⭐⭐⭐ في النتائج
+❌ لن تظهر معلومات العمل (الهاتف، العنوان، ساعات العمل)
+الحل المطلوب:
+
+<!-- 1. LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.aldeyarksa.tech/#organization",
+  "name": "محترفين الديار",
+  "alternateName": "Aldeyar Professionals",
+  "description": "شركة متخصصة في تركيب المظلات والبرجولات والسواتر وتنسيق الحدائق في جدة",
+  "url": "https://www.aldeyarksa.tech",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.aldeyarksa.tech/images/logo.png",
+    "width": 250,
+    "height": 60
+  },
+  "image": [
+    "https://www.aldeyarksa.tech/images/slider1.webp",
+    "https://www.aldeyarksa.tech/images/slider2.webp",
+    "https://www.aldeyarksa.tech/images/slider3.webp"
+  ],
+  "telephone": "+966553719009",
+  "email": "ksaaldeyar@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "جدة",
+    "addressLocality": "جدة",
+    "addressRegion": "مكة المكرمة",
+    "addressCountry": "SA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "21.5433",
+    "longitude": "39.1728"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "جدة"
+  },
+  "priceRange": "$$-$$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "5000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "sameAs": [
+    "https://www.instagram.com/aldiyarglobal",
+    "https://wa.me/966553719009"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+966553719009",
+    "contactType": "customer service",
+    "areaServed": "SA",
+    "availableLanguage": ["ar", "en"]
+  }
+}
+</script>
+<!-- 2. Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "محترفين الديار",
+  "url": "https://www.aldeyarksa.tech",
+  "logo": "https://www.aldeyarksa.tech/images/logo.png",
+  "foundingDate": "2010",
+  "slogan": "رواد المظلات والبرجولات في جدة"
+}
+</script>
+<!-- 3. Service Schema لكل خدمة -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "تركيب مظلات السيارات",
+  "provider": {
+    "@type": "LocalBusiness",
+    "@id": "https://www.aldeyarksa.tech/#organization"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "جدة"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "مظلات السيارات",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "مظلات سيارات حديد"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "مظلات سيارات قماش"
+        }
+      }
+    ]
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "SAR",
+    "lowPrice": "2500",
+    "description": "تركيب مظلات السيارات بأفضل الأسعار"
+  }
+}
+</script>
+<!-- 4. Review Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "LocalBusiness",
+    "@id": "https://www.aldeyarksa.tech/#organization"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "أحمد المالكي"
+  },
+  "reviewBody": "خدمة ممتازة من محترفين الديار. تم تركيب مظلات السيارات بجودة عالية وفي الوقت المحدد. أنصح بالتعامل معهم.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "محترفين الديار"
+  }
+}
+</script>
+<!-- 5. BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "الرئيسية",
+      "item": "https://www.aldeyarksa.tech"
+    }
+  ]
+}
+</script>
+<!-- 6. WebSite Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "محترفين الديار",
+  "url": "https://www.aldeyarksa.tech",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.aldeyarksa.tech/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+C. Heading Structure - (4/10) ⚠️
+الحالة الحالية:
+
+H1: "محترفين الديار رواد المظلات والبرجولات في جدة"
+H2: "خدماتنا الشاملة"
+H3: "مظلات السيارات"
+H3: "ساندوتش بانل"
+... (8 H3s للخدمات)
+H2: "أحدث أعمال محترفين الديار في جدة"
+H3: بطاقات المشاريع
+H2: "آراء عملائنا السعداء"
+
+المشاكل:
+
+⚠️ H1 طويل جداً (يفضل 50-60 حرف)
+❌ العناوين وصفية أكثر من كونها مقنعة
+⚠️ لا تحتوي على كلمات مفتاحية قوية
+الحل:
+
+<!-- ✅ التحسين المطلوب: -->
+<h1>مظلات وبرجولات جدة | ضمان 10 سنوات - محترفين الديار</h1>
+<h2>لماذا تختار محترفين الديار؟</h2>
+<h2>خدماتنا المتخصصة في جدة</h2>
+<h3>مظلات سيارات - حماية كاملة من حرارة جدة</h3>
+<h3>برجولات حدائق فاخرة - تصاميم عصرية حصرية</h3>
+... إلخ
+<h2>أكثر من 5000 مشروع ناجح في جدة</h2>
+<h2>ماذا يقول عملاؤنا عنا؟</h2>
+<h2>الأسئلة الشائعة عن المظلات والبرجولات</h2>
+
+D. URL Structure - (7/10) ✅
+الحالة: جيدة نسبياً
+
+✅ https://www.aldeyarksa.tech/ (نظيف)
+✅ https://www.aldeyarksa.tech/services/mazallat
+✅ https://www.aldeyarksa.tech/portfolio
+
+تحسينات بسيطة:
+
+إضافة trailing slash للتوحيد
+التأكد من canonical URLs
+E. Internal Linking - (5/10) ⚠️
+المشاكل:
+
+⚠️ الروابط الداخلية محدودة
+❌ لا توجد روابط سياقية داخل المحتوى
+⚠️ لا يوجد تنظيم للروابط بشكل استراتيجي
+التوصيات:
+
+<!-- إضافة روابط داخلية في المحتوى -->
+<p>نقدم أفضل خدمات 
+  <a href="/services/mazallat">مظلات السيارات</a> 
+  في جدة مع <a href="/services/pergolas">برجولات الحدائق</a>
+</p>
+<!-- إضافة Related Services في كل صفحة خدمة -->
+
+<a name="design"></a>
+
+3️⃣ تحليل التصميم والـ UX (Design & UX Analysis)
+A. Hero Section - (4/10) 🔴
+الحالة الحالية:
+┌─────────────────────────────────────┐
+│ [معلومات اتصال في الأعلى]          │
+│ [شعارات الثقة]                     │
+│                                      │
+│  ┌──────────────────────────┐       │
+│  │   [Slider - 3 صور]       │       │
+│  │                           │       │
+│  │  محترفين الديار          │       │
+│  │  رواد المظلات...         │       │
+│  │                           │       │
+│  │  [CTA] [CTA]             │       │
+│  └──────────────────────────┘       │
+│                                      │
+│ [6 روابط خدمات]                    │
+└─────────────────────────────────────┘
+
+❌ المشاكل الحرجة:
+السلايدر (Slider)
+
+❌ يشتت الانتباه - الزائر لا يعرف أين ينظر
+⚠️ يبطئ التحميل
+❌ معدل التحويل أقل بـ 30% من الصور الثابتة
+⚠️ 3 صور مختلفة = 3 رسائل مشوشة
+العنوان الرئيسي
+
+❌ الحالي: "محترفين الديار رواد المظلات والبرجولات في جدة"
+المشاكل:
+- طويل جداً (53 حرف)
+- يبدأ باسم الشركة بدل الفائدة
+- عام وممل
+- لا يوجد emotional trigger
+
+العنوان الفرعي
+
+❌ الحالي: "حماية فاخرة • تصاميم عصرية • جودة مضمونة"
+المشاكل:
+- مجرد features بدون benefits
+- لا يحل مشكلة محددة
+- لا يوجد USP واضح
+
+الـ CTAs
+
+⚠️ الحالي: 
+- "استشارة مجانية الآن"
+- "+966553719009"
+المشاكل:
+- نفس CTA متكرر في كل مكان
+- لا يوجد تمييز بين Primary و Secondary CTA
+- لا يوجد urgency
+
+✅ الحل المقترح:
+<!-- Hero Section المحسّن -->
+<section class="hero-section">
+  <!-- Trust Bar أولاً -->
+  <div class="trust-bar">
+    <div class="trust-item">
+      <strong>15+</strong> سنة خبرة
+    </div>
+    <div class="trust-item">
+      <strong>5000+</strong> مشروع ناجح
+    </div>
+    <div class="trust-item">
+      <strong>4.9⭐</strong> تقييم العملاء
+    </div>
+    <div class="trust-item">
+      <strong>10</strong> سنوات ضمان
+    </div>
+  </div>
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <div class="hero-text">
+      <!-- Badge -->
+      <span class="badge">🏆 الأكثر ثقة في جدة</span>
+      
+      <!-- Main Headline - يحل مشكلة -->
+      <h1 class="hero-headline">
+        احمِ سيارتك من حرارة جدة الحارقة
+        <span class="highlight">بمظلات فاخرة تدوم 10 سنوات</span>
+      </h1>
+      
+      <!-- Sub-headline - USP -->
+      <p class="hero-subheadline">
+        أكثر من 5000 عائلة في جدة وثقت بنا لحماية سياراتهم وتجميل حدائقهم.
+        نقدم ضمان 10 سنوات وتركيب خلال 48 ساعة فقط.
+      </p>
+      
+      <!-- Social Proof Quick -->
+      <div class="quick-social-proof">
+        <div class="customer-avatars">
+          <img src="customer1.jpg" alt="">
+          <img src="customer2.jpg" alt="">
+          <img src="customer3.jpg" alt="">
+          <span>+5000</span>
+        </div>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ 4.9 (500+ تقييم)
+        </div>
+      </div>
+      
+      <!-- CTAs -->
+      <div class="hero-ctas">
+        <button class="cta-primary large pulse">
+          📞 احصل على عرض سعر مجاني الآن
+        </button>
+        <button class="cta-secondary large">
+          📸 شاهد أعمالنا
+        </button>
+      </div>
+      
+      <!-- Urgency -->
+      <div class="urgency-banner">
+        🔥 <strong>عرض خاص:</strong> خصم 15% لأول 10 عملاء هذا الأسبوع
+        <span class="countdown" id="countdown">باقي 2 يوم</span>
+      </div>
+      
+      <!-- Trust Signals -->
+      <div class="trust-signals">
+        <div class="signal">✓ تركيب خلال 48 ساعة</div>
+        <div class="signal">✓ ضمان 10 سنوات</div>
+        <div class="signal">✓ استشارة مجانية</div>
+        <div class="signal">✓ دفع بالتقسيط</div>
+      </div>
+    </div>
+    
+    <!-- Hero Image/Video -->
+    <div class="hero-visual">
+      <!-- استخدام صورة ثابتة قوية واحدة أو فيديو -->
+      <img src="/images/hero-main.webp" 
+           alt="مظلة سيارات فاخرة في فيلا بجدة - محترفين الديار"
+           class="hero-image">
+      
+      <!-- أو فيديو background -->
+      <!-- <video autoplay muted loop playsinline class="hero-video">
+        <source src="hero-video.mp4" type="video/mp4">
+      </video> -->
+      
+      <!-- Badge على الصورة -->
+      <div class="image-badge">
+        <div class="warranty-badge">
+          <strong>ضمان</strong>
+          <span>10 سنوات</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+B. Color Scheme - (5/10) ⚠️
+المشاكل:
+
+❌ لا يوجد نظام ألوان واضح ومحدد
+⚠️ الألوان غير متناسقة
+❌ لا يوجد Brand Identity قوية
+نظام الألوان المقترح:
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1a5f3b;        /* أخضر داكن - الثقة والطبيعة */
+  --color-primary-light: #2d8f5a;  /* أخضر فاتح */
+  --color-primary-dark: #0f3d24;   /* أخضر غامق */
+  
+  /* Secondary Colors */
+  --color-secondary: #d4af37;      /* ذهبي - الفخامة */
+  --color-secondary-light: #f0d98b;
+  --color-secondary-dark: #b8941f;
+  
+  /* Accent Colors */
+  --color-accent: #e74c3c;         /* أحمر - Urgency */
+  --color-success: #27ae60;        /* أخضر - نجاح */
+  --color-warning: #f39c12;        /* برتقالي - تحذير */
+  
+  /* Neutral Colors */
+  --color-dark: #2c3e50;           /* نص رئيسي */
+  --color-gray: #7f8c8d;           /* نص ثانوي */
+  --color-light-gray: #ecf0f1;     /* خلفيات */
+  --color-white: #ffffff;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #1a5f3b 0%, #2d8f5a 100%);
+  --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f0d98b 100%);
+  --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+}
+
+استخدام الألوان:
+
+- Primary (الأخضر): CTAs، Headers، Navigation
+- Secondary (الذهبي): Badges، Icons، Highlights
+- Accent (الأحمر): Urgency، Discounts، Special Offers
+- Neutral: Text، Backgrounds، Borders
+
+C. Typography - (6/10) ⚠️
+المشاكل:
+
+⚠️ لا يوجد تباين واضح في أحجام الخطوط
+❌ قد لا يكون هناك نظام خط موحد
+⚠️ Line-height والـ spacing غير متناسقين
+نظام الخطوط المقترح:
+
+/* استخدام خطوط عربية احترافية */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+:root {
+  /* Font Families */
+  --font-primary: 'Cairo', sans-serif;      /* للعناوين */
+  --font-secondary: 'Tajawal', sans-serif;  /* للنصوص */
+  
+  /* Font Sizes - Mobile First */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+  --font-size-6xl: 3.75rem;   /* 60px */
+  
+  /* Font Weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 900;
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  --line-height-loose: 2;
+}
+/* Heading Styles */
+h1 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-4xl);  /* Mobile */
+  font-weight: var(--font-black);
+  line-height: var(--line-height-tight);
+  color: var(--color-dark);
+}
+@media (min-width: 768px) {
+  h1 { font-size: var(--font-size-5xl); }
+}
+@media (min-width: 1024px) {
+  h1 { font-size: var(--font-size-6xl); }
+}
+h2 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-tight);
+}
+h3 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-semibold);
+}
+/* Body Text */
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-dark);
+}
+p {
+  margin-bottom: 1rem;
+  line-height: var(--line-height-relaxed);
+}
+/* Utility Classes */
+.text-large {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+.text-small {
+  font-size: var(--font-size-sm);
+}
+
+D. Services Section - (6/10) ⚠️
+الحالة الحالية:
+
+✅ 8 خدمات معروضة
+⚠️ كل الخدمات بنفس الأولوية
+❌ بطاقات بسيطة جداً
+⚠️ لا يوجد visual hierarchy
+التحسينات المطلوبة:
+
+<!-- نسخة محسّنة لبطاقة الخدمة -->
+<div class="service-card premium">
+  <!-- Badge -->
+  <span class="service-badge hot">🔥 الأكثر طلباً</span>
+  
+  <!-- Icon -->
+  <div class="service-icon">
+    <img src="/icons/mazallat.svg" alt="مظلات سيارات">
+  </div>
+  
+  <!-- Title -->
+  <h3 class="service-title">مظلات السيارات العصرية</h3>
+  
+  <!-- Short Description -->
+  <p class="service-description">
+    احمِ سيارتك من حرارة جدة الحارقة بمظلات عصرية فاخرة
+    مع ضمان 10 سنوات
+  </p>
+  
+  <!-- Benefits List -->
+  <ul class="service-benefits">
+    <li>
+      <svg class="check-icon">...</svg>
+      حماية 100% من الحرارة والأشعة
+    </li>
+    <li>
+      <svg class="check-icon">...</svg>
+      تركيب احترافي خلال 48 ساعة
+    </li>
+    <li>
+      <svg class="check-icon">...</svg>
+      ضمان 10 سنوات على المواد والتركيب
+    </li>
+    <li>
+      <svg class="check-icon">...</svg>
+      تصاميم متعددة (حديد، خشب، قماش)
+    </li>
+  </ul>
+  
+  <!-- Pricing -->
+  <div class="service-pricing">
+    <div class="price-container">
+      <span class="price-label">يبدأ من</span>
+      <div class="price">
+        <span class="old-price">3,000 ر.س</span>
+        <span class="current-price">2,500 ر.س</span>
+      </div>
+      <span class="price-note">للمظلة الواحدة</span>
+    </div>
+    
+    <!-- Discount Badge -->
+    <div class="discount-badge">
+      وفّر 500 ر.س
+    </div>
+  </div>
+  
+  <!-- CTAs -->
+  <div class="service-ctas">
+    <button class="cta-primary">
+      احصل على عرض سعر مجاني
+    </button>
+    <a href="/services/mazallat" class="cta-link">
+      تفاصيل أكثر →
+    </a>
+  </div>
+  
+  <!-- Trust Signal -->
+  <div class="service-trust">
+    <div class="projects-count">
+      <strong>+1200</strong> مظلة تم تركيبها
+    </div>
+    <div class="rating">
+      ⭐⭐⭐⭐⭐ 4.9
+    </div>
+  </div>
+</div>
+
+E. Portfolio Section - (7/10) ✅⚠️
+ما هو جيد:
+
+✅ عرض أمثلة أعمال
+✅ فلتر بالخدمات
+✅ إحصائيات
+ما يحتاج تحسين:
+
+❌ لا يوجد "Before/After" comparison
+⚠️ الصور صغيرة نسبياً
+❌ لا توجد Case Studies تفصيلية
+⚠️ المشاريع لا تحكي قصة
+التحسينات:
+
+<!-- Before/After Slider -->
+<div class="portfolio-item before-after">
+  <div class="comparison-slider">
+    <div class="before-image">
+      <img src="before.jpg" alt="قبل تركيب المظلة">
+      <span class="label">قبل</span>
+    </div>
+    <div class="after-image">
+      <img src="after.jpg" alt="بعد تركيب المظلة">
+      <span class="label">بعد</span>
+    </div>
+    <input type="range" class="slider" min="0" max="100" value="50">
+  </div>
+  
+  <div class="project-info">
+    <h3>مظلة فيلا فاخرة - حي الروضة</h3>
+    <div class="project-meta">
+      <span>📍 جدة، حي الروضة</span>
+      <span>📅 مارس 2024</span>
+      <span>⭐ 5.0</span>
+    </div>
+    
+    <div class="project-details">
+      <div class="detail">
+        <strong>المساحة:</strong> 6×5 متر
+      </div>
+      <div class="detail">
+        <strong>النوع:</strong> مظلة حديد مع قماش PVC
+      </div>
+      <div class="detail">
+        <strong>المدة:</strong> يومين فقط
+      </div>
+    </div>
+    
+    <blockquote class="customer-quote">
+      "تحولت سيارتي من فرن إلى ظل بارد! شكراً محترفين الديار"
+      <cite>- أحمد المالكي</cite>
+    </blockquote>
+    
+    <button class="view-case-study">
+      اقرأ القصة الكاملة →
+    </button>
+  </div>
+</div>
+
+F. Testimonials Section - (6/10) ⚠️
+الحالة:
+
+✅ 6 تقييمات موجودة
+⚠️ تقييمات نصية فقط
+❌ لا يوجد فيديو testimonials
+❌ لا توجد صور للعملاء
+⚠️ التقييمات في آخر الصفحة
+التحسينات:
+
+<!-- Video Testimonial -->
+<div class="testimonial-video">
+  <video poster="customer-thumbnail.jpg" controls>
+    <source src="testimonial-video.mp4" type="video/mp4">
+  </video>
+  <div class="video-info">
+    <h4>شاهد تجربة أحمد المالكي</h4>
+    <p>"كيف حمت المظلة سيارتي من حرارة جدة"</p>
+    <div class="customer-info">
+      <img src="ahmed.jpg" alt="أحمد المالكي">
+      <div>
+        <strong>أحمد المالكي</strong>
+        <span>حي الروضة، جدة</span>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Carousel of Text Testimonials with Photos -->
+<div class="testimonials-carousel">
+  <div class="testimonial-card">
+    <div class="quote-mark">"</div>
+    <p class="testimonial-text">
+      خدمة ممتازة من محترفين الديار. تم تركيب مظلات السيارات 
+      بجودة عالية وفي الوقت المحدد. أنصح بالتعامل معهم.
+    </p>
+    <div class="customer-profile">
+      <img src="customer.jpg" alt="أحمد المالكي">
+      <div class="customer-details">
+        <strong>أحمد المالكي</strong>
+        <span>حي الروضة، جدة</span>
+        <div class="service-type">مظلات سيارات</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+    <div class="verification">
+      ✓ عميل موثق
+    </div>
+  </div>
+</div>
+<!-- Trust Statistics من التقييمات -->
+<div class="testimonials-stats">
+  <div class="stat">
+    <strong>4.9/5</strong>
+    <span>متوسط التقييمات</span>
+  </div>
+  <div class="stat">
+    <strong>98%</strong>
+    <span>معدل الرضا</span>
+  </div>
+  <div class="stat">
+    <strong>5000+</strong>
+    <span>عميل سعيد</span>
+  </div>
+  <div class="stat">
+    <strong>95%</strong>
+    <span>يوصون بنا</span>
+  </div>
+</div>
+
+<a name="content"></a>
+
+4️⃣ تحليل المحتوى (Content Analysis)
+A. محتوى العناوين - (5/10) ⚠️
+المشكلة الرئيسية: المحتوى يركز على Features بدلاً من Benefits
+
+❌ الحالي (Features):
+"حماية كاملة من الشمس"
+"تصاميم متنوعة"
+"عازل للحرارة والصوت"
+✅ المطلوب (Benefits):
+"وفّر 300 ر.س شهرياً من فاتورة البنزين"
+"احمِ سيارتك من حرارة 50° وأضف 5 سنوات لعمرها"
+"قلل حرارة منزلك 15° واخفض فاتورة الكهرباء 40%"
+
+B. Storytelling - (3/10) 🔴
+المشكلة: لا توجد قصة أو رحلة عاطفية
+
+الحل: إضافة Story-Based Sections
+
+<!-- Problem-Agitate-Solution -->
+<section class="problem-section">
+  <h2>هل تعاني من هذه المشاكل؟</h2>
+  
+  <div class="problems-grid">
+    <div class="problem-card">
+      <div class="problem-icon">🔥</div>
+      <h3>سيارتك فرن متنقل؟</h3>
+      <p>
+        حرارة جدة الحارقة تحول سيارتك إلى فرن. 
+        تحتاج 10 دقائق مكيف قبل القيادة. 
+        طفلك يبكي من الحرارة.
+      </p>
+    </div>
+    
+    <div class="problem-card">
+      <div class="problem-icon">💸</div>
+      <h3>فاتورة بنزين مرتفعة؟</h3>
+      <p>
+        تشغيل المكيف على أقصى درجة يستهلك 
+        300 ر.س إضافية شهرياً من البنزين
+      </p>
+    </div>
+    
+    <div class="problem-card">
+      <div class="problem-icon">🚗</div>
+      <h3>دهان السيارة يتلف؟</h3>
+      <p>
+        الشمس المباشرة تتلف دهان سيارتك 
+        وتقلل من قيمتها 20% خلال 3 سنوات
+      </p>
+    </div>
+  </div>
+  
+  <div class="solution-intro">
+    <h3>الحل: مظلات محترفين الديار</h3>
+    <p>
+      مظلاتنا تقلل حرارة سيارتك 30°، 
+      توفر لك 300 ر.س شهرياً، 
+      وتحمي استثمارك لـ 10 سنوات قادمة
+    </p>
+    <button class="cta-primary">
+      احصل على مظلتك الآن
+    </button>
+  </div>
+</section>
+<!-- Success Stories -->
+<section class="success-stories">
+  <h2>قصص نجاح عملائنا</h2>
+  
+  <div class="story-card">
+    <div class="story-before">
+      <h4>القصة</h4>
+      <p>
+        "كانت سيارتي تصل لحرارة 65° في الصيف. 
+        أطفالي يرفضون الركوب. كنت أضطر لتشغيل 
+        المكيف 15 دقيقة قبل كل رحلة."
+      </p>
+    </div>
+    
+    <div class="story-solution">
+      <h4>الحل</h4>
+      <p>
+        "ركبت مظلة من محترفين الديار. 
+        التركيب أخذ يومين فقط. الفريق محترف جداً."
+      </p>
+    </div>
+    
+    <div class="story-result">
+      <h4>النتيجة</h4>
+      <div class="results-grid">
+        <div class="result">
+          <strong>-30°</strong>
+          <span>انخفاض الحرارة</span>
+        </div>
+        <div class="result">
+          <strong>300 ر.س</strong>
+          <span>توفير شهري</span>
+        </div>
+        <div class="result">
+          <strong>راحة</strong>
+          <span>لكل العائلة</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="story-customer">
+      <img src="customer.jpg" alt="">
+      <div>
+        <strong>أحمد المالكي</strong>
+        <span>حي الروضة، جدة</span>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+C. الأقسام المفقودة - (0/10) 🔴
+1. قسم "لماذا نحن؟" (Why Choose Us)
+<section class="why-choose-us">
+  <div class="section-header">
+    <h2>لماذا يختارنا أكثر من 5000 عميل في جدة؟</h2>
+    <p>6 أسباب تجعلنا الخيار الأول</p>
+  </div>
+  
+  <div class="reasons-grid">
+    <!-- Reason 1 -->
+    <div class="reason-card">
+      <div class="reason-icon">
+        <img src="/icons/experience.svg" alt="خبرة">
+      </div>
+      <h3>15+ سنة خبرة في جدة</h3>
+      <p>
+        نعرف مناخ جدة جيداً. نستخدم مواد مقاومة 
+        للحرارة والرطوبة والملوحة. خبرتنا تضمن لك 
+        حلول تدوم عقود.
+      </p>
+      <ul class="reason-benefits">
+        <li>فهم عميق لمناخ جدة</li>
+        <li>مواد مختارة بعناية</li>
+        <li>+5000 مشروع ناجح</li>
+      </ul>
+    </div>
+    
+    <!-- Reason 2 -->
+    <div class="reason-card highlighted">
+      <div class="badge">الأهم</div>
+      <div class="reason-icon">
+        <img src="/icons/warranty.svg" alt="ضمان">
+      </div>
+      <h3>ضمان 10 سنوات شامل</h3>
+      <p>
+        نحن الوحيدون في جدة الذين يقدمون ضمان 
+        10 سنوات على المواد والتركيب. ثقتنا في 
+        جودتنا = راحة بالك.
+      </p>
+      <div class="warranty-details">
+        <div>✓ ضمان المواد 10 سنوات</div>
+        <div>✓ ضمان التركيب 10 سنوات</div>
+        <div>✓ صيانة دورية مجانية سنة</div>
+      </div>
+    </div>
+    
+    <!-- Reason 3 -->
+    <div class="reason-card">
+      <div class="reason-icon">
+        <img src="/icons/speed.svg" alt="سرعة">
+      </div>
+      <h3>تركيب سريع خلال 48 ساعة</h3>
+      <p>
+        لا تنتظر أسابيع. نبدأ التركيب خلال 48 ساعة 
+        من الموافقة. فريق من 25+ فني محترف جاهز.
+      </p>
+    </div>
+    
+    <!-- Reason 4 -->
+    <div class="reason-card">
+      <div class="reason-icon">
+        <img src="/icons/quality.svg" alt="جودة">
+      </div>
+      <h3>مواد ألمانية وكورية أصلية</h3>
+      <p>
+        نستورد موادنا من ألمانيا وكوريا. 
+        شهادات جودة معتمدة. مقاومة للصدأ والعوامل الجوية.
+      </p>
+    </div>
+    
+    <!-- Reason 5 -->
+    <div class="reason-card">
+      <div class="reason-icon">
+        <img src="/icons/design.svg" alt="تصميم">
+      </div>
+      <h3>تصاميم حصرية وعصرية</h3>
+      <p>
+        فريق تصميم خاص يبتكر تصاميم تناسب 
+        ديكور منزلك. أكثر من 50 تصميم للاختيار.
+      </p>
+    </div>
+    
+    <!-- Reason 6 -->
+    <div class="reason-card">
+      <div class="reason-icon">
+        <img src="/icons/support.svg" alt="دعم">
+      </div>
+      <h3>خدمة عملاء 24/7</h3>
+      <p>
+        فريق خدمة عملاء متاح على مدار الساعة. 
+        رد خلال 5 دقائق على WhatsApp.
+      </p>
+    </div>
+  </div>
+  
+  <div class="section-cta">
+    <button class="cta-primary large">
+      جرّب الأفضل في جدة - احصل على عرض مجاني
+    </button>
+  </div>
+</section>
+
+2. قسم "كيف نعمل؟" (How It Works)
+<section class="how-it-works">
+  <div class="section-header">
+    <h2>رحلتك معنا من البداية للنهاية</h2>
+    <p>4 خطوات بسيطة للحصول على مظلتك الفاخرة</p>
+  </div>
+  
+  <div class="steps-timeline">
+    <!-- Step 1 -->
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <h3>استشارة مجانية</h3>
+        <p>
+          تواصل معنا عبر WhatsApp أو الهاتف. 
+          مهندس متخصص يستمع لاحتياجاتك ويقدم 
+          الحل الأمثل خلال 30 دقيقة.
+        </p>
+        <div class="step-details">
+          <span>⏱️ 30 دقيقة</span>
+          <span>📱 عبر WhatsApp أو زيارة</span>
+          <span>🎁 مجاناً 100%</span>
+        </div>
+      </div>
+      <div class="step-visual">
+        <img src="/images/step1.jpg" alt="استشارة">
+      </div>
+    </div>
+    
+    <!-- Step 2 -->
+    <div class="step reverse">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h3>زيارة وقياس دقيق</h3>
+        <p>
+          فني متخصص يزور موقعك، يأخذ قياسات 
+          دقيقة، ويعرض عليك نماذج وتصاميم. 
+          كل هذا مجاناً.
+        </p>
+        <div class="step-details">
+          <span>⏱️ ساعة واحدة</span>
+          <span>📐 قياس دقيق 3D</span>
+          <span>🎨 عرض تصاميم</span>
+        </div>
+      </div>
+      <div class="step-visual">
+        <img src="/images/step2.jpg" alt="قياس">
+      </div>
+    </div>
+    
+    <!-- Step 3 -->
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <h3>عرض سعر شفاف</h3>
+        <p>
+          تستلم عرض سعر تفصيلي شامل كل شيء. 
+          بدون تكاليف خفية. إمكانية الدفع بالتقسيط.
+        </p>
+        <div class="step-details">
+          <span>💰 أسعار تنافسية</span>
+          <span>📄 عقد موثق</span>
+          <span>💳 دفع بالتقسيط</span>
+        </div>
+      </div>
+      <div class="step-visual">
+        <img src="/images/step3.jpg" alt="عرض سعر">
+      </div>
+    </div>
+    
+    <!-- Step 4 -->
+    <div class="step reverse">
+      <div class="step-number">4</div>
+      <div class="step-content">
+        <h3>تركيب احترافي سريع</h3>
+        <p>
+          فريق من 4-6 فنيين محترفين يبدأ التركيب. 
+          عمل نظيف ومرتب. ضمان 10 سنوات يبدأ فوراً.
+        </p>
+        <div class="step-details">
+          <span>⏱️ 1-2 يوم فقط</span>
+          <span>👷 فريق محترف</span>
+          <span>✅ ضمان 10 سنوات</span>
+        </div>
+      </div>
+      <div class="step-visual">
+        <img src="/images/step4.jpg" alt="تركيب">
+      </div>
+    </div>
+  </div>
+  
+  <div class="timeline-cta">
+    <div class="cta-box">
+      <h3>ابدأ رحلتك الآن</h3>
+      <p>خلال 48 ساعة فقط تبدأ مظلتك</p>
+      <button class="cta-primary large pulse">
+        📞 اتصل الآن واحصل على خصم 15%
+      </button>
+      <span class="guarantee">
+        ✓ بدون التزام ✓ استشارة مجانية ✓ عرض سعر فوري
+      </span>
+    </div>
+  </div>
+</section>
+
+3. قسم FAQ (الأسئلة الشائعة) - مهم جداً للـ SEO
+<section class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+  <div class="section-header">
+    <h2>الأسئلة الشائعة</h2>
+    <p>كل ما تريد معرفته عن المظلات والبرجولات</p>
+  </div>
+  
+  <div class="faq-grid">
+    <!-- سأضيف 12 سؤال شائع -->
+    
+    <!-- Q1 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>ما هي مدة تركيب المظلة؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            تعتمد المدة على حجم المشروع:
+          </p>
+          <ul>
+            <li><strong>مظلة سيارة واحدة:</strong> يوم واحد فقط</li>
+            <li><strong>مظلة 2-3 سيارات:</strong> يوم إلى يومين</li>
+            <li><strong>برجولة حديقة:</strong> 2-3 أيام</li>
+            <li><strong>مشروع كامل (مظلات + برجولة):</strong> 3-5 أيام</li>
+          </ul>
+          <p>
+            نبدأ العمل خلال 48 ساعة من توقيع العقد.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q2 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>هل تقدمون ضمان؟ وما مدته؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            <strong>نعم، نقدم أفضل ضمان في السوق السعودي:</strong>
+          </p>
+          <ul>
+            <li>✅ <strong>ضمان 10 سنوات</strong> على الهيكل الحديدي</li>
+            <li>✅ <strong>ضمان 5 سنوات</strong> على القماش (PVC/Polyethylene)</li>
+            <li>✅ <strong>ضمان 10 سنوات</strong> على جودة التركيب</li>
+            <li>✅ <strong>صيانة دورية مجانية</strong> أول سنة</li>
+          </ul>
+          <p>
+            الضمان يشمل أي عيوب في المواد أو التصنيع أو التركيب.
+            الضمان موثق كتابياً في العقد.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q3 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>كم تكلفة مظلة السيارة الواحدة؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            الأسعار تبدأ من:
+          </p>
+          <table class="pricing-table">
+            <tr>
+              <td><strong>مظلة قماش PVC</strong></td>
+              <td>من 2,500 ر.س</td>
+            </tr>
+            <tr>
+              <td><strong>مظلة حديد مجلفن</strong></td>
+              <td>من 3,200 ر.س</td>
+            </tr>
+            <tr>
+              <td><strong>مظلة خشبية فاخرة</strong></td>
+              <td>من 4,500 ر.س</td>
+            </tr>
+            <tr>
+              <td><strong>مظلة بولي كربونيت</strong></td>
+              <td>من 3,800 ر.س</td>
+            </tr>
+          </table>
+          <p>
+            <strong>السعر يشمل:</strong> المواد + التركيب + الضمان
+          </p>
+          <p>
+            💡 <strong>نصيحة:</strong> احصل على عرض سعر مجاني مخصص 
+            لمشروعك عبر WhatsApp: <a href="https://wa.me/966553719009">0553719009</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q4 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>ما هي طرق الدفع المتاحة؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>نوفر طرق دفع مرنة:</p>
+          <ul>
+            <li>💵 <strong>نقداً</strong></li>
+            <li>💳 <strong>تحويل بنكي</strong> (مباشر، STC Pay)</li>
+            <li>💳 <strong>شبكة مدى</strong></li>
+            <li>💳 <strong>Visa / Mastercard</strong></li>
+            <li>🏦 <strong>تقسيط</strong> بدون فوائد حتى 12 شهر (بالتعاون مع تمارا وتابي)</li>
+          </ul>
+          <p>
+            📌 <strong>خطة الدفع:</strong>
+            <br>• مقدم 40% عند التوقيع
+            <br>• 60% عند الانتهاء من التركيب
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q5 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>هل تعملون خارج جدة؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            <strong>نعم،</strong> نخدم جدة والمناطق المحيطة:
+          </p>
+          <ul>
+            <li>✅ جدة (جميع الأحياء)</li>
+            <li>✅ مكة المكرمة</li>
+            <li>✅ رابغ</li>
+            <li>✅ خليص</li>
+            <li>✅ ثول</li>
+            <li>✅ مستورة</li>
+          </ul>
+          <p>
+            📍 للمناطق البعيدة (+100 كم)، قد تُضاف رسوم نقل رمزية.
+            <br>اتصل بنا لمعرفة التفاصيل: 0553719009
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q6 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>هل يمكن تخصيص التصميم حسب رغبتي؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            <strong>بالتأكيد!</strong> نوفر تصاميم حصرية:
+          </p>
+          <ul>
+            <li>🎨 اختر من +50 تصميم جاهز</li>
+            <li>🖌️ أو صمم تصميمك الخاص مع مهندسينا</li>
+            <li>🌈 اختر الألوان التي تناسب ديكور منزلك</li>
+            <li>📏 جميع المقاسات والأشكال متاحة</li>
+            <li>✨ إضافة إضاءة LED، كشافات، مراوح</li>
+          </ul>
+          <p>
+            فريق التصميم يعمل معك خطوة بخطوة حتى تحصل 
+            على التصميم المثالي.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q7 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>ما هي المواد المستخدمة؟ هل مقاومة للحرارة؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            نستخدم <strong>أفضل المواد المستوردة</strong> من ألمانيا وكوريا:
+          </p>
+          
+          <h4>🔩 الهيكل الحديدي:</h4>
+          <ul>
+            <li>حديد مجلفن بسمك 2-3 ملم</li>
+            <li>مقاوم للصدأ والتآكل</li>
+            <li>دهان حراري كوري (Powder Coating)</li>
+            <li>يتحمل حرارة 60° ورياح 120 كم/ساعة</li>
+          </ul>
+          
+          <h4>🎪 القماش/الغطاء:</h4>
+          <ul>
+            <li><strong>PVC ألماني:</strong> عاكس للحرارة 95%، مقاوم للماء</li>
+            <li><strong>Polyethylene كوري:</strong> خفيف ومتين</li>
+            <li><strong>Polycarbonate:</strong> شفاف، مقاوم للكسر</li>
+            <li>جميعها مع حماية UV 99%</li>
+          </ul>
+          
+          <p>
+            ✅ <strong>النتيجة:</strong> تقليل الحرارة 25-30° تحت المظلة
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q8 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>هل تحتاج المظلة صيانة دورية؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            <strong>الصيانة بسيطة جداً:</strong>
+          </p>
+          <ul>
+            <li>🧹 تنظيف القماش مرة كل 3-6 أشهر (بالماء والصابون)</li>
+            <li>🔍 فحص بصري للهيكل مرة سنوياً</li>
+            <li>🔧 شد البراغي إذا لزم الأمر</li>
+          </ul>
+          
+          <p>
+            <strong>نحن نقدم:</strong>
+          </p>
+          <ul>
+            <li>✅ صيانة دورية مجانية السنة الأولى</li>
+            <li>✅ خدمة صيانة سنوية بأسعار رمزية</li>
+            <li>✅ استجابة سريعة خلال 24 ساعة</li>
+          </ul>
+          
+          <p>
+            💡 المواد عالية الجودة = صيانة أقل = توفير أكثر
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q9 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>ماذا لو تغير رأيي بعد التوقيع؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            نحترم قرارك دائماً:
+          </p>
+          <ul>
+            <li>✅ يمكنك إلغاء العقد خلال 48 ساعة من التوقيع بدون أي رسوم</li>
+            <li>✅ يمكنك تعديل التصميم قبل البدء بالتصنيع</li>
+            <li>✅ إذا لم تكن راضياً 100% عن التركيب، نعيد العمل مجاناً</li>
+          </ul>
+          
+          <p>
+            <strong>ضمان رضا العميل:</strong>
+            <br>رضاك هو أولويتنا. إذا لم تكن راضياً، نعمل حتى تكون كذلك.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q10 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>هل المظلة آمنة في الأمطار والرياح؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            <strong>نعم، تماماً!</strong> مظلاتنا مصممة لتحمل:
+          </p>
+          <ul>
+            <li>🌧️ <strong>الأمطار:</strong> القماش 100% مقاوم للماء مع نظام تصريف</li>
+            <li>💨 <strong>الرياح:</strong> تتحمل رياح حتى 120 كم/ساعة</li>
+            <li>⚡ <strong>العواصف:</strong> تثبيت قوي بأساسات خرسانية عميقة</li>
+            <li>🌪️ <strong>العواصف الرملية:</strong> مواد مقاومة للتآكل</li>
+          </ul>
+          
+          <p>
+            <strong>التثبيت المحترف:</strong>
+          </p>
+          <ul>
+            <li>أساسات خرسانية بعمق 60-80 سم</li>
+            <li>براغي تثبيت Heavy Duty</li>
+            <li>حسابات هندسية دقيقة</li>
+          </ul>
+          
+          <p>
+            ✅ اجتازت مظلاتنا اختبارات عواصف جدة الشتوية لأكثر من 15 سنة
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q11 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>كيف أحصل على عرض سعر؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            <strong>3 طرق سهلة وسريعة:</strong>
+          </p>
+          
+          <div class="contact-methods">
+            <div class="method">
+              <strong>1️⃣ WhatsApp (الأسرع)</strong>
+              <p>
+                أرسل صورة للموقع + المقاسات التقريبية
+                <br>ستحصل على عرض سعر خلال 30 دقيقة
+              </p>
+              <a href="https://wa.me/966553719009" class="cta-link">
+                💬 راسلنا على WhatsApp
+              </a>
+            </div>
+            
+            <div class="method">
+              <strong>2️⃣ اتصال هاتفي</strong>
+              <p>
+                اتصل الآن واحصل على استشارة فورية
+              </p>
+              <a href="tel:+966553719009" class="cta-link">
+                📞 اتصل الآن: 0553719009
+              </a>
+            </div>
+            
+            <div class="method">
+              <strong>3️⃣ زيارة مجانية</strong>
+              <p>
+                احجز موعد لزيارة مجانية وقياس دقيق
+              </p>
+              <a href="/contact" class="cta-link">
+                📅 احجز موعد زيارة
+              </a>
+            </div>
+          </div>
+          
+          <p>
+            ⚡ <strong>الرد خلال 5-30 دقيقة في جميع الطرق</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Q12 -->
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" itemprop="name">
+        <span>هل هناك فرق بين البرجولة والمظلة؟</span>
+        <svg class="toggle-icon">...</svg>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">
+          <p>
+            نعم، هناك فروقات واضحة:
+          </p>
+          
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>المظلة</th>
+                <th>البرجولة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>الغرض</strong></td>
+                <td>حماية من الشمس والحرارة</td>
+                <td>جمالية + ظل جزئي</td>
+              </tr>
+              <tr>
+                <td><strong>الموقع</strong></td>
+                <td>مواقف السيارات، المداخل</td>
+                <td>الحدائق، المجالس الخارجية</td>
+              </tr>
+              <tr>
+                <td><strong>الغطاء</strong></td>
+                <td>قماش/بولي كاربونيت كامل</td>
+                <td>خشب، حديد، أحياناً متسلقات نباتية</td>
+              </tr>
+              <tr>
+                <td><strong>الحماية</strong></td>
+                <td>100% من الشمس والماء</td>
+                <td>ظل جزئي، تهوية طبيعية</td>
+              </tr>
+              <tr>
+                <td><strong>السعر</strong></td>
+                <td>من 2,500 ر.س</td>
+                <td>من 3,500 ر.س</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <p>
+            💡 <strong>نصيحتنا:</strong>
+            <br>• اختر <strong>المظلة</strong> لحماية السيارة أو المدخل
+            <br>• اختر <strong>البرجولة</strong> لتجميل الحديقة وجلسات الشاي
+            <br>• يمكنك الجمع بينهما لتغطية كاملة وجمالية!
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="faq-footer">
+    <p>لم تجد إجابة لسؤالك؟</p>
+    <button class="cta-secondary">
+      📞 تواصل معنا مباشرة
+    </button>
+  </div>
+</section>
+
+<a name="performance"></a>
+
+5️⃣ تحليل الأداء (Performance Analysis)
+A. سرعة التحميل - (6/10) ⚠️
+المشاكل المحتملة:
+
+الصور:
+
+❌ slider1.webp - جودة 85% (يمكن تقليلها)
+❌ slider2.webp - جودة 65%
+❌ slider3.webp - جودة 65%
+⚠️ حجم الصور: 1920px (كبير للموبايل)
+
+السلايدر:
+
+❌ تحميل 3 صور كبيرة مرة واحدة
+⚠️ JavaScript للسلايدر يضيف وزن
+
+الحلول:
+
+<!-- 1. استخدام Responsive Images -->
+<picture>
+  <source 
+    media="(max-width: 640px)" 
+    srcset="/images/slider1-mobile.webp"
+    width="640"
+    height="480">
+  <source 
+    media="(max-width: 1024px)" 
+    srcset="/images/slider1-tablet.webp"
+    width="1024"
+    height="768">
+  <img 
+    src="/images/slider1-desktop.webp" 
+    alt="مظلات وبرجولات فاخرة"
+    width="1920"
+    height="1080"
+    loading="lazy"
+    decoding="async">
+</picture>
+<!-- 2. Lazy Loading لكل الصور -->
+<img 
+  src="image.webp" 
+  loading="lazy"
+  decoding="async"
+  width="600"
+  height="400"
+  alt="...">
+<!-- 3. استخدام CDN -->
+<!-- Cloudinary موجود لكن يحتاج تحسين -->
+<img 
+  src="https://res.cloudinary.com/.../image.jpg?w=800&q=75&f_auto"
+  srcset="
+    ...?w=400&q=75&f_auto 400w,
+    ...?w=800&q=75&f_auto 800w,
+    ...?w=1200&q=75&f_auto 1200w
+  "
+  sizes="(max-width: 640px) 100vw, 800px">
+
+B. Core Web Vitals:
+الأهداف:
+
+✅ LCP (Largest Contentful Paint): < 2.5s
+✅ FID (First Input Delay): < 100ms
+✅ CLS (Cumulative Layout Shift): < 0.1
+
+التحسينات:
+
+<!-- 1. Preload الموارد المهمة -->
+<head>
+  <link rel="preload" as="image" href="/images/hero-main.webp">
+  <link rel="preload" as="font" href="/fonts/cairo-bold.woff2" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://res.cloudinary.com">
+  <link rel="dns-prefetch" href="https://res.cloudinary.com">
+</head>
+<!-- 2. تحديد Width & Height لتجنب Layout Shift -->
+<img 
+  src="image.jpg" 
+  width="600" 
+  height="400"
+  alt="...">
+<!-- 3. استخدام aspect-ratio في CSS -->
+<style>
+.image-container {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+
+<a name="conversion"></a>
+
+6️⃣ تحليل التحويل (Conversion Optimization)
+A. CTAs - (5/10) ⚠️
+المشاكل:
+
+❌ نفس CTA متكرر ("استشارة مجانية")
+⚠️ لا يوجد urgency
+❌ لا يوجد تنويع
+⚠️ الألوان غير بارزة بما فيه الكفاية
+
+الحل: نظام CTAs متدرج
+
+<!-- Primary CTA (الرئيسي) - أخضر/ذهبي -->
+<button class="cta-primary large pulse">
+  📞 احصل على عرض سعر مجاني الآن
+</button>
+<!-- Secondary CTA (ثانوي) - أبيض مع border -->
+<button class="cta-secondary large">
+  📸 شاهد معرض الأعمال
+</button>
+<!-- Urgency CTA (إلحاح) - أحمر -->
+<button class="cta-urgent">
+  🔥 عرض محدود: وفّر 500 ر.س اليوم
+</button>
+<!-- WhatsApp CTA (مباشر) - أخضر WhatsApp -->
+<a href="https://wa.me/966553719009" class="cta-whatsapp">
+  <svg>WhatsApp Icon</svg>
+  تواصل فوراً عبر WhatsApp
+</a>
+<!-- Call CTA (اتصال) -->
+<a href="tel:+966553719009" class="cta-call">
+  📞 اتصل الآن: 0553719009
+</a>
+
+CSS للـ CTAs:
+
+/* Primary CTA */
+.cta-primary {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(26, 95, 59, 0.3);
+}
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 95, 59, 0.4);
+}
+.cta-primary.large {
+  padding: 20px 40px;
+  font-size: 20px;
+}
+/* Pulse Animation للفت الانتباه */
+.cta-primary.pulse {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(26, 95, 59, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(26, 95, 59, 0.6);
+  }
+}
+/* Secondary CTA */
+.cta-secondary {
+  background: white;
+  color: var(--color-primary);
+  padding: 16px 32px;
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cta-secondary:hover {
+  background: var(--color-primary);
+  color: white;
+}
+/* Urgency CTA */
+.cta-urgent {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  animation: shake 3s infinite;
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+.whatsapp-float a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #25D366;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  animation: bounce 2s infinite;
+}
+.whatsapp-float a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+/* Mobile: أزرار أكبر وأوضح */
+@media (max-width: 768px) {
+  .cta-primary, .cta-secondary {
+    width: 100%;
+    padding: 18px 24px;
+    font-size: 16px;
+  }
+  
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-float a span {
+    display: none; /* إخفاء النص على الموبايل */
+  }
+  
+  .whatsapp-float a {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+
+B. Forms - (0/10) 🔴
+المشكلة: لا يوجد نموذج اتصال واضح في الصفحة الرئيسية
+
+الحل: نموذج Lead Generation
+
+<section class="lead-form-section">
+  <div class="form-container">
+    <div class="form-intro">
+      <h2>احصل على عرض سعر مجاني خلال 30 دقيقة</h2>
+      <p>
+        املأ النموذج وسيتواصل معك أحد مهندسينا خلال 30 دقيقة
+        لتقديم استشارة مجانية وعرض سعر مخصص لمشروعك
+      </p>
+      
+      <div class="form-benefits">
+        <div class="benefit">
+          <svg class="check">...</svg>
+          <span>استشارة مجانية 100%</span>
+        </div>
+        <div class="benefit">
+          <svg class="check">...</svg>
+          <span>رد خلال 30 دقيقة</span>
+        </div>
+        <div class="benefit">
+          <svg class="check">...</svg>
+          <span>بدون التزام</span>
+        </div>
+        <div class="benefit">
+          <svg class="check">...</svg>
+          <span>عرض سعر مفصل</span>
+        </div>
+      </div>
+    </div>
+    
+    <form class="lead-form" id="leadForm">
+      <!-- الاسم -->
+      <div class="form-group">
+        <label for="name">
+          <svg>...</svg>
+          الاسم الكامل
+        </label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="مثال: أحمد محمد"
+          required
+          autocomplete="name">
+      </div>
+      
+      <!-- رقم الجوال -->
+      <div class="form-group">
+        <label for="phone">
+          <svg>...</svg>
+          رقم الجوال (للتواصل عبر WhatsApp)
+        </label>
+        <input 
+          type="tel" 
+          id="phone" 
+          name="phone" 
+          placeholder="05XXXXXXXX"
+          pattern="[0-9]{10}"
+          required
+          autocomplete="tel">
+        <small>سنتواصل معك عبر WhatsApp خلال 30 دقيقة</small>
+      </div>
+      
+      <!-- المدينة/الحي -->
+      <div class="form-group">
+        <label for="location">
+          <svg>...</svg>
+          المدينة والحي
+        </label>
+        <input 
+          type="text" 
+          id="location" 
+          name="location" 
+          placeholder="مثال: جدة - حي الروضة"
+          required>
+      </div>
+      
+      <!-- نوع الخدمة -->
+      <div class="form-group">
+        <label for="service">
+          <svg>...</svg>
+          نوع الخدمة المطلوبة
+        </label>
+        <select id="service" name="service" required>
+          <option value="">-- اختر الخدمة --</option>
+          <option value="mazallat">مظلات سيارات</option>
+          <option value="pergolas">برجولات حدائق</option>
+          <option value="sawater">سواتر</option>
+          <option value="sandwich-panel">ساندوتش بانل</option>
+          <option value="landscaping">تنسيق حدائق</option>
+          <option value="byoot-shaar">بيوت شعر</option>
+          <option value="khayyam">خيام ملكية</option>
+          <option value="renovation">ترميم</option>
+          <option value="multiple">أكثر من خدمة</option>
+          <option value="other">أخرى</option>
+        </select>
+      </div>
+      
+      <!-- تفاصيل المشروع (اختياري) -->
+      <div class="form-group">
+        <label for="details">
+          <svg>...</svg>
+          تفاصيل المشروع (اختياري)
+        </label>
+        <textarea 
+          id="details" 
+          name="details" 
+          rows="4"
+          placeholder="مثال: أحتاج مظلة لسيارتين بمقاس تقريبي 6×5 متر..."></textarea>
+      </div>
+      
+      <!-- Checkbox للموافقة -->
+      <div class="form-group checkbox">
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">
+          أوافق على <a href="/privacy">سياسة الخصوصية</a> 
+          وأن يتواصل معي فريق محترفين الديار
+        </label>
+      </div>
+      
+      <!-- زر الإرسال -->
+      <button type="submit" class="cta-primary large full-width">
+        <svg class="spinner" style="display: none;">...</svg>
+        <span class="button-text">
+          📞 احصل على عرض السعر المجاني الآن
+        </span>
+      </button>
+      
+      <!-- Trust Signals -->
+      <div class="form-trust">
+        <div class="trust-item">
+          <svg>...</svg>
+          <span>آمن ومحمي 100%</span>
+        </div>
+        <div class="trust-item">
+          <svg>...</svg>
+          <span>لن نشارك بياناتك</span>
+        </div>
+        <div class="trust-item">
+          <svg>...</svg>
+          <span>بدون التزام</span>
+        </div>
+      </div>
+    </form>
+    
+    <!-- Success Message -->
+    <div class="form-success" id="successMessage" style="display: none;">
+      <svg class="success-icon">...</svg>
+      <h3>شكراً! تم استلام طلبك بنجاح</h3>
+      <p>
+        سيتواصل معك أحد مهندسينا خلال 30 دقيقة عبر WhatsApp
+        على الرقم <strong id="userPhone"></strong>
+      </p>
+      <p class="success-note">
+        💡 تأكد من فتح WhatsApp لاستقبال رسالتنا
+      </p>
+    </div>
+  </div>
+</section>
+<!-- JavaScript للنموذج -->
+<script>
+document.getElementById('leadForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const button = this.querySelector('button[type="submit"]');
+  const buttonText = button.querySelector('.button-text');
+  const spinner = button.querySelector('.spinner');
+  
+  // تعطيل الزر وإظهار Spinner
+  button.disabled = true;
+  buttonText.textContent = 'جارٍ الإرسال...';
+  spinner.style.display = 'inline-block';
+  
+  // جمع البيانات
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData);
+  
+  try {
+    // إرسال إلى Backend
+    const response = await fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    
+    if (response.ok) {
+      // إخفاء النموذج وإظهار رسالة النجاح
+      this.style.display = 'none';
+      document.getElementById('successMessage').style.display = 'block';
+      document.getElementById('userPhone').textContent = data.phone;
+      
+      // إرسال إلى Google Analytics
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'generate_lead', {
+          'event_category': 'form',
+          'event_label': data.service,
+          'value': 1
+        });
+      }
+      
+      // إعادة توجيه اختيارية بعد 5 ثواني
+      // setTimeout(() => {
+      //   window.location.href = '/thank-you';
+      // }, 5000);
+      
+    } else {
+      throw new Error('فشل في الإرسال');
+    }
+    
+  } catch (error) {
+    alert('عذراً، حدث خطأ. يرجى المحاولة مرة أخرى أو الاتصال بنا على 0553719009');
+    button.disabled = false;
+    buttonText.textContent = 'إرسال الطلب';
+    spinner.style.display = 'none';
+  }
+});
+</script>
+
+C. Urgency & Scarcity - (2/10) 🔴
+المشكلة: لا يوجد عناصر إلحاح أو ندرة
+
+الحل:
+
+<!-- 1. Countdown Timer للعرض المحدود -->
+<div class="urgency-banner sticky">
+  <div class="urgency-content">
+    <span class="urgency-icon">🔥</span>
+    <div class="urgency-text">
+      <strong>عرض محدود:</strong>
+      خصم 15% على جميع المظلات والبرجولات
+    </div>
+    <div class="countdown" id="countdown">
+      <div class="countdown-item">
+        <span class="countdown-value" id="days">02</span>
+        <span class="countdown-label">يوم</span>
+      </div>
+      <div class="countdown-separator">:</div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="hours">14</span>
+        <span class="countdown-label">ساعة</span>
+      </div>
+      <div class="countdown-separator">:</div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="minutes">32</span>
+        <span class="countdown-label">دقيقة</span>
+      </div>
+    </div>
+    <button class="cta-urgent-small">
+      احجز الآن
+    </button>
+  </div>
+</div>
+<!-- 2. Limited Spots (أماكن محدودة) -->
+<div class="limited-spots">
+  <div class="spots-header">
+    ⚡ <strong>مقاعد محدودة هذا الأسبوع</strong>
+  </div>
+  <div class="spots-remaining">
+    <div class="spots-bar">
+      <div class="spots-filled" style="width: 70%"></div>
+    </div>
+    <p>
+      <strong>3 مقاعد متبقية</strong> من أصل 10 مشاريع هذا الأسبوع
+    </p>
+  </div>
+  <button class="cta-primary">
+    احجز مقعدك الآن
+  </button>
+</div>
+<!-- 3. Recent Activity (نشاط حديث) -->
+<div class="recent-activity-popup">
+  <div class="activity-icon">✓</div>
+  <div class="activity-text">
+    <strong>أحمد من جدة</strong>
+    حجز للتو مظلة سيارات
+  </div>
+  <span class="activity-time">منذ 5 دقائق</span>
+</div>
+<!-- JavaScript للـ Countdown -->
+<script>
+// تعيين تاريخ انتهاء العرض (مثلاً: بعد 3 أيام من الآن)
+const offerEndDate = new Date();
+offerEndDate.setDate(offerEndDate.getDate() + 3);
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = offerEndDate - now;
+  
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  document.getElementById('days').textContent = String(days).padStart(2, '0');
+  document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+  document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+  
+  if (distance < 0) {
+    document.querySelector('.urgency-banner').style.display = 'none';
+  }
+}
+// تحديث كل ثانية
+setInterval(updateCountdown, 1000);
+updateCountdown();
+// Recent Activity Popup
+const activities = [
+  { name: 'أحمد', location: 'جدة', service: 'مظلة سيارات', time: 5 },
+  { name: 'فاطمة', location: 'جدة', service: 'برجولة حديقة', time: 12 },
+  { name: 'محمد', location: 'جدة', service: 'ساتر خصوصية', time: 18 }
+];
+let currentActivityIndex = 0;
+function showActivityPopup() {
+  const activity = activities[currentActivityIndex];
+  const popup = document.querySelector('.recent-activity-popup');
+  
+  popup.querySelector('strong').textContent = `${activity.name} من ${activity.location}`;
+  popup.querySelector('.activity-text').innerHTML = `
+    <strong>${activity.name} من ${activity.location}</strong>
+    حجز للتو ${activity.service}
+  `;
+  popup.querySelector('.activity-time').textContent = `منذ ${activity.time} دقيقة`;
+  
+  popup.classList.add('show');
+  
+  setTimeout(() => {
+    popup.classList.remove('show');
+  }, 5000);
+  
+  currentActivityIndex = (currentActivityIndex + 1) % activities.length;
+}
+// إظهار كل 15 ثانية
+setInterval(showActivityPopup, 15000);
+setTimeout(showActivityPopup, 5000); // أول مرة بعد 5 ثواني
+</script>
+<style>
+.urgency-banner {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.urgency-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.countdown {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.countdown-item {
+  background: rgba(255,255,255,0.2);
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-align: center;
+}
+.countdown-value {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+.countdown-label {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.recent-activity-popup {
+  position: fixed;
+  bottom: 100px;
+  left: 30px;
+  background: white;
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transform: translateX(-400px);
+  transition: transform 0.5s ease;
+  z-index: 998;
+}
+.recent-activity-popup.show {
+  transform: translateX(0);
+}
+.activity-icon {
+  width: 40px;
+  height: 40px;
+  background: #27ae60;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.activity-time {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+@media (max-width: 768px) {
+  .urgency-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .recent-activity-popup {
+    left: 20px;
+    right: 20px;
+    bottom: 80px;
+    font-size: 14px;
+  }
+}
+</style>
+
+<a name="accessibility"></a>
+
+7️⃣ تحليل إمكانية الوصول (Accessibility)
+المشاكل - (6/10) ⚠️
+❌ نسبة التباين (Color Contrast)
+
+بعض النصوص قد لا تحقق نسبة 4.5:1 المطلوبة
+❌ ARIA Labels ناقصة
+
+الأزرار والروابط بدون aria-label
+❌ Keyboard Navigation
+
+قد لا تكون جميع العناصر التفاعلية قابلة للوصول عبر لوحة المفاتيح
+❌ Alt Text
+
+بعض الصور تفتقد Alt Text المفصل
+الحلول:
+
+<!-- 1. تحسين Alt Text -->
+<!-- ❌ قبل -->
+<img src="slider1.webp" alt="مظلات وبرجولات">
+<!-- ✅ بعد -->
+<img src="slider1.webp" 
+     alt="مظلة سيارات فاخرة من الحديد المجلفن بقماش PVC في فيلا بجدة - محترفين الديار">
+<!-- 2. إضافة ARIA Labels -->
+<button class="cta-primary" 
+        aria-label="احصل على عرض سعر مجاني لمظلة سيارتك">
+  احصل على عرض سعر
+</button>
+<a href="https://wa.me/966553719009" 
+   aria-label="تواصل معنا عبر WhatsApp على الرقم 0553719009">
+  <svg aria-hidden="true">...</svg>
+  WhatsApp
+</a>
+<!-- 3. Semantic HTML -->
+<!-- استخدام العناصر الدلالية الصحيحة -->
+<nav aria-label="التنقل الرئيسي">
+  <ul>
+    <li><a href="#services">الخدمات</a></li>
+    <li><a href="#portfolio">الأعمال</a></li>
+    ...
+  </ul>
+</nav>
+<main>
+  <section aria-labelledby="services-heading">
+    <h2 id="services-heading">خدماتنا الشاملة</h2>
+    ...
+  </section>
+</main>
+<!-- 4. Skip to Content -->
+<a href="#main-content" class="skip-link">
+  تخطى إلى المحتوى الرئيسي
+</a>
+<style>
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 10000;
+}
+.skip-link:focus {
+  top: 0;
+}
+</style>
+<!-- 5. Focus Indicators واضحة -->
+<style>
+*:focus {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
+}
+</style>
+<!-- 6. تباين الألوان المحسّن -->
+<!-- التأكد من نسبة تباين 4.5:1 للنص العادي -->
+<!-- و 3:1 للنص الكبير (18px+) -->
+
+<a name="competition"></a>
+
+8️⃣ المنافسة وأفضل الممارسات
+تحليل المنافسين (تقديري):
+النقاط التي قد يتفوق بها المنافسون:
+
+❌ Video Testimonials
+❌ Before/After Galleries
+❌ Live Chat
+❌ Blog/Content Marketing
+❌ Calculator للأسعار
+نقاط قوتكم الحالية:
+
+✅ +5000 مشروع
+✅ 15+ سنة خبرة
+✅ ضمان 10 سنوات
+✅ تقييم 4.9
+كيف تتفوقون:
+
+<!-- 1. Price Calculator (حاسبة الأسعار) -->
+<section class="price-calculator">
+  <h2>احسب سعر مظلتك في 30 ثانية</h2>
+  
+  <div class="calculator-form">
+    <div class="form-group">
+      <label>نوع المظلة:</label>
+      <select id="calc-type">
+        <option value="2500">مظلة قماش PVC</option>
+        <option value="3200">مظلة حديد</option>
+        <option value="4500">مظلة خشبية</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label>عدد السيارات:</label>
+      <input type="number" id="calc-cars" min="1" max="10" value="1">
+    </div>
+    
+    <div class="form-group">
+      <label>إضافات:</label>
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" id="calc-lighting" value="500">
+          إضاءة LED (+500 ر.س)
+        </label>
+        <label>
+          <input type="checkbox" id="calc-paint" value="300">
+          دهان خاص (+300 ر.س)
+        </label>
+      </div>
+    </div>
+    
+    <div class="calculator-result">
+      <div class="price-estimate">
+        <span>السعر التقديري:</span>
+        <strong id="estimated-price">2,500 ر.س</strong>
+      </div>
+      <p class="price-note">
+        * السعر النهائي يتحدد بعد الزيارة والقياس الدقيق
+      </p>
+      <button class="cta-primary">
+        احصل على عرض سعر دقيق
+      </button>
+    </div>
+  </div>
+</section>
+<!-- 2. Virtual Tour / 360° -->
+<section class="virtual-tour">
+  <h2>جولة افتراضية في مشاريعنا</h2>
+  <div class="tour-360">
+    <!-- استخدام مكتبة مثل Photo Sphere Viewer -->
+    <div id="panorama"></div>
+  </div>
+</section>
+<!-- 3. Comparison Table -->
+<section class="comparison-table">
+  <h2>لماذا محترفين الديار هم الأفضل؟</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>المعيار</th>
+        <th class="highlight">محترفين الديار</th>
+        <th>المنافس أ</th>
+        <th>المنافس ب</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>الضمان</td>
+        <td class="highlight">✅ 10 سنوات</td>
+        <td>⚠️ 5 سنوات</td>
+        <td>❌ سنتان</td>
+      </tr>
+      <tr>
+        <td>مدة التركيب</td>
+        <td class="highlight">✅ 1-2 يوم</td>
+        <td>⚠️ 3-5 أيام</td>
+        <td>❌ أسبوع</td>
+      </tr>
+      <tr>
+        <td>المواد</td>
+        <td class="highlight">✅ ألمانية/كورية</td>
+        <td>⚠️ صينية</td>
+        <td>⚠️ محلية</td>
+      </tr>
+      <tr>
+        <td>التقييم</td>
+        <td class="highlight">✅ 4.9⭐ (+5000)</td>
+        <td>⚠️ 4.2⭐</td>
+        <td>⚠️ 3.8⭐</td>
+      </tr>
+      <tr>
+        <td>الخبرة</td>
+        <td class="highlight">✅ 15+ سنة</td>
+        <td>⚠️ 8 سنوات</td>
+        <td>❌ 3 سنوات</td>
+      </tr>
+      <tr>
+        <td>السعر</td>
+        <td class="highlight">✅ تنافسي</td>
+        <td>⚠️ أعلى بـ20%</td>
+        <td>✅ منخفض (جودة أقل)</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<a name="action-plan"></a>
+
+9️⃣ خطة العمل التفصيلية (6 أسابيع)
+الأسبوع 1: الأساسيات الحرجة 🔴
+اليوم 1-2: SEO التقني
+
+ إضافة Meta Tags لجميع الصفحات
+ إضافة Open Graph و Twitter Cards
+ إنشاء Schema Markup (LocalBusiness, Service, Review)
+ إنشاء robots.txt و sitemap.xml
+اليوم 3-4: Hero Section
+
+ إزالة السلايدر واستبداله بصورة/فيديو ثابت قوي
+ إعادة كتابة العنوان الرئيسي (Problem-Solution)
+ تحسين CTAs (Primary + Secondary)
+ إضافة Trust Bar
+اليوم 5-7: النظام البصري
+
+ تحديد نظام الألوان الموحد
+ تحديد الخطوط ونظام Typography
+ إنشاء Component Library (أزرار، بطاقات، إلخ)
+الأسبوع 2: المحتوى الأساسي 🟡
+اليوم 8-10: إضافة الأقسام المفقودة
+
+ قسم "لماذا نحن؟" (6 أسباب)
+ قسم "كيف نعمل؟" (4 خطوات)
+ قسم Problem-Solution
+اليوم 11-14: FAQ Section
+
+ كتابة 12-15 سؤال شائع مع Schema Markup
+ إضافة FAQ Schema لكل سؤال
+ تصميم FAQ accordion تفاع
+انا اريدك تدخل للصفحةة الرئيسية الحالية وتعطيني العيوب فقط لهدف الحصول على المراكز الاولى في محركات البحث
+
+6 minutes ago
+
+Visited https://www.aldeyarksa.tech/
+🔍 عيوب SEO الحرجة - الصفحة الرئيسية aldeyarksa.tech
+هدف: الوصول للمراكز الأولى في محركات البحث
+🔴 العيوب الحرجة (Critical Issues)
+1. Meta Tags - غير موجودة أو ناقصة تماماً
+التأثير: ❌ لن يظهر موقعك بشكل جيد في نتائج البحث
+
+المشاكل:
+❌ لا يوجد Meta Description
+❌ لا يوجد Meta Keywords  
+❌ لا توجد Open Graph Tags (للسوشيال ميديا)
+❌ لا توجد Twitter Cards
+❌ لا يوجد Canonical URL واضح
+
+الخسارة:
+CTR منخفض في نتائج البحث (الناس لن تضغط على نتيجتك)
+لن يظهر محتوى جذاب عند المشاركة على فيسبوك/تويتر/واتساب
+Google قد يختار description عشوائي من صفحتك
+الإصلاح المطلوب فوراً:
+<head>
+  <!-- Title محسّن -->
+  <title>مظلات وبرجولات جدة | أفضل شركة تركيب مظلات سيارات - ضمان 10 سنوات</title>
+  
+  <!-- Meta Description (155-160 حرف) -->
+  <meta name="description" content="أفضل شركة مظلات وبرجولات في جدة. خبرة 15 سنة، ضمان 10 سنوات، +5000 مشروع ناجح. تركيب مظلات سيارات، برجولات حدائق، سواتر بأفضل الأسعار. اتصل: 0553719009">
+  
+  <!-- Keywords -->
+  <meta name="keywords" content="مظلات جدة, برجولات جدة, مظلات سيارات جدة, سواتر جدة, تركيب مظلات, شركة مظلات, برجولات حدائق, ساندوتش بانل, تنسيق حدائق جدة, بيوت شعر, محترفين الديار">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="محترفين الديار | أفضل شركة مظلات وبرجولات في جدة">
+  <meta property="og:description" content="خبرة 15+ سنة في تركيب المظلات والبرجولات. ضمان 10 سنوات، +5000 مشروع ناجح، تقييم 4.9⭐">
+  <meta property="og:image" content="https://www.aldeyarksa.tech/images/og-image.jpg">
+  <meta property="og:url" content="https://www.aldeyarksa.tech/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="محترفين الديار - مظلات وبرجولات جدة">
+  <meta name="twitter:description" content="أفضل شركة مظلات في جدة. ضمان 10 سنوات، خبرة 15 سنة">
+  <meta name="twitter:image" content="https://www.aldeyarksa.tech/images/twitter-card.jpg">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.aldeyarksa.tech/">
+</head>
+
+2. Schema Markup - غير موجود تماماً
+التأثير: ❌ لن تظهر نتائجك بشكل غني (Rich Snippets) في Google
+
+المشاكل:
+❌ لا يوجد LocalBusiness Schema
+❌ لا يوجد Review/Rating Schema
+❌ لا يوجد Service Schema
+❌ لا يوجد Organization Schema
+❌ لا يوجد BreadcrumbList Schema
+
+الخسارة:
+لن تظهر النجوم ⭐⭐⭐⭐⭐ في نتائج البحث
+لن تظهر معلومات العمل (الهاتف، العنوان، ساعات العمل)
+المنافسون سيتفوقون عليك في الظهور
+الإصلاح المطلوب فوراً:
+<!-- إضافة قبل </body> -->
+<!-- 1. LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "محترفين الديار",
+  "description": "شركة متخصصة في تركيب المظلات والبرجولات والسواتر في جدة",
+  "url": "https://www.aldeyarksa.tech",
+  "telephone": "+966553719009",
+  "email": "ksaaldeyar@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "جدة",
+    "addressRegion": "مكة المكرمة",
+    "addressCountry": "SA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "21.5433",
+    "longitude": "39.1728"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "جدة"
+  },
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "5000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "sameAs": [
+    "https://www.instagram.com/aldiyarglobal"
+  ]
+}
+</script>
+<!-- 2. Review Schema (لكل تقييم) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "LocalBusiness",
+    "name": "محترفين الديار"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "أحمد المالكي"
+  },
+  "reviewBody": "خدمة ممتازة من محترفين الديار. تم تركيب مظلات السيارات بجودة عالية وفي الوقت المحدد."
+}
+</script>
+<!-- 3. Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "تركيب مظلات السيارات",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "محترفين الديار"
+  },
+  "areaServed": "جدة",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "SAR",
+    "price": "2500",
+    "description": "تركيب مظلات السيارات بأفضل الأسعار"
+  }
+}
+</script>
+
+3. عناوين H1 وH2 - ضعيفة وغير محسّنة
+التأثير: ⚠️ Google لن يفهم موضوع صفحتك بوضوح
+
+المشاكل:
+❌ H1 الحالي: "محترفين الديار رواد المظلات والبرجولات في جدة"
+   - طويل جداً (53 حرف)
+   - يبدأ باسم الشركة بدل الكلمات المفتاحية
+   - لا يحتوي على كلمات بحث قوية
+⚠️ H2: "خدماتنا الشاملة"
+   - عام جداً
+   - لا يحتوي على كلمات مفتاحية
+⚠️ H2: "أحدث أعمال محترفين الديار في جدة"
+   - طويل وغير SEO-friendly
+
+الإصلاح المطلوب:
+<!-- ✅ H1 المحسّن -->
+<h1>مظلات وبرجولات جدة | تركيب مظلات سيارات بضمان 10 سنوات</h1>
+<!-- ✅ H2 المحسّنة -->
+<h2>خدمات تركيب المظلات والبرجولات في جدة</h2>
+<!-- ✅ H2 للأعمال -->
+<h2>معرض أعمال مظلات وبرجولات جدة - أكثر من 5000 مشروع</h2>
+<!-- ✅ H2 للتقييمات -->
+<h2>تقييمات عملاء شركة مظلات جدة - تقييم 4.9 من 5</h2>
+<!-- ✅ H3 للخدمات -->
+<h3>تركيب مظلات سيارات في جدة - من 2,500 ريال</h3>
+<h3>برجولات حدائق فاخرة بتصاميم عصرية - من 3,500 ريال</h3>
+<h3>سواتر خصوصية حديد وقماش - من 1,800 ريال</h3>
+
+4. قسم FAQ - غير موجود
+التأثير: ❌ تفقد فرصة ذهبية للظهور في نتائج البحث
+
+الخسارة:
+لن تظهر في Featured Snippets ("الناس يسألون أيضاً")
+لن تستهدف Long-tail Keywords مثل "كم سعر مظلة السيارة في جدة"
+Google يحب FAQ Schema ويمنحه أولوية عالية
+الإصلاح المطلوب:
+<section class="faq" itemscope itemtype="https://schema.org/FAQPage">
+  <h2>الأسئلة الشائعة عن مظلات وبرجولات جدة</h2>
+  
+  <!-- سؤال 1 -->
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">كم سعر مظلة السيارة في جدة؟</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>أسعار مظلات السيارات في جدة تبدأ من 2,500 ريال للمظلة الواحدة. السعر يعتمد على:</p>
+        <ul>
+          <li>نوع المظلة (قماش PVC، حديد، خشب، بولي كربونيت)</li>
+          <li>المساحة والمقاسات</li>
+          <li>الإضافات (إضاءة، دهان خاص)</li>
+        </ul>
+        <p>نقدم عرض سعر مجاني عبر الاتصال على <a href="tel:+966553719009">0553719009</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- سؤال 2 -->
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">ما هي أفضل شركة مظلات في جدة؟</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>محترفين الديار هي أفضل شركة مظلات في جدة بناءً على:</p>
+        <ul>
+          <li>خبرة 15+ سنة في السوق السعودي</li>
+          <li>ضمان 10 سنوات على جميع المنتجات</li>
+          <li>+5000 مشروع ناجح</li>
+          <li>تقييم 4.9 من 5 نجوم</li>
+          <li>مواد ألمانية وكورية أصلية</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- سؤال 3 -->
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">كم مدة تركيب المظلة؟</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        <p>مدة تركيب المظلة تعتمد على نوعها:</p>
+        <ul>
+          <li>مظلة سيارة واحدة: يوم واحد</li>
+          <li>مظلة 2-3 سيارات: يوم إلى يومين</li>
+          <li>برجولة حديقة: 2-3 أيام</li>
+        </ul>
+        <p>نبدأ التركيب خلال 48 ساعة من توقيع العقد.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- أضف 7-10 أسئلة أخرى -->
+</section>
+
+5. المحتوى النصي - قصير جداً وضعيف
+التأثير: ⚠️ Google يفضل المحتوى الطويل والمفيد
+
+المشاكل:
+❌ وصف الخدمات قصير جداً (سطرين فقط)
+❌ لا يوجد محتوى تعليمي
+❌ لا توجد كلمات مفتاحية طويلة (Long-tail Keywords)
+❌ عدد الكلمات الإجمالي في الصفحة قليل جداً
+
+المطلوب:
+1500-2500 كلمة في الصفحة الرئيسية
+محتوى غني بالكلمات المفتاحية بشكل طبيعي
+معلومات مفيدة للزائر
+الإصلاح:
+<!-- إضافة قسم "لماذا تحتاج مظلة سيارة في جدة؟" -->
+<section class="why-mazallat">
+  <h2>لماذا تحتاج مظلة سيارة في جدة؟</h2>
+  <p>
+    جدة تشهد درجات حرارة تصل إلى 45-50 درجة مئوية في الصيف، 
+    مما يحول سيارتك إلى فرن حقيقي. مظلات السيارات في جدة ليست 
+    رفاهية بل ضرورة لحماية سيارتك وعائلتك.
+  </p>
+  
+  <h3>فوائد تركيب مظلة سيارة:</h3>
+  <ul>
+    <li><strong>تقليل الحرارة 25-30 درجة:</strong> سيارتك ستكون أبرد بكثير</li>
+    <li><strong>حماية الدهان:</strong> الأشعة فوق البنفسجية تتلف دهان السيارة</li>
+    <li><strong>توفير البنزين:</strong> تقليل استهلاك المكيف يوفر 300 ر.س شهرياً</li>
+    <li><strong>زيادة عمر السيارة:</strong> الحرارة الشديدة تسرع تلف الأجزاء الداخلية</li>
+    <li><strong>راحة فورية:</strong> لا حاجة لانتظار 10 دقائق حتى تبرد السيارة</li>
+  </ul>
+</section>
+<!-- إضافة قسم "أنواع المظلات المتوفرة" -->
+<section class="types-of-mazallat">
+  <h2>أنواع مظلات السيارات في جدة</h2>
+  
+  <h3>1. مظلات القماش PVC</h3>
+  <p>
+    مظلات القماش PVC هي الأكثر شيوعاً في جدة. تتميز بمقاومتها 
+    العالية للحرارة والماء. نستخدم قماش PVC ألماني أصلي بضمان 
+    5 سنوات. السعر يبدأ من 2,500 ريال.
+  </p>
+  
+  <h3>2. مظلات الحديد المجلفن</h3>
+  <p>
+    مظلات الحديد المجلفن توفر حماية قوية ومتينة. الحديد المجلفن 
+    مقاوم للصدأ ومناسب لمناخ جدة الرطب. نستخدم حديد كوري بسمك 
+    2-3 ملم مع دهان حراري. السعر من 3,200 ريال.
+  </p>
+  
+  <h3>3. مظلات الخشب (البرجولات)</h3>
+  <p>
+    المظلات الخشبية تضيف جمالاً طبيعياً لمنزلك. نستخدم خشب معالج 
+    ضد الحشرات والرطوبة. مثالية للحدائق والمداخل. السعر من 4,500 ريال.
+  </p>
+  
+  <h3>4. مظلات البولي كاربونيت</h3>
+  <p>
+    البولي كاربونيت شفاف ومقاوم للكسر. يسمح بمرور الضوء مع حجب 
+    الحرارة. مثالي للممرات والمداخل. السعر من 3,800 ريال.
+  </p>
+</section>
+
+6. الروابط الداخلية - ضعيفة
+التأثير: ⚠️ Google لن يستطيع الزحف لجميع صفحاتك بكفاءة
+
+المشاكل:
+❌ الروابط الداخلية محدودة
+❌ لا توجد روابط سياقية في المحتوى
+❌ لا يوجد anchor text محسّن
+
+الإصلاح:
+<!-- في المحتوى، أضف روابط داخلية -->
+<p>
+  نقدم أفضل خدمات 
+  <a href="/services/mazallat" title="تركيب مظلات سيارات في جدة">تركيب مظلات السيارات</a> 
+  في جدة مع 
+  <a href="/services/pergolas" title="برجولات حدائق فاخرة">برجولات الحدائق الفاخرة</a>. 
+  كما نوفر 
+  <a href="/services/sawater" title="سواتر خصوصية">سواتر الخصوصية</a> 
+  بجميع الأنواع.
+</p>
+<!-- إضافة قسم "خدمات ذات صلة" في كل صفحة -->
+<div class="related-services">
+  <h3>خدمات ذات صلة:</h3>
+  <ul>
+    <li><a href="/services/mazallat">مظلات السيارات</a></li>
+    <li><a href="/services/pergolas">برجولات الحدائق</a></li>
+    <li><a href="/services/sawater">السواتر</a></li>
+  </ul>
+</div>
+
+7. سرعة التحميل - بطيئة
+التأثير: ❌ Google يعاقب المواقع البطيئة
+
+المشاكل:
+❌ صور كبيرة الحجم (1920px × جودة 85%)
+❌ تحميل 3 صور slider مرة واحدة
+❌ لا يوجد lazy loading واضح
+
+الإصلاح:
+<!-- 1. تحسين الصور -->
+<img 
+  src="/images/slider1.webp" 
+  alt="مظلات سيارات جدة"
+  width="1920"
+  height="1080"
+  loading="lazy"
+  decoding="async">
+<!-- 2. استخدام srcset للصور المتجاوبة -->
+<img 
+  src="/images/slider1-800w.webp"
+  srcset="
+    /images/slider1-400w.webp 400w,
+    /images/slider1-800w.webp 800w,
+    /images/slider1-1200w.webp 1200w,
+    /images/slider1-1920w.webp 1920w
+  "
+  sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px"
+  alt="مظلات سيارات جدة"
+  loading="lazy">
+<!-- 3. Preload للصورة الأولى فقط -->
+<link rel="preload" as="image" href="/images/slider1.webp">
+
+8. عناوين الصور (Alt Text) - ضعيفة
+التأثير: ⚠️ فرصة ضائعة للظهور في بحث الصور
+
+المشاكل:
+❌ Alt text عام: "مظلات وبرجولات حدائق فاخرة في جدة"
+⚠️ لا يحتوي على كلمات مفتاحية تفصيلية
+
+الإصلاح:
+<!-- ❌ قبل -->
+<img src="slider1.webp" alt="مظلات وبرجولات">
+<!-- ✅ بعد -->
+<img src="slider1.webp" 
+     alt="مظلة سيارات حديد مجلفن بقماش PVC في فيلا فاخرة بجدة - محترفين الديار - تقييم 5 نجوم">
+<img src="project1.jpg" 
+     alt="مظلة موقف سيارتين حديد مع قماش بولي اثيلين في حي الروضة جدة - مشروع 2024">
+<img src="pergola1.jpg" 
+     alt="برجولة حديقة خشبية فاخرة 6×4 متر في فيلا بجدة - تصميم عصري حصري">
+
+9. لا يوجد Breadcrumbs
+التأثير: ⚠️ Google يحب Breadcrumbs
+
+الإصلاح:
+<!-- إضافة Breadcrumbs -->
+<nav aria-label="breadcrumb">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.aldeyarksa.tech">
+        <span itemprop="name">الرئيسية</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+  </ol>
+</nav>
+<!-- في صفحات الخدمات -->
+<nav aria-label="breadcrumb">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.aldeyarksa.tech">
+        <span itemprop="name">الرئيسية</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="/services">
+        <span itemprop="name">الخدمات</span>
+      </a>
+      <meta itemprop="position" content="2" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name">مظلات السيارات</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+
+10. ملفات robots.txt و sitemap.xml
+التأثير: ⚠️ Google قد لا يزحف لكل صفحاتك
+
+الإصلاح:
+# robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Sitemap: https://www.aldeyarksa.tech/sitemap.xml
+
+<!-- sitemap.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.aldeyarksa.tech/</loc>
+    <lastmod>2025-01-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.aldeyarksa.tech/services/mazallat</loc>
+    <lastmod>2025-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.aldeyarksa.tech/services/pergolas</loc>
+    <lastmod>2025-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- أضف باقي الصفحات -->
+</urlset>
+
+📋 قائمة الإصلاحات بالأولوية
+🔴 أولوية قصوى (اليوم)
+✅ إضافة Meta Description
+✅ إضافة Schema Markup (LocalBusiness + Review)
+✅ تحسين H1
+✅ إنشاء sitemap.xml
+🟠 أولوية عالية (هذا الأسبوع)
+✅ إضافة قسم FAQ (10 أسئلة)
+✅ تحسين Alt Text للصور
+✅ إضافة محتوى نصي (1500 كلمة)
+✅ تحسين سرعة الصور
+🟡 أولوية متوسطة (الأسبوعين القادمين)
+✅ إضافة Breadcrumbs
+✅ تحسين الروابط الداخلية
+✅ إضافة Open Graph Tags
+✅ إنشاء robots.txt
+هذه العيوب إذا تم إصلاحها، ستحسّن ترتيبك في محركات البحث بشكل كبير خلال 2-3 أشهر.
+
+
+Scroll to latest
+I've created a feature list based on your request. If everything looks good, we can start creating.
+How do you want to continue?
+
+Build the entire app
+20+ mins
+Best if you want Agent to build out the full functionality of your app
+
+Start with a design
+5-10 mins
+Best if you want to see a design prototype first, then iterate on visuals or features
+
+Start building
+

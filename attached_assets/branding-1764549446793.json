@@ -1,0 +1,150 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Inter",
+      "role": "body"
+    },
+    {
+      "family": "-apple-system",
+      "role": "body"
+    },
+    {
+      "family": "BlinkMacSystemFont",
+      "role": "body"
+    },
+    {
+      "family": "Segoe UI",
+      "role": "body"
+    },
+    {
+      "family": "Roboto",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#0072F5",
+    "accent": "#171717",
+    "background": "#FAFAFA",
+    "textPrimary": "#171717",
+    "link": "#96CBFE"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Inter",
+      "heading": "Inter"
+    },
+    "fontStacks": {
+      "heading": [
+        "Geist",
+        "Inter",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        "sans-serif"
+      ],
+      "body": [
+        "Geist",
+        "Inter",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Geist",
+        "Inter",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "36px",
+      "h2": "24px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "6px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "6px"
+    },
+    "buttonPrimary": {
+      "background": "#171717",
+      "textColor": "#FFFFFF",
+      "borderRadius": "6px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#FFFFFF",
+      "textColor": "#0072F5",
+      "borderRadius": "6px",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 114, 245) 0px 0px 0px 4px"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.svg",
+    "favicon": "File saved at: attached_assets/favicon.ico",
+    "ogImage": "https://nextjs.org/api/og?title=Prerender%20Error%20with%20Next.js"
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Logo #0 is the Next.js logotype, which matches the brand name 'Prerender Error with Next.js' and is located in the header, linking to the homepage. This makes it the most suitable choice for the brand logo.",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Send",
+      "reasoning": "Button #0 has a dark background color (#171717) with white text, which stands out as a strong call-to-action. It is more vibrant compared to the secondary button, which has a light background. The action-oriented text 'Send' also supports its role as the primary CTA."
+    },
+    "secondary": {
+      "index": 1,
+      "text": "Skip to content",
+      "reasoning": "Button #1 has a white background (#FFFFFF) with blue text (#0072F5), making it less prominent than the primary button. It serves as a secondary action, suitable for less urgent actions like 'Skip to content'."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "developers and technical users"
+  },
+  "designSystem": {
+    "framework": "tailwind",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}

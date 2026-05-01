@@ -1,0 +1,1122 @@
+# الحلول العملية - أكواد مصححة لموقع محترفين الديار
+
+## 📁 ملف الحلول العملية والإصلاحات
+
+### 1. إصلاح الصفحة الرئيسية - src/app/page.tsx
+
+#### الكود المصحح:
+```tsx
+'use client'
+import type { Metadata } from 'next'
+import dynamic from 'next/dynamic'
+import Navbar from '@/components/Navbar'
+import HeroSection from '@/components/HeroSection'
+import ServicesSection from '@/components/ServicesSection'
+import WhyChooseUsSection from '@/components/WhyChooseUsSection'
+import HowItWorksSection from '@/components/HowItWorksSection'
+import FAQSection from '@/components/FAQSection'
+import TestimonialsSection from '@/components/TestimonialsSection'
+import Footer from '@/components/Footer'
+import HomePageBreadcrumb from '@/components/HomePageBreadcrumb'
+import ReviewSchema from '@/components/ReviewSchema'
+import SearchActionSchema from '@/components/SearchActionSchema'
+import HowToSchema from '@/components/HowToSchema'
+import ProductSchema from '@/components/ProductSchema'
+
+const PortfolioSection = dynamic(() => import('@/components/PortfolioSection'), {
+  loading: () => <div className="text-center py-8">جاري تحميل معرض الأعمال...</div>,
+  ssr: true
+})
+
+const StickyWhatsApp = dynamic(() => import('@/components/StickyWhatsApp'))
+
+export const metadata: Metadata = {
+  title: 'مظلات وسواتر جدة | محترفين الديار - ضمان 10 سنوات',
+  description: 'شركة محترفين الديار العالمية - تركيب مظلات سيارات، برجولات، سواتر، ساندوتش بانل، تنسيق حدائق، بيوت شعر بجدة. خبرة 15 عام، ضمان 10 سنوات. اتصل: 0553719009',
+  keywords: 'مظلات سيارات جدة، برجولات خشبية جدة، سواتر جدة، ساندوتش بانل جدة، تنسيق حدائق جدة، بيوت شعر جدة، خيام ملكية، ترميم ملحقات جدة، مظلات لكسان، سواتر حديد، سواتر قماش، برجولات حدائق، هناجر جدة، مستودعات جدة، تركيب مظلات، مقاول مظلات جدة، أسعار المظلات في جدة، افضل شركة مظلات جدة، مظلات متحركة، تركيب مظلات حدائق منزلية، مظلات خشبية فاخرة، مظلات مواقف سيارات',
+  authors: [{ name: 'محترفين الديار العالمية' }],
+  robots: 'index, follow',
+  alternates: {
+    canonical: '/',
+    languages: {
+      'ar-SA': '/',
+      'x-default': '/',
+    },
+  },
+  openGraph: {
+    title: 'مظلات وسواتر جدة | محترفين الديار - ضمان 10 سنوات',
+    description: 'محترفين الديار العالمية - تركيب مظلات سيارات، برجولات حدائق، سواتر، ساندوتش بانل، تنسيق حدائق، بيوت شعر بجدة. خبرة 15 عام، ضمان 10 سنوات، أسعار منافسة',
+    url: 'https://www.aldeyarksa.tech',
+    siteName: 'محترفين الديار العالمية',
+    locale: 'ar_SA', // تم تصحيح الـ escape sequences
+    type: 'website',
+    images: [
+      {
+        url: 'https://www.aldeyarksa.tech/images/hero-bg.webp',
+        width: 1200,
+        height: 630,
+        alt: 'محترفين الديار العالمية - مظلات سيارات وبرجولات وسواتر جدة',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image', // تم تصحيح الـ escape sequences
+    title: 'مظلات وسواتر جدة | محترفين الديار - ضمان 10 سنوات',
+    description: 'محترفين الديار العالمية - تركيب مظلات سيارات، برجولات، سواتر، ساندوتش بانل، تنسيق حدائق بجدة. خبرة 15 عام، ضمان 10 سنوات',
+    images: ['https://www.aldeyarksa.tech/images/hero-bg.webp'],
+  },
+}
+
+export default function HomePage() {
+  return (
+    <>
+      {/* Schema Components */}
+      <ReviewSchema />
+      <SearchActionSchema />
+      <HowToSchema />
+      <ProductSchema />
+      
+      {/* Page Components */}
+      <Navbar />
+      <HomePageBreadcrumb />
+      <HeroSection />
+      <ServicesSection />
+      <WhyChooseUsSection />
+      <HowItWorksSection />
+      <PortfolioSection />
+      <TestimonialsSection />
+      <FAQSection />
+      <Footer />
+      
+      {/* Floating Components */}
+      <StickyWhatsApp />
+    </>
+  )
+}
+```
+
+---
+
+### 2. إصلاح صفحة About - src/app/about/page.tsx
+
+#### الكود المصحح:
+```tsx
+import type { Metadata } from 'next'
+import {
+  Star,
+  Users,
+  Award,
+  Clock,
+  Shield,
+  CheckCircle,
+  Target,
+  Heart,
+  Phone,
+  MessageCircle,
+  Mail
+} from 'lucide-react'
+import Link from 'next/link'
+import Image from 'next/image'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import { Button } from '@/components/ui/button'
+import StructuredDataScript from '@/components/StructuredDataScript'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
+import { generateCanonicalUrl } from '@/lib/seo-utils'
+
+export const metadata: Metadata = {
+  title: 'عن محترفين الديار العالمية | خبرة 15 عام',
+  description: 'تعرف على محترفين الديار العالمية، الرائدة في خدمات المظلات والسواتر في جدة منذ 15 عاماً. فريق محترف، جودة عالية، وخدمة متميزة.',
+  keywords: 'محترفين الديار، عن الشركة، خبرة 15 عام، شركة مظلات جدة، تاريخ الشركة، قيم الشركة',
+  authors: [{ name: 'محترفين الديار العالمية' }],
+  robots: 'index, follow',
+  alternates: {
+    canonical: generateCanonicalUrl('/about'),
+    languages: {
+      'ar-SA': '/about',
+      'x-default': '/about',
+    },
+  },
+  openGraph: {
+    title: 'عن محترفين الديار | محترفين الديار العالمية',
+    description: 'تعرف على محترفين الديار العالمية، الرائدة في خدمات المظلات والسواتر في جدة منذ 15 عاماً.',
+    url: generateCanonicalUrl('/about'),
+    siteName: 'محترفين الديار العالمية',
+    type: 'website',
+    locale: 'ar_SA',
+    images: [
+      {
+        url: 'https://www.aldeyarksa.tech/favicon.svg',
+        width: 1200,
+        height: 630,
+        alt: 'عن محترفين الديار العالمية',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'عن محترفين الديار | محترفين الديار العالمية',
+    description: 'تعرف على محترفين الديار العالمية، الرائدة في خدمات المظلات والسواتر في جدة منذ 15 عاماً.',
+    images: ['https://www.aldeyarksa.tech/favicon.svg'],
+  },
+}
+
+const stats = [
+  { number: '5000+', label: 'مشروع مكتمل', icon: CheckCircle },
+  { number: '15+', label: 'سنة خبرة', icon: Clock },
+  { number: '100%', label: 'رضا العملاء', icon: Heart },
+  { number: '24/7', label: 'خدمة العملاء', icon: Shield }
+]
+
+const values = [
+  {
+    title: 'الجودة',
+    description: 'نلتزم بأعلى معايير الجودة في جميع مشاريعنا، باستخدام أفضل المواد والتقنيات المتطورة.',
+    icon: Award
+  },
+  {
+    title: 'المصداقية',
+    description: 'نبني علاقات طويلة الأمد مع عملائنا من خلال الشفافية والصدق في جميع تعاملاتنا.',
+    icon: Shield
+  },
+  {
+    title: 'الإبداع',
+    description: 'نقدم حلول مبتكرة وتصاميم عصرية تلبي احتياجات العملاء وتفوق توقعاتهم.',
+    icon: Star
+  },
+  {
+    title: 'الخدمة المتميزة',
+    description: 'فريق محترف متاح على مدار الساعة لضمان حصولكم على أفضل خدمة وأسرع استجابة.',
+    icon: Users
+  }
+]
+
+const milestones = [
+  {
+    year: '2009',
+    title: 'تأسيس الشركة',
+    description: 'بدأنا رحلتنا في جدة بفريق صغير وحلم كبير لتقديم أفضل الخدمات'
+  },
+  {
+    year: '2012',
+    title: 'التوسع الأول',
+    description: 'توسعنا في الخدمات وأضفنا السواتر والبرجولات إلى خدماتنا'
+  },
+  {
+    year: '2015',
+    title: 'الريادة في السوق',
+    description: 'أصبحنا من الشركات الرائدة في مجال المظلات والسواتر في جدة'
+  },
+  {
+    year: '2018',
+    title: 'التطوير التقني',
+    description: 'استثمرنا في أحدث التقنيات والمعدات لضمان أعلى جودة'
+  },
+  {
+    year: '2021',
+    title: 'خدمات شاملة',
+    description: 'أضفنا خدمات تنسيق الحدائق وساندوتش بانل وترميم الملحقات'
+  },
+  {
+    year: '2024',
+    title: 'التميز والإبداع',
+    description: 'حققنا أكثر من 5000 مشروع ناجح ونواصل رحلة التميز'
+  }
+]
+
+export default function AboutPage() {
+  const whatsappMessage = "السلام عليكم، أريد الاستفسار عن خدماتكم ومعرفة المزيد عن الشركة."
+  const whatsappURL = `https://wa.me/966553719009?text=${encodeURIComponent(whatsappMessage)}`
+  
+  const organizationData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "محترفين الديار العالمية",
+    "description": "شركة رائدة في خدمات المظلات والسواتر في جدة منذ 15 عاماً",
+    "url": "https://www.aldeyarksa.tech",
+    "logo": "https://www.aldeyarksa.tech/logo.png",
+    "foundingDate": "2009",
+    "founder": "المهندس أحمد السعيد",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "جدة",
+      "addressCountry": "SA"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+966553719009",
+      "contactType": "customer service"
+    },
+    "areaServed": "جدة",
+    "knowsAbout": ["مظلات", "سواتر", "برجولات", "خيام ملكية", "بيوت شعر", "ساندوتش بانل", "تنسيق حدائق", "ترميم ملحقات"]
+  }
+
+  const breadcrumbItems = [
+    { label: 'عن محترفين الديار', href: '/about' }
+  ]
+
+  return (
+    <>
+      <StructuredDataScript data={organizationData} />
+      <Navbar />
+
+      <main className="min-h-screen">
+        {/* Breadcrumb */}
+        <BreadcrumbSchema items={breadcrumbItems} />
+        <nav className="bg-gray-100 py-3">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center space-x-2 space-x-reverse text-sm text-gray-600">
+              <Link href="/" className="hover:text-blue-600">الرئيسية</Link>
+              <span>/</span>
+              <span>عن محترفين الديار</span>
+            </div>
+          </div>
+        </nav>
+
+        {/* Hero Section */}
+        <section className="py-16 bg-gradient-to-r from-blue-50 to-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl font-bold text-gray-900 mb-6">
+                نحن محترفين الديار - رائدون في التميز منذ 2009
+              </h1>
+              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                محترفين الديار العالمية، شريكك الموثوق في تحويل الأحلام إلى واقع.
+                نقدم خدمات شاملة ومتكاملة في جدة منذ أكثر من 15 عاماً،
+                بخبرة واسعة وفريق محترف يضمن لك أعلى معايير الجودة والإتقان.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href={whatsappURL} target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full sm:w-auto">
+                    <MessageCircle className="mr-2 h-4 w-4" />
+                    تواصل معنا
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button variant="outline" className="w-full sm:w-auto">
+                    <Phone className="mr-2 h-4 w-4" />
+                    اطلب استشارة
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">15+ سنة من التميز</h2>
+              <p className="text-gray-600">نفخر بثقة أكثر من 5000 عميل</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {stats.map((stat, index) => {
+                const IconComponent = stat.icon
+                return (
+                  <div key={index} className="text-center p-6 bg-gray-50 rounded-lg">
+                    <IconComponent className="mx-auto h-12 w-12 text-blue-600 mb-4" />
+                    <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
+                    <div className="text-gray-600">{stat.label}</div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Our Story Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">قصة نجاحنا</h2>
+                <p className="text-gray-600">رحلة 15 عاماً من العمل الدؤوب والإبداع في خدمة أهالي جدة</p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">رؤيتنا</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    أن نكون الشركة الرائدة والموثوقة في مجال تقديم الحلول المعمارية المتكاملة في المملكة العربية السعودية، 
+                    ourselves ourselves ونشارك في تطوير البيئة العمرانية بحلول مبتكرة وعصرية تلبي احتياجات عملائنا وتفوق توقعاتهم.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">رسالتنا</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    نلتزم بتقديم خدمات عالية الجودة في مجال المظلات، السواتر، والحلول المعمارية المتنوعة، 
+                    من خلال فريق محترف ومواد عالية الجودة، مع ضمان رضا العملاء والالتزام بالمواعيد والمعايير العالمية.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Values Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">قيمنا ومبادئنا</h2>
+              <p className="text-gray-600">المبادئ التي نؤمن بها والتي تقود عملنا نحو التميز</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {values.map((value, index) => {
+                const IconComponent = value.icon
+                return (
+                  <div key={index} className="text-center p-6">
+                    <IconComponent className="mx-auto h-12 w-12 text-blue-600 mb-4" />
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed">{value.description}</p>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Timeline Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">رحلة التطور والنمو</h2>
+              <p className="text-gray-600">محطات مهمة في تاريخ محترفين الديار العالمية</p>
+            </div>
+            
+            <div className="max-w-4xl mx-auto">
+              <div className="space-y-8">
+                {milestones.map((milestone, index) => (
+                  <div key={index} className="flex items-start space-x-4 space-x-reverse">
+                    <div className="flex-shrink-0 w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      {milestone.year}
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{milestone.title}</h3>
+                      <p className="text-gray-700">{milestone.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-blue-600 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-4">اكتشف الفرق مع محترفين الديار</h2>
+            <p className="text-xl mb-8 opacity-90">
+              انضم إلى آلاف العملاء الذين وثقوا بنا واختاروا التميز والجودة
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href={whatsappURL} target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  تواصل معنا الآن
+                </Button>
+              </Link>
+              <Link href="/services">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                  مزيد من المعلومات
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  )
+}
+```
+
+---
+
+### 3. إصلاح صفحة Portfolio - src/app/portfolio/page.tsx
+
+#### الكود المصحح:
+```tsx
+import type { Metadata } from 'next'
+import { Suspense } from 'react'
+import PortfolioPageClient from './PortfolioPageClient'
+import StructuredDataScript from '@/components/StructuredDataScript'
+import VideoObjectSchema from '@/components/VideoObjectSchema'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+
+export const metadata: Metadata = {
+  title: 'معرض أعمالنا | محترفين الديار العالمية',
+  description: 'تصفح معرض أعمالنا المتميز في جدة. أكثر من 5000 مشروع ناجح في المظلات، البرجولات، السواتر، ساندوتش بانل، تنسيق الحدائق، والترميم. اكتشف جودة العمل والإبداع في التصميم.',
+  keywords: 'معرض أعمال, مشاريع مظلات جدة, برجولات جدة, سواتر جدة, ساندوتش بانل, تنسيق حدائق, ترميم, محترفين الديار العالمية',
+  authors: [{ name: 'محترفين الديار العالمية' }],
+  creator: 'محترفين الديار العالمية',
+  publisher: 'محترفين الديار العالمية',
+  robots: 'index, follow',
+  openGraph: {
+    title: 'معرض أعمال محترفين الديار العالمية - مشاريع مميزة في جدة',
+    description: 'اكتشف أعمالنا المتميزة في المظلات والبرجولات والسواتر وجميع خدماتنا في جدة',
+    url: 'https://www.aldeyarksa.tech/portfolio',
+    siteName: 'محترفين الديار العالمية',
+    images: [
+      {
+        url: 'https://www.aldeyarksa.tech/uploads/mazallat-1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'معرض أعمال محترفين الديار العالمية'
+      }
+    ],
+    locale: 'ar_SA',
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'معرض أعمال محترفين الديار العالمية',
+    description: 'اكتشف مشاريعنا المتميزة في جدة',
+    images: ['https://www.aldeyarksa.tech/uploads/mazallat-1.webp']
+  },
+  alternates: {
+    canonical: '/portfolio'
+  }
+}
+
+// البيانات المنظمة للصفحة
+const portfolioStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "معرض أعمال محترفين الديار العالمية",
+  "description": "مجموعة شاملة من مشاريعنا المتميزة في جدة",
+  "url": "https://www.aldeyarksa.tech/portfolio",
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "مشاريع محترفين الديار العالمية",
+    "description": "قائمة بأهم مشاريعنا في المظلات والبرجولات والسواتر",
+    "numberOfItems": "5000+",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "name": "مظلات السيارات",
+        "description": "تصميم وتركيب مظلات سيارات عالية الجودة"
+      },
+      {
+        "@type": "Service",
+        "name": "البرجولات الخشبية",
+        "description": "برجولات خشبية فاخرة للحدائق والمساحات الخارجية"
+      },
+      {
+        "@type": "Service",
+        "name": "السواتر المعدنية",
+        "description": "سواتر معدنية للخصوصية والحماية"
+      }
+    ]
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "محترفين الديار العالمية",
+    "url": "https://www.aldeyarksa.tech",
+    "logo": "https://www.aldeyarksa.tech/logo.png"
+  }
+}
+
+function LoadingFallback() {
+  return (
+    <div className="flex items-center justify-center py-16">
+      <div className="text-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+        <p className="text-gray-600">جاري تحميل معرض الأعمال...</p>
+      </div>
+    </div>
+  )
+}
+
+export default function PortfolioPage() {
+  return (
+    <>
+      {/* Structured Data Components */}
+      <StructuredDataScript data={portfolioStructuredData} />
+      <VideoObjectSchema />
+      
+      {/* Navigation */}
+      <Navbar />
+      
+      {/* Main Content */}
+      <main className="min-h-screen">
+        <div className="container mx-auto px-4 py-8">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">معرض أعمالنا</h1>
+            <p className="text-xl text-gray-600">أعمالنا تتحدث عن جودة خدمتنا</p>
+          </div>
+          
+          <Suspense fallback={<LoadingFallback />}>
+            <PortfolioPageClient />
+          </Suspense>
+        </div>
+      </main>
+      
+      {/* Footer */}
+      <Footer />
+    </>
+  )
+}
+```
+
+---
+
+### 4. إصلاح صفحة Contact - src/app/contact/page.tsx
+
+#### الكود المصحح:
+```tsx
+'use client'
+import type { Metadata } from 'next'
+import { useState } from 'react'
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  MessageCircle,
+  Send,
+  User,
+  MessageSquare,
+  Home,
+  CheckCircle
+} from 'lucide-react'
+import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import { Button } from '@/components/ui/button'
+import StructuredDataScript from '@/components/StructuredDataScript'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
+import { generateCanonicalUrl } from '@/lib/seo-utils'
+
+export const metadata: Metadata = {
+  title: 'تواصل معنا | محترفين الديار العالمية - خدمة العملاء 24/7',
+  description: 'تواصل مع فريق محترفين الديار العالمية في جدة عبر الهاتف أو واتساب. خدمة عملاء متميزة 24/7، استشارة مجانية فورية، وردود سريعة على جميع استفساراتكم.',
+  keywords: 'تواصل معنا جدة، خدمة العملاء، استشارة مجانية، رقم تواصل مظلات، واتساب مظلات، محترفين الديار العالمية',
+  authors: [{ name: 'محترفين الديار العالمية' }],
+  robots: 'index, follow',
+  alternates: {
+    canonical: generateCanonicalUrl('/contact'),
+    languages: {
+      'ar-SA': '/contact',
+      'x-default': '/contact',
+    },
+  },
+  openGraph: {
+    title: 'تواصل معنا | محترفين الديار العالمية',
+    description: 'تواصل مع فريق محترفين الديار العالمية في جدة. خدمة عملاء متميزة 24/7 واستشارة مجانية.',
+    url: generateCanonicalUrl('/contact'),
+    siteName: 'محترفين الديار العالمية',
+    type: 'website',
+    locale: 'ar_SA',
+    images: [
+      {
+        url: 'https://www.aldeyarksa.tech/favicon.svg',
+        width: 1200,
+        height: 630,
+        alt: 'تواصل معنا - محترفين الديار العالمية'
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'تواصل معنا | محترفين الديار العالمية',
+    description: 'خدمة عملاء متميزة 24/7 واستشارة مجانية في جدة',
+    images: ['https://www.aldeyarksa.tech/favicon.svg'],
+  }
+}
+
+const contactMethods = [
+  {
+    icon: Phone,
+    title: 'اتصل بنا',
+    description: 'متاح 24/7 للرد على استفساراتك',
+    value: '+966 55 371 9009',
+    action: 'tel:+966553719009',
+    buttonText: 'اتصل الآن'
+  },
+  {
+    icon: MessageCircle,
+    title: 'واتساب',
+    description: 'تواصل مباشر وسريع عبر واتساب',
+    value: '+966 55 371 9009',
+    action: 'https://wa.me/966553719009?text=السلام عليكم، أريد الاستفسار عن خدماتكم',
+    buttonText: 'راسلنا'
+  },
+  {
+    icon: Mail,
+    title: 'البريد الإلكتروني',
+    description: 'نرد خلال 24 ساعة كحد أقصى',
+    value: 'ksaaldeyar@gmail.com',
+    action: 'mailto:ksaaldeyar@gmail.com',
+    buttonText: 'أرسل إيميل'
+  },
+  {
+    icon: MapPin,
+    title: 'موقعنا',
+    description: 'زيارة مكتبنا في جدة',
+    value: 'جدة، المملكة العربية السعودية',
+    action: '#location',
+    buttonText: 'عرض الخريطة'
+  }
+]
+
+const workingHours = [
+  { day: 'الأحد - الخميس', hours: '8:00 ص - 6:00 م' },
+  { day: 'الجمعة', hours: '2:00 م - 6:00 م' },
+  { day: 'السبت', hours: '9:00 ص - 5:00 م' },
+  { day: 'خدمة الطوارئ', hours: '24/7' }
+]
+
+const serviceAreas = [
+  'شمال جدة', 'جنوب جدة', 'شرق جدة', 'غرب جدة',
+  'وسط جدة', 'الكورنيش', 'حي الصفا', 'حي النزهة',
+  'حي الروضة', 'حي المرجان', 'حي الشاطئ', 'حي السلامة'
+]
+
+export default function ContactPage() {
+  const whatsappMessage = "السلام عليكم، أريد الاستفسار عن خدماتكم والحصول على عرض سعر."
+  const whatsappURL = `https://wa.me/966553719009?text=${encodeURIComponent(whatsappMessage)}`
+  const breadcrumbItems = [
+    { label: 'تواصل معنا', href: '/contact' }
+  ]
+
+  const [formData, setFormData] = useState({
+    fullName: '',
+    phoneNumber: '',
+    email: '',
+    serviceType: '',
+    addressRegion: '',
+    projectDetails: ''
+  })
+
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState('')
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    
+    try {
+      // إرسال البيانات إلى API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitMessage('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.')
+        setFormData({
+          fullName: '',
+          phoneNumber: '',
+          email: '',
+          serviceType: '',
+          addressRegion: '',
+          projectDetails: ''
+        })
+      } else {
+        setSubmitMessage('حدث خطأ في إرسال الرسالة. يرجى المحاولة مرة أخرى.')
+      }
+    } catch (error) {
+      setSubmitMessage('حدث خطأ في إرسال الرسالة. يرجى المحاولة مرة أخرى.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  return (
+    <>
+      {/* Structured Data */}
+      <StructuredDataScript type="BreadcrumbList" data={breadcrumbItems} />
+      
+      <Navbar />
+      
+      <main className="min-h-screen">
+        {/* Breadcrumb */}
+        <BreadcrumbSchema items={breadcrumbItems} />
+        <nav className="bg-gray-100 py-3">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center space-x-2 space-x-reverse text-sm text-gray-600">
+              <Link href="/" className="hover:text-blue-600">الرئيسية</Link>
+              <span>/</span>
+              <span>تواصل معنا</span>
+            </div>
+          </div>
+        </nav>
+
+        {/* Hero Section */}
+        <section className="py-16 bg-gradient-to-r from-blue-50 to-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl font-bold text-gray-900 mb-6">
+                تواصل مع محترفين الديار
+              </h1>
+              <p className="text-lg text-gray-700 mb-8">
+                نحن هنا لخدمتكم على مدار الساعة. فريق متخصص جاهز للرد على استفساراتكم وتقديم الاستشارة المجانية
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href={whatsappURL} target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="w-full sm:w-auto">
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    واتساب مباشر
+                  </Button>
+                </Link>
+                <a href="tel:+966553719009">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                    <Phone className="mr-2 h-5 w-5" />
+                    اتصل الآن
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Methods */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">طرق التواصل معنا</h2>
+              <p className="text-gray-600">اختر الطريقة الأنسب لك للتواصل معنا</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {contactMethods.map((method, index) => {
+                const IconComponent = method.icon
+                return (
+                  <div key={index} className="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <IconComponent className="mx-auto h-12 w-12 text-blue-600 mb-4" />
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{method.title}</h3>
+                    <p className="text-gray-600 mb-2">{method.description}</p>
+                    <p className="font-medium text-gray-900 mb-4">{method.value}</p>
+                    <Link href={method.action} target={method.action.startsWith('http') ? '_blank' : '_self'} rel={method.action.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                      <Button className="w-full">
+                        {method.buttonText}
+                      </Button>
+                    </Link>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Form */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">أرسل لنا رسالة</h2>
+                <p className="text-gray-600">نملأ النموذج وسنرد عليك خلال 30 دقيقة</p>
+              </div>
+              
+              {submitMessage && (
+                <div className={`mb-6 p-4 rounded-lg ${
+                  submitMessage.includes('نجح') ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                }`}>
+                  {submitMessage}
+                </div>
+              )}
+              
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+                      الاسم الكامل *
+                    </label>
+                    <input
+                      type="text"
+                      id="fullName"
+                      name="fullName"
+                      value={formData.fullName}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      placeholder="أدخل اسمك الكامل"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-2">
+                      رقم الهاتف *
+                    </label>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      placeholder="05XXXXXXXX"
+                    />
+                  </div>
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    البريد الإلكتروني
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="example@email.com"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="serviceType" className="block text-sm font-medium text-gray-700 mb-2">
+                    نوع الخدمة المطلوبة
+                  </label>
+                  <select
+                    id="serviceType"
+                    name="serviceType"
+                    value={formData.serviceType}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  >
+                    <option value="">اختر نوع الخدمة</option>
+                    <option value="مظلات سيارات">مظلات سيارات</option>
+                    <option value="سواتر خصوصية">سواتر خصوصية</option>
+                    <option value="برجولات حدائق">برجولات حدائق</option>
+                    <option value="خيام ملكية">خيام ملكية</option>
+                    <option value="بيوت شعر">بيوت شعر</option>
+                    <option value="ساندوتش بانل">ساندوتش بانل</option>
+                    <option value="تنسيق حدائق">تنسيق حدائق</option>
+                    <option value="ترميم ملحقات">ترميم ملحقات</option>
+                    <option value="استشارة عامة">استشارة عامة</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label htmlFor="addressRegion" className="block text-sm font-medium text-gray-700 mb-2">
+                    العنوان/المنطقة
+                  </label>
+                  <input
+                    type="text"
+                    id="addressRegion"
+                    name="addressRegion"
+                    value={formData.addressRegion}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="مثال: حي الفيصلية، جدة"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="projectDetails" className="block text-sm font-medium text-gray-700 mb-2">
+                    تفاصيل المشروع *
+                  </label>
+                  <textarea
+                    id="projectDetails"
+                    name="projectDetails"
+                    value={formData.projectDetails}
+                    onChange={handleInputChange}
+                    required
+                    rows={4}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"
+                    placeholder="اكتب تفاصيل طلبك أو استفسارك هنا"
+                  />
+                </div>
+                
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full"
+                  size="lg"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                      جاري الإرسال...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="mr-2 h-4 w-4" />
+                      إرسال الرسالة
+                    </>
+                  )}
+                </Button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Info */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Working Hours */}
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">ساعات العمل</h3>
+                <div className="space-y-4">
+                  {workingHours.map((schedule, index) => (
+                    <div key={index} className="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
+                      <span className="font-medium text-gray-900">{schedule.day}</span>
+                      <span className="text-gray-600">{schedule.hours}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Service Areas */}
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">المناطق المخدومة</h3>
+                <div className="grid grid-cols-2 gap-2">
+                  {serviceAreas.map((area, index) => (
+                    <span key={index} className="px-3 py-2 bg-blue-100 text-blue-700 rounded text-sm text-center">
+                      {area}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Quick Contact */}
+        <section className="py-16 bg-blue-600 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h3 className="text-2xl font-bold mb-4">تحتاج مساعدة فورية؟</h3>
+            <p className="text-xl mb-6 opacity-90">
+              فريق خدمة العملاء متاح الآن للرد على استفساراتك
+            </p>
+            <p className="text-lg mb-6">اتصل الآن: 9009 371 55 966+</p>
+            
+            <Link href={whatsappURL} target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                واتساب فوري
+              </Button>
+            </Link>
+          </div>
+        </section>
+
+        {/* Map Section */}
+        <section id="location" className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">موقعنا في جدة</h2>
+              <p className="text-xl text-gray-600">محترفين الديار العالمية - في خدمتكم في جميع أنحاء جدة</p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto text-center">
+              <h4 className="text-xl font-bold text-gray-900 mb-2">محترفين الديار العالمية</h4>
+              <p className="text-gray-600 mb-4">جدة، المملكة العربية السعودية</p>
+              <Link 
+                href="https://maps.google.com/?q=21.485811,39.192505" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 font-medium"
+              >
+                فتح في خرائط جوجل ←
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Quick Links */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">أسئلة شائعة؟</h2>
+            <p className="text-gray-600 mb-6">ربما تجد إجابة سؤالك في صفحة الأسئلة الشائعة</p>
+            <Link href="/faq">
+              <Button size="lg" variant="outline">
+                عرض الأسئلة الشائعة
+              </Button>
+            </Link>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  )
+}
+```
+
+---
+
+## 📝 ملاحظات مهمة للإصلاح:
+
+### 1. اختبار كل صفحة:
+- **اختبر كل صفحة بعد إصلاحها**
+- **تأكد من ظهور المحتوى بشكل صحيح**
+- **اختبر النماذج والروابط**
+
+### 2. إنشاء ملفات API للنماذج:
+```javascript
+// pages/api/contact.js
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ message: 'Method not allowed' })
+  }
+
+  try {
+    const formData = req.body
+    // معالجة البيانات هنا (إرسال إيميل، حفظ في قاعدة بيانات، إلخ)
+    
+    // مثال: إرسال إيميل
+    // await sendEmail(formData)
+    
+    res.status(200).json({ message: 'تم إرسال الرسالة بنجاح' })
+  } catch (error) {
+    console.error('Contact form error:', error)
+    res.status(500).json({ message: 'حدث خطأ في إرسال الرسالة' })
+  }
+}
+```
+
+### 3. ملفات CSS المطلوبة:
+- **تأكد من وجود ملف globals.css مع Tailwind CSS**
+- **أضف أنماط مخصصة إذا لزم الأمر**
+
+### 4. متطلبات أخرى:
+- **تأكد من وجود جميع المكونات المستخدمة**
+- **أضف مكونات الناقصة إذا لزم الأمر**
+- **اختبر الموقع على أجهزة مختلفة**
+
+---
+
+## ✅ قائمة فحص سريعة:
+
+- [ ] إصلاح الصفحة الرئيسية (page.tsx)
+- [ ] إصلاح صفحة About
+- [ ] إصلاح صفحة Portfolio  
+- [ ] إصلاح صفحة Contact
+- [ ] إنشاء API endpoint للنماذج
+- [ ] اختبار جميع الصفحات
+- [ ] اختبار النموذج
+- [ ] فحص ظهور البيانات
+- [ ] اختبار على الجوال
+- [ ] فحص الـ SEO
+
+---
+
+**ملاحظة**: هذا التقرير يحتوي على الحلول العملية لإصلاح جميع الأخطاء الحرجة في موقعك. بعد تطبيق هذه الحلول، يجب أن يعمل الموقع بشكل طبيعي ومهني.
+
+---
+
+**تم إعداد هذا التقرير بواسطة**: MiniMax Agent  
+**تاريخ الإعداد**: 27 نوفمبر 2025
