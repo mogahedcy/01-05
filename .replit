@@ -1,0 +1,67 @@
+modules = ["bun", "postgresql-16", "bun-1.3", "nodejs-20", "web"]
+run = "npm run dev"
+
+[nix]
+channel = "stable-25_05"
+packages = ["openssl", "imagemagick", "librsvg", "nodejs_20"]
+
+[deployment]
+run = ["bash", "-c", "cd .next/standalone && PORT=5000 HOSTNAME=0.0.0.0 node server.js"]
+build = ["bash", "-c", "bunx prisma generate && NODE_OPTIONS='--max-old-space-size=4096' bun run build && cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/"]
+deploymentTarget = "autoscale"
+
+[[ports]]
+localPort = 3000
+
+[[ports]]
+localPort = 3001
+externalPort = 80
+
+[[ports]]
+localPort = 3002
+externalPort = 3002
+
+[[ports]]
+localPort = 5000
+externalPort = 8099
+
+[workflows]
+
+  [[workflows.workflow]]
+  name = "Start application"
+  author = "agent"
+
+  [workflows.workflow.metadata]
+  agentRequireRestartOnSave = false
+  outputType = "webview"
+
+  [[workflows.workflow.tasks]]
+  task = "shell.exec"
+  args = "npm run dev"
+  waitForPort = 5000
+  
+
+[agent]
+expertMode = true
+integrations = ["javascript_openai:1.0.0"]
+
+[userenv]
+
+[userenv.shared]
+NEXT_PUBLIC_BASE_URL = "https://www.deyarsu.com"
+JWT_SECRET = "I9wREFuSzrXjEh29NDCz0TaHDmaFbYpgGDq8mWhSD4w="
+NEON_DATABASE_URL = "postgresql://neondb_owner:npg_Cdt08PknDiKz@ep-withered-bread-a48nkvax-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require"
+N8N_WEBHOOK_URL = "https://mogahedali.app.n8n.cloud/webhook-test/receive-project-data"
+
+[userenv.production]
+DATABASE_URL_UNPOOLED = "postgresql://neondb_owner:npg_Cdt08PknDiKz@ep-withered-bread-a48nkvax.us-east-1.aws.neon.tech/neondb?sslmode=require"
+PGHOST_UNPOOLED = "ep-withered-bread-a48nkvax.us-east-1.aws.neon.tech"
+POSTGRES_URL = "postgresql://neondb_owner:npg_Cdt08PknDiKz@ep-withered-bread-a48nkvax-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require"
+POSTGRES_URL_NON_POOLING = "postgresql://neondb_owner:npg_Cdt08PknDiKz@ep-withered-bread-a48nkvax.us-east-1.aws.neon.tech/neondb?sslmode=require"
+POSTGRES_HOST = "ep-withered-bread-a48nkvax-pooler.us-east-1.aws.neon.tech"
+POSTGRES_DATABASE = "neondb"
+POSTGRES_URL_NO_SSL = "postgresql://neondb_owner:npg_Cdt08PknDiKz@ep-withered-bread-a48nkvax-pooler.us-east-1.aws.neon.tech/neondb"
+POSTGRES_PRISMA_URL = "postgresql://neondb_owner:npg_Cdt08PknDiKz@ep-withered-bread-a48nkvax-pooler.us-east-1.aws.neon.tech/neondb?connect_timeout=15&sslmode=require"
+
+[userenv.development]
+DATABASE_URL_UNPOOLED = "postgresql://neondb_owner:npg_Cdt08PknDiKz@ep-withered-bread-a48nkvax.us-east-1.aws.neon.tech/neondb?sslmode=require"

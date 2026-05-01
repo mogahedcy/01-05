@@ -1,0 +1,46 @@
+# Development and documentation files
+.same/
+attached_assets/
+*.md
+!README.md
+
+# Environment files (should be set in Vercel dashboard)
+.env.local
+.env.development
+.env.test
+
+# Database files
+prisma/dev.db
+prisma/migrations/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+.next/
+out/
+build/
+
+# Dependencies (will be installed during build)
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+
+# Keep scripts folder for build process
+!scripts/
