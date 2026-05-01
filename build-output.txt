@@ -1,0 +1,7 @@
+$ next build
+   ▲ Next.js 15.3.2
+   - Environments: .env.production
+
+   Creating an optimized production build ...
+Next.js build worker exited with code: null and signal: SIGKILL
+error: script "build" exited with code 1

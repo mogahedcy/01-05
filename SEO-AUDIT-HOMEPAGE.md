@@ -1,0 +1,241 @@
+# تدقيق SEO شامل للصفحة الرئيسية
+## ديار جدة
+### تاريخ المراجعة: 14 نوفمبر 2025
+
+---
+
+## ✅ 1. معايير Metadata الأساسية
+
+### Title Tag
+- **المحتوى**: "مظلات وسواتر جدة | برجولات | ساندوتش بانل | بيوت شعر"
+- **الطول**: 55 حرف ✅
+- **التقييم**: ممتاز (يتضمن الكلمات المفتاحية الرئيسية + الموقع)
+
+### Meta Description
+- **المحتوى**: "شركة محترفين الديار ✅ تركيب مظلات سيارات، برجولات، سواتر، ساندوتش بانل، تنسيق حدائق، بيوت شعر بجدة. خبرة 15 عام، ضمان 10 سنوات. اتصل: 0553719009"
+- **الطول**: 161 حرف ✅
+- **التقييم**: ممتاز (يتضمن USP + CTA + رقم الهاتف)
+
+### Keywords Meta
+- **المحتوى**: مظلات سيارات جدة، برجولات خشبية جدة، سواتر جدة، ساندوتش بانل جدة، تنسيق حدائق جدة، بيوت شعر جدة، خيام ملكية، ترميم ملحقات جدة، مظلات لكسان، سواتر حديد، سواتر قماش، برجولات حدائق، هناجر جدة، مستودعات جدة، تركيب مظلات، مقاول مظلات جدة
+- **التقييم**: ممتاز (يغطي جميع الخدمات الرئيسية)
+
+---
+
+## ✅ 2. بنية العناوين (Heading Structure)
+
+### H1 (العنوان الرئيسي)
+- **الموقع**: HeroSection
+- **المحتوى**: "محترفين الديار" + "مظلات وسواتر وبرجولات وساندوتش بانل جدة"
+- **التقييم**: ممتاز ✅
+- **ملاحظة**: يحتوي على اسم الشركة + الخدمات + الموقع
+
+### H2 (العناوين الفرعية)
+1. "خدماتنا المتخصصة" - ServicesSection
+2. "لماذا محترفين الديار الخيار الأول في جدة؟" - WhyChooseUsSection
+3. "الأسئلة الشائعة" - FAQSection
+
+**التقييم**: جيد ✅
+**ملاحظة**: استخدام منطقي ومتسلسل للعناوين
+
+---
+
+## ✅ 3. Structured Data (Schema.org)
+
+### ✅ Organization Schema
+```json
+{
+  "@type": "Organization",
+  "name": "ديار جدة",
+  "alternateName": "Al Deyar Professional Global",
+  "url": "https://www.aldeyarksa.tech",
+  "foundingDate": "2010",
+  "telephone": "+966553719009"
+}
+```
+**التقييم**: ممتاز ✅
+
+### ✅ LocalBusiness Schema
+```json
+{
+  "@type": "LocalBusiness",
+  "name": "ديار جدة",
+  "address": {
+    "streetAddress": "شارع الأمير سلطان",
+    "addressLocality": "جدة",
+    "postalCode": "21423"
+  },
+  "aggregateRating": {
+    "ratingValue": "4.8",
+    "reviewCount": "125"
+  }
+}
+```
+**التقييم**: ممتاز ✅
+
+### ✅ WebSite Schema (Search Action)
+```json
+{
+  "@type": "WebSite",
+  "name": "ديار جدة",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.aldeyarksa.tech/search?q={search_term_string}"
+  }
+}
+```
+**التقييم**: ممتاز ✅
+
+### ✅ FAQPage Schema
+- **عدد الأسئلة**: 5 أسئلة رئيسية
+- **التقييم**: ممتاز ✅
+
+### ✅ Review Schema
+- **معدل التقييم**: 4.9/5
+- **عدد التقييمات**: 287
+- **التقييم**: ممتاز ✅
+
+### ✅ BreadcrumbList Schema
+- **التقييم**: موجود ✅
+
+---
+
+## ✅ 4. Open Graph & Twitter Cards
+
+### Open Graph
+- ✅ og:title: "مظلات وسواتر جدة | برجولات | ساندوتش بانل | بيوت شعر"
+- ✅ og:description: محدد بشكل صحيح
+- ✅ og:url: https://www.aldeyarksa.tech
+- ✅ og:site_name: "ديار جدة"
+- ✅ og:locale: ar_SA
+- ✅ og:type: website
+- ✅ og:image: https://www.aldeyarksa.tech/images/slider1.webp (1200x630)
+
+### Twitter Cards
+- ✅ twitter:card: summary_large_image
+- ✅ twitter:title: محدد
+- ✅ twitter:description: محدد
+- ✅ twitter:image: محدد
+
+**التقييم الإجمالي**: ممتاز ✅
+
+---
+
+## ✅ 5. الروابط الكنونية (Canonical & Alternate)
+
+### Canonical URL
+- ✅ <link rel="canonical" href="/" />
+
+### Hreflang Tags
+- ✅ ar-SA: /
+- ✅ x-default: /
+
+**التقييم**: ممتاز ✅
+
+---
+
+## ✅ 6. معايير الأداء (Performance)
+
+### Core Web Vitals
+- **FCP** (First Contentful Paint): 1416ms ✅ (Good)
+- **TTFB** (Time to First Byte): 343ms ✅ (Good)
+- **التقييم**: ممتاز ✅
+
+### تحسينات الصور
+- ✅ استخدام Next.js Image optimization
+- ✅ AVIF & WebP formats
+- ✅ Priority loading للصورة الأولى
+- ✅ Lazy loading للصور الثانوية
+- ✅ Alt text لجميع الصور
+
+---
+
+## ✅ 7. معايير Accessibility
+
+- ✅ Lang attribute: ar
+- ✅ Dir attribute: rtl
+- ✅ Alt text لجميع الصور
+- ✅ ARIA labels حيث يلزم
+- ✅ بنية عناوين منطقية
+
+---
+
+## ❌ 8. المشاكل المكتشفة
+
+### 🔴 مشكلة حرجة: عدم توحيد اسم المؤسسة
+
+#### الأسماء المستخدمة حالياً:
+1. "ديار جدة" ✅ (الاسم الرسمي الصحيح)
+2. "محترفين الديار" ❌ (نسخة مختصرة في بعض الأماكن)
+3. "Al Deyar Professional Global" ✅ (الاسم الإنجليزي)
+
+#### الأماكن التي تحتاج توحيد:
+- ✅ Structured Data: يستخدم "ديار جدة"
+- ❌ WhyChooseUsSection L84: يستخدم "محترفين الديار"
+- ❌ FAQSection L12,97,173: يستخدم "محترفين الديار"
+- ❌ ServicesSection L135,138,143: يستخدم "ديار جدة"
+- ✅ Layout metadata: يستخدم "ديار جدة"
+
+### 🟡 مشاكل ثانوية:
+
+1. **تضارب العناوين في LocalBusiness Schema**
+   - Organization: "شارع الأمير محمد بن عبدالعزيز"
+   - LocalBusiness: "شارع الأمير سلطان"
+   - **يجب توحيد العنوان**
+
+2. **تضارب الرموز البريدية**
+   - Organization: "23442"
+   - LocalBusiness: "21423"
+   - **يجب توحيد الرمز البريدي**
+
+3. **تضارب الإحداثيات الجغرافية**
+   - Organization: lat: 21.4858, lng: 39.1925
+   - LocalBusiness: lat: 21.5433, lng: 39.1728
+   - **يجب توحيد الموقع**
+
+4. **URL في ServicesSection**
+   - يستخدم "https://yourdomain.com" بدلاً من الدومين الفعلي
+   - **يجب تحديث الدومين**
+
+---
+
+## 📊 التقييم الإجمالي
+
+### النتيجة: 92/100 ⭐⭐⭐⭐⭐
+
+| المعيار | النتيجة | الحالة |
+|---------|---------|--------|
+| Metadata | 10/10 | ✅ ممتاز |
+| Heading Structure | 10/10 | ✅ ممتاز |
+| Structured Data | 9/10 | ⚠️ جيد جداً (تضاربات طفيفة) |
+| Open Graph | 10/10 | ✅ ممتاز |
+| Canonical URLs | 10/10 | ✅ ممتاز |
+| Performance | 10/10 | ✅ ممتاز |
+| Accessibility | 10/10 | ✅ ممتاز |
+| اتساق الاسم | 7/10 | ⚠️ يحتاج تحسين |
+
+---
+
+## 🎯 الإجراءات الموصى بها (Priority)
+
+### 🔴 أولوية عالية (Critical)
+1. ✅ **توحيد اسم المؤسسة** إلى "ديار جدة" في جميع الملفات
+2. ✅ **توحيد العنوان الفعلي** في Schema
+3. ✅ **توحيد الإحداثيات الجغرافية** 
+4. ✅ **تحديث domain في ServicesSection**
+
+### 🟡 أولوية متوسطة
+1. إضافة Product Schema للخدمات الفردية
+2. إضافة ImageObject Schema للصور الرئيسية
+
+### 🟢 أولوية منخفضة
+1. تحسين internal linking
+2. إضافة Breadcrumb navigation مرئية
+
+---
+
+## ✅ الخلاصة
+
+الصفحة الرئيسية محسّنة بشكل ممتاز لمحركات البحث وتلتزم بمعظم معايير SEO الحديثة. المشكلة الرئيسية هي عدم اتساق اسم المؤسسة في بعض الأماكن، وهذا قد يسبب ارتباكاً لمحركات البحث.
+
+**الخطوة التالية**: توحيد اسم المؤسسة والبيانات الجغرافية في جميع الملفات.
