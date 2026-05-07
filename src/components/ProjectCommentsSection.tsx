@@ -309,6 +309,7 @@ export default function ProjectCommentsSection({
     <section
       className="mt-16 bg-white rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-slate-100 p-8 sm:p-12 relative overflow-hidden"
       itemScope
+      // CreativeWork avoids Product-rich-result requirements for project reviews.
       itemType="https://schema.org/CreativeWork"
     >
       {/* JSON-LD for SEO */}

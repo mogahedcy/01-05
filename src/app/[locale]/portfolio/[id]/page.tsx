@@ -158,6 +158,37 @@ async function getProject(id: string) {
   }
 }
 
+function getKeywordCandidates(project: any, parsedTranslation: any) {
+  const storedEnglishKeywords = project.keywordsEn
+    ? project.keywordsEn.split(',').map((k: string) => k.trim())
+    : [];
+  const translatedEnglishKeywords = Array.isArray(parsedTranslation?.keywords)
+    ? parsedTranslation.keywords.map((k: string) => k.trim())
+    : [];
+  const arabicKeywords = project.keywords
+    ? project.keywords.split(',').map((k: string) => k.trim())
+    : [];
+
+  return { storedEnglishKeywords, translatedEnglishKeywords, arabicKeywords };
+}
+
+function getOpenGraphTags(options: {
+  isEn: boolean;
+  parsedTranslation: any;
+  translatedEnglishKeywords: string[];
+  projectTags: string[];
+}) {
+  if (!options.isEn) {
+    return options.projectTags;
+  }
+
+  const translatedTags = Array.isArray(options.parsedTranslation?.tags) && options.parsedTranslation.tags.length > 0
+    ? options.parsedTranslation.tags
+    : options.translatedEnglishKeywords;
+
+  return translatedTags;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ id: string; locale: string }> }): Promise<Metadata> {
   const { id, locale } = await params;
   const isEn = locale === 'en';
@@ -229,18 +260,11 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     shareImage = 'https://www.deyarsu.com/images/slider1.webp';
   }
 
-  const storedEnglishKeywords = (project as any).keywordsEn
-    ? (project as any).keywordsEn.split(',').map((k: string) => k.trim())
-    : [];
-  const translatedEnglishKeywords = Array.isArray(parsedTranslation?.keywords)
-    ? parsedTranslation.keywords.map((k: string) => k.trim())
-    : [];
-  const arabicKeywords = project.keywords
-    ? project.keywords.split(',').map((k: string) => k.trim())
-    : [];
-  const projectKeywords = isEn
-    ? (storedEnglishKeywords.length > 0 ? storedEnglishKeywords : translatedEnglishKeywords)
-    : arabicKeywords;
+  const { storedEnglishKeywords, translatedEnglishKeywords, arabicKeywords } = getKeywordCandidates(project, parsedTranslation);
+  let projectKeywords = arabicKeywords;
+  if (isEn) {
+    projectKeywords = storedEnglishKeywords.length > 0 ? storedEnglishKeywords : translatedEnglishKeywords;
+  }
   const dynamicKeywords = [
     project.title,
     project.category,
@@ -258,12 +282,12 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const pageUrl = `${localePrefix}/portfolio/${project.slug || id}`;
   const fullUrl = `https://www.deyarsu.com${pageUrl}`;
 
-  const translatedOpenGraphTags = Array.isArray(parsedTranslation?.tags) && parsedTranslation.tags.length > 0
-    ? parsedTranslation.tags
-    : translatedEnglishKeywords;
-  const openGraphTags = isEn
-    ? translatedOpenGraphTags
-    : (project.tags?.map((t: any) => t.name) || []);
+  const openGraphTags = getOpenGraphTags({
+    isEn,
+    parsedTranslation,
+    translatedEnglishKeywords,
+    projectTags: project.tags?.map((t: any) => t.name) || []
+  });
 
   return {
     title: seoTitle,
