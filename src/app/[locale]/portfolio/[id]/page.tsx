@@ -397,13 +397,14 @@ export default async function ProjectDetailsPage({ params }: Props) {
       } catch (e) {}
     }
 
-    if (!(project as any).keywordsEn && Array.isArray(parsedTranslation?.keywords)) {
-      (project as any).keywordsEn = parsedTranslation.keywords.join(', ');
+    const { translatedEnglishKeywords } = getKeywordCandidates(project, parsedTranslation);
+    if (!(project as any).keywordsEn && translatedEnglishKeywords.length > 0) {
+      (project as any).keywordsEn = translatedEnglishKeywords.join(', ');
     }
 
     const translatedTags = Array.isArray(parsedTranslation?.tags) && parsedTranslation.tags.length > 0
       ? parsedTranslation.tags
-      : (Array.isArray(parsedTranslation?.keywords) ? parsedTranslation.keywords : []);
+      : translatedEnglishKeywords;
 
     if (translatedTags.length > 0) {
       project.tags = translatedTags.map((name: string, index: number) => ({
