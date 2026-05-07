@@ -99,6 +99,14 @@ export async function POST(request: NextRequest) {
         publishedAt: new Date(),
         updatedAt: new Date(),
         // حفظ النسخة الإنجليزية والكلمات المقترحة في الحقول المتوفرة
+        titleEn: englishTranslation?.title || null,
+        descriptionEn: englishTranslation?.description || null,
+        locationEn: englishTranslation?.location || null,
+        metaTitleEn: englishTranslation?.metaTitle || null,
+        metaDescriptionEn: englishTranslation?.metaDescription || null,
+        keywordsEn: Array.isArray(englishTranslation?.keywords)
+          ? englishTranslation?.keywords.join(', ')
+          : null,
         aiAnalysis: englishTranslation ? JSON.stringify({ englishVersion: englishTranslation }) : null,
         suggestedKeywords: englishTranslation ? JSON.stringify(englishTranslation) : null
       },

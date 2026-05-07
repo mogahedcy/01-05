@@ -53,13 +53,63 @@ interface ProjectCommentsSectionProps {
   projectId: string;
   projectTitle: string;
   initialComments?: Comment[];
+  locale?: string;
 }
 
 export default function ProjectCommentsSection({ 
   projectId, 
   projectTitle,
-  initialComments = []
+  initialComments = [],
+  locale = 'ar'
 }: ProjectCommentsSectionProps) {
+  const isEn = locale === 'en';
+  const dateLocale = isEn ? 'en-US' : 'ar-SA';
+  const t = {
+    sectionTitle: isEn ? 'Customer Reviews & Ratings' : 'آراء وتجارب العملاء',
+    sectionSubtitle: isEn
+      ? 'We value our clients’ feedback that reflects our commitment to quality and craftsmanship.'
+      : 'نعتز بآراء عملائنا التي تعكس التزامنا بالجودة والإتقان',
+    verifiedComments: (count: number) => isEn ? `${count} verified reviews` : `${count} تعليق موثق`,
+    basedOnReviews: (count: number) => isEn ? `Based on ${count} verified ratings` : `بناءً على ${count} تقييم حقيقي`,
+    successTitle: isEn ? 'Success!' : 'تم بنجاح!',
+    successMessage: isEn
+      ? 'Your comment was added and will appear after review.'
+      : 'تم إضافة تعليقك وسيظهر بعد المراجعة',
+    addReviewTitle: isEn ? 'Add your rating and comment' : 'أضف تقييمك وتعليقك',
+    ratingLabel: isEn ? 'Your project rating *' : 'تقييمك للمشروع *',
+    ratingOutOf: (rating: number) => isEn ? `(${rating} of 5)` : `(${rating} من 5)`,
+    nameLabel: isEn ? 'Full name *' : 'الاسم الكريم *',
+    namePlaceholder: isEn ? 'Enter your name' : 'اكتب اسمك',
+    emailLabel: isEn ? 'Email (optional)' : 'البريد الإلكتروني (اختياري)',
+    commentLabel: isEn ? 'Your comment *' : 'تعليقك *',
+    commentPlaceholder: isEn ? 'Share your thoughts about this project...' : 'شاركنا رأيك في هذا المشروع...',
+    submitting: isEn ? 'Submitting...' : 'جاري الإرسال...',
+    submitComment: isEn ? 'Submit Comment' : 'إرسال التعليق',
+    reviewNotice: isEn ? 'Comments are reviewed before publishing' : 'سيتم مراجعة التعليق قبل النشر',
+    commentsTitle: (count: number) => isEn ? `Comments (${count})` : `التعليقات (${count})`,
+    sortNewest: isEn ? 'Newest first' : 'الأحدث أولاً',
+    sortOldest: isEn ? 'Oldest first' : 'الأقدم أولاً',
+    sortHighest: isEn ? 'Highest rated' : 'الأعلى تقييماً',
+    sortMostHelpful: isEn ? 'Most helpful' : 'الأكثر تفاعلاً',
+    filterAllStars: isEn ? 'All stars' : 'جميع النجوم',
+    starsLabel: (count: number) => {
+      if (isEn) return `${count} stars`;
+      if (count === 1) return 'نجمة';
+      if (count === 2) return 'نجمتين';
+      return `${count} نجوم`;
+    },
+    loadingComments: isEn ? 'Loading comments...' : 'جاري تحميل التعليقات...',
+    noCommentsTitle: isEn ? 'No comments yet' : 'لا توجد تعليقات بعد',
+    noCommentsSubtitle: isEn
+      ? 'Be the first to rate this project and leave a comment'
+      : 'كن أول من يقيم هذا المشروع ويترك تعليقاً',
+    verifiedBadge: isEn ? 'Verified' : 'موثق',
+    adminReplyLabel: isEn ? 'Deyar Jeddah Management' : 'إدارة ديار جدة العالمية',
+    helpfulLabel: (score: number) => isEn ? `Very helpful (+${score})` : `مفيد جداً (+${score})`,
+    requiredFieldsError: isEn ? 'Please fill in all required fields.' : 'يرجى ملء جميع الحقول المطلوبة',
+    submitError: isEn ? 'Failed to submit comment.' : 'حدث خطأ أثناء إضافة التعليق',
+    connectionError: isEn ? 'Connection error. Please try again later.' : 'حدث خطأ في الاتصال. يرجى المحاولة لاحقاً',
+  };
   const [comments, setComments] = useState<Comment[]>(initialComments);
   const [newComment, setNewComment] = useState({
     name: '',
@@ -102,7 +152,7 @@ export default function ProjectCommentsSection({
     e.preventDefault();
 
     if (!newComment.name.trim() || !newComment.message.trim()) {
-      setError('يرجى ملء جميع الحقول المطلوبة');
+      setError(t.requiredFieldsError);
       return;
     }
 
@@ -148,11 +198,11 @@ export default function ProjectCommentsSection({
         setTimeout(() => setShowSuccess(false), 3000);
       } else {
         const errorData = await response.json();
-        setError(errorData.error || 'حدث خطأ أثناء إضافة التعليق');
+        setError(errorData.error || t.submitError);
       }
     } catch (error) {
       console.error('خطأ في إرسال التعليق:', error);
-      setError('حدث خطأ في الاتصال. يرجى المحاولة لاحقاً');
+      setError(t.connectionError);
     } finally {
       setIsSubmitting(false);
     }
@@ -259,7 +309,7 @@ export default function ProjectCommentsSection({
     <section
       className="mt-16 bg-white rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-slate-100 p-8 sm:p-12 relative overflow-hidden"
       itemScope
-      itemType="https://schema.org/Product"
+      itemType="https://schema.org/CreativeWork"
     >
       {/* JSON-LD for SEO */}
       <script
@@ -267,7 +317,7 @@ export default function ProjectCommentsSection({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Product",
+            "@type": "CreativeWork",
             "name": projectTitle,
             "aggregateRating": comments.length > 0 ? {
               "@type": "AggregateRating",
@@ -315,11 +365,11 @@ export default function ProjectCommentsSection({
           </div>
           <div>
             <h2 className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center gap-2">
-              آراء وتجارب العملاء
+              {t.sectionTitle}
               <Sparkles className="w-6 h-6 text-indigo-500" />
             </h2>
             <p className="text-gray-600 text-base mt-2 font-medium">
-              نعتز بآراء عملائنا التي تعكس التزامنا بالجودة والإتقان
+              {t.sectionSubtitle}
             </p>
           </div>
         </div>
@@ -335,7 +385,7 @@ export default function ProjectCommentsSection({
             </div>
           </div>
           <div className="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
-            {comments.length} تعليق موثق
+            {t.verifiedComments(comments.length)}
           </div>
         </div>
       </div>
@@ -362,7 +412,7 @@ export default function ProjectCommentsSection({
               </div>
               <div className="bg-white/80 px-6 py-2 rounded-full border border-slate-200 shadow-sm">
                 <span className="text-slate-600 font-bold text-sm">
-                  بناءً على {comments.length} تقييم حقيقي
+                  {t.basedOnReviews(comments.length)}
                 </span>
               </div>
             </div>
@@ -418,8 +468,8 @@ export default function ProjectCommentsSection({
           >
             <CheckCircle className="w-6 h-6 text-green-600 ml-4 flex-shrink-0" />
             <div>
-              <h4 className="font-bold text-green-800 mb-1">تم بنجاح!</h4>
-              <span className="text-green-700">تم إضافة تعليقك وسيظهر بعد المراجعة</span>
+              <h4 className="font-bold text-green-800 mb-1">{t.successTitle}</h4>
+              <span className="text-green-700">{t.successMessage}</span>
             </div>
           </motion.div>
         )}
@@ -445,19 +495,19 @@ export default function ProjectCommentsSection({
       >
         <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
           <Sparkles className="w-5 h-5 text-blue-600" />
-          أضف تقييمك وتعليقك
+          {t.addReviewTitle}
         </h3>
 
         <form onSubmit={handleSubmitComment} className="space-y-6">
           {/* التقييم */}
           <div>
             <label className="block text-sm font-bold text-gray-700 mb-3">
-              تقييمك للمشروع *
+              {t.ratingLabel}
             </label>
             <div className="flex items-center gap-4 bg-white rounded-xl p-4 border-2 border-gray-200">
               {renderStars(newComment.rating, true, 'w-10 h-10')}
               <span className="text-xl font-bold text-gray-700 bg-blue-100 px-4 py-2 rounded-lg">
-                ({newComment.rating} من 5)
+                {t.ratingOutOf(newComment.rating)}
               </span>
             </div>
           </div>
@@ -466,20 +516,20 @@ export default function ProjectCommentsSection({
           <div className="grid md:grid-cols-2 gap-5">
             <div>
               <label className="block text-sm font-bold text-gray-700 mb-2">
-                الاسم الكريم *
+                {t.nameLabel}
               </label>
               <Input
                 type="text"
                 required
                 value={newComment.name}
                 onChange={(e) => setNewComment(prev => ({ ...prev, name: e.target.value }))}
-                placeholder="اكتب اسمك"
+                placeholder={t.namePlaceholder}
                 className="transition-all duration-300 focus:ring-4 focus:ring-blue-200 border-2 h-12 text-base"
               />
             </div>
             <div>
               <label className="block text-sm font-bold text-gray-700 mb-2">
-                البريد الإلكتروني (اختياري)
+                {t.emailLabel}
               </label>
               <Input
                 type="email"
@@ -494,14 +544,14 @@ export default function ProjectCommentsSection({
           {/* التعليق */}
           <div>
             <label className="block text-sm font-bold text-gray-700 mb-2">
-              تعليقك *
+              {t.commentLabel}
             </label>
             <Textarea
               rows={5}
               required
               value={newComment.message}
               onChange={(e) => setNewComment(prev => ({ ...prev, message: e.target.value }))}
-              placeholder="شاركنا رأيك في هذا المشروع..."
+              placeholder={t.commentPlaceholder}
               className="transition-all duration-300 focus:ring-4 focus:ring-blue-200 border-2 text-base"
             />
           </div>
@@ -516,12 +566,12 @@ export default function ProjectCommentsSection({
                 {isSubmitting ? (
                   <>
                     <div className="w-5 h-5 border-3 border-white border-t-transparent rounded-full animate-spin" />
-                    جاري الإرسال...
+                    {t.submitting}
                   </>
                 ) : (
                   <>
                     <Send className="w-5 h-5" />
-                    إرسال التعليق
+                    {t.submitComment}
                   </>
                 )}
               </Button>
@@ -529,7 +579,7 @@ export default function ProjectCommentsSection({
 
             <div className="flex items-center text-sm text-gray-600 bg-blue-50 px-4 py-2 rounded-lg">
               <AlertCircle className="w-4 h-4 ml-2" />
-              سيتم مراجعة التعليق قبل النشر
+              {t.reviewNotice}
             </div>
           </div>
         </form>
@@ -540,7 +590,7 @@ export default function ProjectCommentsSection({
         <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
           <h3 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
             <MessageCircle className="w-6 h-6 text-blue-600" />
-            التعليقات ({comments.length})
+            {t.commentsTitle(comments.length)}
           </h3>
 
           {/* أدوات التصفية والترتيب */}
@@ -557,10 +607,10 @@ export default function ProjectCommentsSection({
                   }}
                   className="appearance-none bg-slate-50 border border-slate-200 text-slate-700 text-xs font-bold rounded-xl px-5 py-2.5 pr-10 focus:ring-4 focus:ring-blue-100 focus:border-blue-400 transition-all cursor-pointer"
                 >
-                  <option value="newest">الأحدث أولاً</option>
-                  <option value="oldest">الأقدم أولاً</option>
-                  <option value="rating">الأعلى تقييماً</option>
-                  <option value="popular">الأكثر تفاعلاً</option>
+                  <option value="newest">{t.sortNewest}</option>
+                  <option value="oldest">{t.sortOldest}</option>
+                  <option value="rating">{t.sortHighest}</option>
+                  <option value="popular">{t.sortMostHelpful}</option>
                 </select>
                 <div className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
                   <TrendingUp className="w-3.5 h-3.5" />
@@ -574,12 +624,12 @@ export default function ProjectCommentsSection({
                   onChange={(e) => setFilterByRating(e.target.value ? Number.parseInt(e.target.value) : null)}
                   className="appearance-none bg-slate-50 border border-slate-200 text-slate-700 text-xs font-bold rounded-xl px-5 py-2.5 pr-10 focus:ring-4 focus:ring-blue-100 focus:border-blue-400 transition-all cursor-pointer"
                 >
-                  <option value="">جميع النجوم</option>
-                  <option value="5">5 نجوم</option>
-                  <option value="4">4 نجوم</option>
-                  <option value="3">3 نجوم</option>
-                  <option value="2">نجمتين</option>
-                  <option value="1">نجمة</option>
+                  <option value="">{t.filterAllStars}</option>
+                  <option value="5">{t.starsLabel(5)}</option>
+                  <option value="4">{t.starsLabel(4)}</option>
+                  <option value="3">{t.starsLabel(3)}</option>
+                  <option value="2">{t.starsLabel(2)}</option>
+                  <option value="1">{t.starsLabel(1)}</option>
                 </select>
                 <div className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none text-amber-400">
                   <Star className="w-3.5 h-3.5 fill-current" />
@@ -592,7 +642,7 @@ export default function ProjectCommentsSection({
         {loading ? (
           <div className="text-center py-16">
             <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-            <p className="text-gray-600 font-medium">جاري تحميل التعليقات...</p>
+            <p className="text-gray-600 font-medium">{t.loadingComments}</p>
           </div>
         ) : comments.length === 0 ? (
           <motion.div 
@@ -602,10 +652,10 @@ export default function ProjectCommentsSection({
           >
             <MessageCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
             <h4 className="text-xl font-bold text-gray-600 mb-2">
-              لا توجد تعليقات بعد
+              {t.noCommentsTitle}
             </h4>
             <p className="text-gray-500 text-lg">
-              كن أول من يقيم هذا المشروع ويترك تعليقاً
+              {t.noCommentsSubtitle}
             </p>
           </motion.div>
         ) : (
@@ -649,7 +699,7 @@ export default function ProjectCommentsSection({
                             </h4>
                             {comment.isVerified && (
                               <div className="hidden sm:flex items-center gap-1.5 bg-green-50 text-green-700 text-[10px] px-2.5 py-1 rounded-full border border-green-100 font-black uppercase tracking-wider">
-                                موثق
+                                {t.verifiedBadge}
                               </div>
                             )}
                           </div>
@@ -670,7 +720,7 @@ export default function ProjectCommentsSection({
                             <span className="text-xs text-slate-400 font-bold flex items-center">
                               <Calendar className="w-3.5 h-3.5 ml-1.5" />
                               <time itemProp="datePublished" dateTime={new Date(comment.createdAt).toISOString()}>
-                                {new Date(comment.createdAt).toLocaleDateString('ar-SA', {
+                                {new Date(comment.createdAt).toLocaleDateString(dateLocale, {
                                   year: 'numeric',
                                   month: 'long',
                                   day: 'numeric'
@@ -699,9 +749,9 @@ export default function ProjectCommentsSection({
                             <User className="w-5 h-5" />
                           </div>
                           <div>
-                            <span className="font-black text-sm text-blue-900 block">إدارة ديار جدة العالمية</span>
+                            <span className="font-black text-sm text-blue-900 block">{t.adminReplyLabel}</span>
                             <span className="text-[10px] text-blue-400 font-bold uppercase">
-                              {new Date(comment.replies[0].createdAt).toLocaleDateString('ar-SA')}
+                              {new Date(comment.replies[0].createdAt).toLocaleDateString(dateLocale)}
                             </span>
                           </div>
                         </div>
@@ -795,7 +845,7 @@ export default function ProjectCommentsSection({
                         <div className="mr-auto hidden sm:flex items-center gap-2 bg-indigo-50 px-4 py-2 rounded-2xl border border-indigo-100 shadow-sm">
                           <TrendingUp className="w-4 h-4 text-indigo-600" />
                           <span className="text-[10px] font-black text-indigo-700 uppercase tracking-widest">
-                            مفيد جداً (+{netScore})
+                            {t.helpfulLabel(netScore)}
                           </span>
                         </div>
                       )}

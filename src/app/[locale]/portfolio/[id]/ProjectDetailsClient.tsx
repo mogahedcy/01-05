@@ -932,6 +932,7 @@ export default function ProjectDetailsClient({ project, projectId, locale = 'ar'
           <ProjectCommentsSection
             projectId={project.id}
             projectTitle={project.title}
+            locale={locale}
           />
         </div>
       </section>

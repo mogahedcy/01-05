@@ -172,25 +172,37 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     };
   }
 
+  let parsedTranslation: any = null;
+
   // استخدام الحقول الإنجليزية المباشرة إذا وجدت
   if (isEn) {
-    if (!(project as any).titleEn && project.suggestedKeywords) {
+    if (project.suggestedKeywords) {
       try {
         const parsed = JSON.parse(project.suggestedKeywords);
         const isBadFallback = parsed.title?.startsWith('Project:') && /[\u0600-\u06FF]/.test(parsed.title);
         if (!isBadFallback) {
+          parsedTranslation = parsed;
           if (parsed.title) (project as any).titleEn = parsed.title;
           if (parsed.description) (project as any).descriptionEn = parsed.description;
           if (parsed.metaTitle) (project as any).metaTitleEn = parsed.metaTitle;
           if (parsed.metaDescription) (project as any).metaDescriptionEn = parsed.metaDescription;
+          if (parsed.location) (project as any).locationEn = parsed.location;
         }
       } catch (e) {}
+    }
+
+    if (!(project as any).keywordsEn && Array.isArray(parsedTranslation?.keywords)) {
+      (project as any).keywordsEn = parsedTranslation.keywords.join(', ');
     }
 
     project.title = (project as any).titleEn || project.title;
     project.description = (project as any).descriptionEn || project.description;
     project.metaTitle = (project as any).metaTitleEn || project.metaTitle;
     project.metaDescription = (project as any).metaDescriptionEn || project.metaDescription;
+    project.location = (project as any).locationEn || project.location;
+    if (parsedTranslation?.category) {
+      project.category = parsedTranslation.category;
+    }
   }
 
   // استخراج جميع الصور والفيديوهات للمشروع
@@ -217,7 +229,11 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     shareImage = 'https://www.deyarsu.com/images/slider1.webp';
   }
 
-  const projectKeywords = project.keywords ? project.keywords.split(',').map((k: string) => k.trim()) : [];
+  const projectKeywords = isEn
+    ? ((project as any).keywordsEn
+        ? (project as any).keywordsEn.split(',').map((k: string) => k.trim())
+        : (Array.isArray(parsedTranslation?.keywords) ? parsedTranslation.keywords.map((k: string) => k.trim()) : []))
+    : (project.keywords ? project.keywords.split(',').map((k: string) => k.trim()) : []);
   const dynamicKeywords = [
     project.title,
     project.category,
@@ -234,6 +250,12 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const localePrefix = isEn ? '/en' : '';
   const pageUrl = `${localePrefix}/portfolio/${project.slug || id}`;
   const fullUrl = `https://www.deyarsu.com${pageUrl}`;
+
+  const openGraphTags = isEn
+    ? ((Array.isArray(parsedTranslation?.tags) && parsedTranslation.tags.length > 0)
+        ? parsedTranslation.tags
+        : (Array.isArray(parsedTranslation?.keywords) ? parsedTranslation.keywords : []))
+    : (project.tags?.map((t: any) => t.name) || []);
 
   return {
     title: seoTitle,
@@ -257,7 +279,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       modifiedTime: (project.updatedAt || project.createdAt).toISOString(),
       authors: [isEn ? 'Deyar Jeda International' : 'ديار جدة العالمية'],
       section: project.category,
-      tags: project.tags?.map((t: any) => t.name) || [],
+      tags: openGraphTags,
       images: [
         {
           url: shareImage,
@@ -323,15 +345,17 @@ export default async function ProjectDetailsPage({ params }: Props) {
 
   // إعداد البيانات بناءً على اللغة
   const isEn = locale === 'en';
+  let parsedTranslation: any = null;
   
   // تطبيق البيانات الإنجليزية المباشرة في المكون الرئيسي
   if (isEn) {
     // Fallback لاستخراج ترجمة Groq المحفوظة مسبقاً في suggestedKeywords
-    if (!(project as any).titleEn && project.suggestedKeywords) {
+    if (project.suggestedKeywords) {
       try {
         const parsed = JSON.parse(project.suggestedKeywords);
         const isBadFallback = parsed.title?.startsWith('Project:') && /[\u0600-\u06FF]/.test(parsed.title);
         if (!isBadFallback) {
+          parsedTranslation = parsed;
           if (parsed.title) (project as any).titleEn = parsed.title;
           if (parsed.description) (project as any).descriptionEn = parsed.description;
           if (parsed.location) (project as any).locationEn = parsed.location;
@@ -341,12 +365,37 @@ export default async function ProjectDetailsPage({ params }: Props) {
       } catch (e) {}
     }
 
+    if (!(project as any).keywordsEn && Array.isArray(parsedTranslation?.keywords)) {
+      (project as any).keywordsEn = parsedTranslation.keywords.join(', ');
+    }
+
+    const translatedTags = Array.isArray(parsedTranslation?.tags) && parsedTranslation.tags.length > 0
+      ? parsedTranslation.tags
+      : (Array.isArray(parsedTranslation?.keywords) ? parsedTranslation.keywords : []);
+
+    if (translatedTags.length > 0) {
+      project.tags = translatedTags.map((name: string, index: number) => ({
+        id: `en-tag-${index + 1}`,
+        name
+      }));
+    }
+
+    if (Array.isArray(parsedTranslation?.materials) && parsedTranslation.materials.length > 0) {
+      project.materials = parsedTranslation.materials.map((name: string, index: number) => ({
+        id: `en-material-${index + 1}`,
+        name
+      }));
+    }
+
     project.title = (project as any).titleEn || project.title;
     project.description = (project as any).descriptionEn || project.description;
     project.metaTitle = (project as any).metaTitleEn || project.metaTitle;
     project.metaDescription = (project as any).metaDescriptionEn || project.metaDescription;
     project.location = (project as any).locationEn || project.location;
     project.client = (project as any).clientEn || project.client;
+    if (parsedTranslation?.category) {
+      project.category = parsedTranslation.category;
+    }
   }
 
   // إعداد structured data
