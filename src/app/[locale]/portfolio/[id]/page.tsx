@@ -226,7 +226,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   if (isEn) {
     if (project.suggestedKeywords) {
       try {
-        const parsed = JSON.parse(project.suggestedKeywords);
+        const parsed = JSON.parse(project.suggestedKeywords) as ParsedProjectTranslation;
         const isBadFallback = parsed.title?.startsWith('Project:') && /[\u0600-\u06FF]/.test(parsed.title);
         if (!isBadFallback) {
           parsedTranslation = parsed;
@@ -401,7 +401,7 @@ export default async function ProjectDetailsPage({ params }: Props) {
     // Fallback لاستخراج ترجمة Groq المحفوظة مسبقاً في suggestedKeywords
     if (project.suggestedKeywords) {
       try {
-        const parsed = JSON.parse(project.suggestedKeywords);
+        const parsed = JSON.parse(project.suggestedKeywords) as ParsedProjectTranslation;
         const isBadFallback = parsed.title?.startsWith('Project:') && /[\u0600-\u06FF]/.test(parsed.title);
         if (!isBadFallback) {
           parsedTranslation = parsed;
