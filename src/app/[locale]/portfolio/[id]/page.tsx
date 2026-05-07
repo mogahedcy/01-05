@@ -50,6 +50,23 @@ function generateVideoThumbnail(videoUrl: string): string | null {
 }
 
 // دالة جلب المشروع مباشرة من قاعدة البيانات - بدون تزامن مع API
+interface ParsedProjectTranslation {
+  title?: string;
+  description?: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  location?: string;
+  category?: string;
+  keywords?: string[];
+  tags?: string[];
+  materials?: string[];
+}
+
+interface ProjectKeywordFields {
+  keywords?: string | null;
+  keywordsEn?: string | null;
+}
+
 async function getProject(id: string) {
   try {
     // فك ترميز URL للتعامل مع الأحرف العربية
@@ -158,7 +175,7 @@ async function getProject(id: string) {
   }
 }
 
-function getKeywordCandidates(project: any, parsedTranslation: any) {
+function getKeywordCandidates(project: ProjectKeywordFields, parsedTranslation?: ParsedProjectTranslation | null) {
   const storedEnglishKeywords = project.keywordsEn
     ? project.keywordsEn.split(',').map((k: string) => k.trim())
     : [];
@@ -174,7 +191,7 @@ function getKeywordCandidates(project: any, parsedTranslation: any) {
 
 function getOpenGraphTags(options: {
   isEn: boolean;
-  parsedTranslation: any;
+  parsedTranslation?: ParsedProjectTranslation | null;
   translatedEnglishKeywords: string[];
   projectTags: string[];
 }) {
@@ -203,7 +220,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     };
   }
 
-  let parsedTranslation: any = null;
+  let parsedTranslation: ParsedProjectTranslation | null = null;
 
   // استخدام الحقول الإنجليزية المباشرة إذا وجدت
   if (isEn) {
@@ -377,7 +394,7 @@ export default async function ProjectDetailsPage({ params }: Props) {
 
   // إعداد البيانات بناءً على اللغة
   const isEn = locale === 'en';
-  let parsedTranslation: any = null;
+  let parsedTranslation: ParsedProjectTranslation | null = null;
   
   // تطبيق البيانات الإنجليزية المباشرة في المكون الرئيسي
   if (isEn) {
