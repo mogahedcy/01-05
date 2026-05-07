@@ -38,8 +38,8 @@ interface TranslationOutput {
  */
 export async function translateProjectToEnglish(
   input: TranslationInput,
-  imageCount: number = 0,
-  videoCount: number = 0
+  imageCount = 0,
+  videoCount = 0
 ): Promise<TranslationOutput> {
   try {
     const prompt = `You are a High-End Architectural Copywriter & SEO Specialist specializing in the luxury Saudi Arabian construction market.

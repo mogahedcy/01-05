@@ -1,5 +1,5 @@
 'use client';
-import { Pair } from './BeforeAfterSlider';
+import type { Pair } from './BeforeAfterSlider';
 
 export const pairs: Pair[] = [
     {

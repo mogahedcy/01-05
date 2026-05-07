@@ -5,8 +5,8 @@ import {
   useRef,
   useEffect,
   useCallback,
-  MouseEvent as ReactMouseEvent,
-  TouchEvent as ReactTouchEvent,
+  type MouseEvent as ReactMouseEvent,
+  type TouchEvent as ReactTouchEvent,
 } from 'react';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
@@ -142,7 +142,7 @@ function SingleSlider({ pair, isRTL }: { pair: Pair; isRTL: boolean }) {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: [0, 1, 1, 0], scale: [0.8, 1, 1, 0.8] }}
-            transition={{ duration: 2, delay: 0.5, repeat: Infinity, repeatDelay: 3 }}
+            transition={{ duration: 2, delay: 0.5, repeat: Number.POSITIVE_INFINITY, repeatDelay: 3 }}
             className="bg-black/60 backdrop-blur-md text-white text-sm font-bold px-5 py-2.5 rounded-full border border-white/20 flex items-center gap-2"
           >
             <span>←</span>

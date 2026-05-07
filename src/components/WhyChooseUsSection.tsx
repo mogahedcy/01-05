@@ -33,7 +33,7 @@ function AnimatedCounter({ value }: { value: string }) {
   
   // Extract number and non-number parts
   const numberMatch = value.match(/\d+/);
-  const numberPart = numberMatch ? parseInt(numberMatch[0], 10) : 0;
+  const numberPart = numberMatch ? Number.parseInt(numberMatch[0], 10) : 0;
   const prefix = numberMatch ? value.substring(0, numberMatch.index) : '';
   const suffix = numberMatch ? value.substring(numberMatch.index! + numberMatch[0].length) : value;
 

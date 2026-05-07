@@ -42,7 +42,7 @@ export default function CacheClearNotification({ locale }: CacheClearNotificatio
       // 2. تحديث الـ Service Worker بلطف (بدون حذفه)
       if ('serviceWorker' in navigator) {
         const registrations = await navigator.serviceWorker.getRegistrations();
-        for (let registration of registrations) {
+        for (const registration of registrations) {
           await registration.update();
         }
       }
