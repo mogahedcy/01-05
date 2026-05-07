@@ -67,6 +67,14 @@ interface ProjectKeywordFields {
   keywordsEn?: string | null;
 }
 
+function splitKeywords(value?: string | null) {
+  return value ? value.split(',').map((keyword) => keyword.trim()).filter(Boolean) : [];
+}
+
+function normalizeKeywords(values?: string[] | null) {
+  return Array.isArray(values) ? values.map((keyword) => keyword.trim()).filter(Boolean) : [];
+}
+
 async function getProject(id: string) {
   try {
     // فك ترميز URL للتعامل مع الأحرف العربية
@@ -176,15 +184,9 @@ async function getProject(id: string) {
 }
 
 function getKeywordCandidates(project: ProjectKeywordFields, parsedTranslation?: ParsedProjectTranslation | null) {
-  const storedEnglishKeywords = project.keywordsEn
-    ? project.keywordsEn.split(',').map((k: string) => k.trim())
-    : [];
-  const translatedEnglishKeywords = Array.isArray(parsedTranslation?.keywords)
-    ? parsedTranslation.keywords.map((k: string) => k.trim())
-    : [];
-  const arabicKeywords = project.keywords
-    ? project.keywords.split(',').map((k: string) => k.trim())
-    : [];
+  const storedEnglishKeywords = splitKeywords(project.keywordsEn);
+  const translatedEnglishKeywords = normalizeKeywords(parsedTranslation?.keywords);
+  const arabicKeywords = splitKeywords(project.keywords);
 
   return { storedEnglishKeywords, translatedEnglishKeywords, arabicKeywords };
 }
@@ -199,6 +201,7 @@ function getOpenGraphTags(options: {
     return options.projectTags;
   }
 
+  // Favor explicit translated tags, otherwise fall back to translated keywords for OG tags.
   const translatedTags = Array.isArray(options.parsedTranslation?.tags) && options.parsedTranslation.tags.length > 0
     ? options.parsedTranslation.tags
     : options.translatedEnglishKeywords;
